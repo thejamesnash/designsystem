@@ -1,0 +1,95 @@
+
+.LogoWrapper {
+    width: 100vw;
+    height: 100vh;
+}
+.LogoWrapper[data-position="fullpage"] {
+    width: 100vw;
+    height: 100vh;
+}
+.LogoWrapper[data-position="halfpage"] {
+    width: 50vw;
+    height: 100vh;
+}
+.LogoWrapper[data-position="docked"] {
+    width: 13.28vw;
+    height: 25.7vh;
+}
+.logo {
+    width: 14vw;
+    height: 34.4vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+.logo svg {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+.LogoWrapper[data-position="fullpage"] .logo {
+    transform: translate3d(42.8vw,33vh,0);
+}
+.LogoWrapper[data-position="halfpage"] .logo {
+    transform: translate3d(18vw,33vh,0);
+}
+.LogoWrapper[data-position="docked"] .logo {
+    transform: translate3d(5vw,8.88vh,0);
+    width: 3.28vw;
+    height: 7.96vh;
+    animation-name: dockLogo;
+}
+
+@keyframes dockLogo {
+    0%      { width: 14vw; height: 34.4vh; transform: translate3d(18vw,33vh,0); }
+    50%     { width: 14vw; height: 34.4vh; transform: translate3d(5vw,33vh,0); }
+    100%    { width: 3.28vw; height: 7.96vh; transform: translate3d(5vw,8.88vh,0); }
+}
+
+.LogoWrapper[data-animate="true"][data-position="halfpage"] {
+    transition-delay: 100ms;
+}
+.LogoWrapper[data-animate="true"][data-animationtier="1"] {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-timing-function: linear;
+}
+.LogoWrapper[data-animate="true"][data-animationtier="2"],
+.LogoWrapper[data-animate="true"][data-animationtier="3"] {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-timing-function: var(--animation-ease-in);
+}
+
+.LogoWrapper[data-animate="true"][data-animationtier="1"] .logo  {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-duration: var(--animation-duration-small);
+    animation-timing-function: linear;
+}
+.LogoWrapper[data-animate="true"][data-animationtier="2"] .logo,
+.LogoWrapper[data-animate="true"][data-animationtier="3"] .logo  {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-timing-function: var(--animation-ease-in);;
+    animation-fill-mode: forwards;
+    animation-duration: var(--animation-duration-small);
+    animation-timing-function: var(--animation-ease-in);
+}
+
+
+
+.logo > div {
+    transform: scale(0.94) translate3d(-69rem,-44rem,0);
+}
+
+.LogoWrapper[data-position="docked"] .logo > div {
+    transform: scale(0.234) translate3d(-69rem,-44rem,0);
+}
+
+.logo canvas {
+    transform: translate3d(-41vw,-30vh,0);
+}

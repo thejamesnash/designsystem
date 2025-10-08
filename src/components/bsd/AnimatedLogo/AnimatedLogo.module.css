@@ -1,0 +1,21 @@
+@keyframes animateLogo {
+    from { background-position: 0rem; }
+    to { background-position: -9685rem; }
+}
+.AnimatedLogo {
+    --logoState: infinite;
+    position: absolute;
+    width: 106rem;
+    height: 124rem;
+    background: transparent url('/images/loading_sprite.png') 0 0 no-repeat;
+    background-size: auto 124rem;
+    background-position: 0rem;
+    transform: translate3d(-24rem,-15rem,0)
+}
+.AnimatedLogo[data-animate="true"] {
+    animation-name: animateLogo;
+    animation-duration: 1.21s;
+    animation-iteration-count: var(--logoState);
+    animation-timing-function: steps(91);
+    animation-play-state: running;
+}

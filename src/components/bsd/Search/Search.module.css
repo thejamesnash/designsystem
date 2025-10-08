@@ -1,0 +1,93 @@
+.Search {  
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 192rem;
+    background-color: var(--surfaceAppLayer00Opacity0);
+}
+.Search:focus-within {
+    background-color: var(--surfaceAppLayer00);
+}
+.searchControls {
+    
+    height: 100vh;
+    width: 464rem;
+    box-sizing: border-box;
+    padding-top: 96rem;
+    margin-right: 128rem;
+    box-sizing: border-box;
+}
+.searchResults {
+    padding-top: 220rem;
+    height: 100vh;
+    width: 1136rem;
+    box-sizing: border-box;
+    position: relative
+}
+.searchResults > div {
+    position: relative;
+    height: 300rem
+}
+.searchResults > div {
+    top: -70rem;
+    left: -256rem
+}
+.searchResults > div > div {
+    position: relative;
+    top: 90rem
+}
+.searchResults > div > div + div  {
+    position: relative;
+    top: -90rem
+}
+
+
+
+.keyboard {
+    display: flex;
+    gap: 16rem;
+    flex-wrap: wrap;
+}
+.key {
+    height: 64rem;
+    width: 64rem;
+    font: var(--Title1);
+    color: var(--textOnDark);
+    background-color: var(--buttonSecondaryButtonFillDefault);
+    outline: 0 none;
+}
+.key:focus {
+    color: var(--textOnLight);
+    background-color: var(--buttonPrimaryButtonFillDefault);
+}
+.key[value="Delete"]{
+    width: 224rem;
+}
+.key[value="Space"]{
+    width: 224rem;
+}
+.searchInput::placeholder {
+    font: var(--Title3);
+    color: var(--iconsAndInputsInactive);
+    font-weight: 600;
+    border-bottom: 3px solid var(--iconsAndInputsInactive);
+}
+.searchInput {
+    margin-bottom: 153rem;
+    font: var(--Title3);
+    background-color: transparent;
+    color: var(--textOnDark);
+    border: none;
+    position: relative;
+    z-index: 1;
+    width: 50vw;
+    border-bottom: 3px solid var(--iconsAndInputsInactive);
+    outline: 0 none;
+}
+
+.SearchPage[data-animate="true"] {
+    transition-property: all;
+    transition-duration: var(--animation-duration-xlarge);
+    transition-behavior:  var(--animation-ease-fast);
+}

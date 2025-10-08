@@ -1,0 +1,26 @@
+.PageTitle {
+    margin: 0;
+    padding: 0;
+}
+.PageTitle h2 {
+    font: var(--Title3);
+}
+.PageTitle h3 {
+    font: var(--Body2);
+    line-height: 40rem;
+    padding: 0rem 0 0 0;   
+    max-width: 1150rem;
+}
+.PageTitle p {
+    font: var(--Body2);
+    padding: 4rem 0 0 0;   
+    max-width: 1150rem;
+}
+.PageTitle .emoji {
+    font-family: '4Moji';
+}
+.PageTitle[data-withshadow="true"] h2,
+.PageTitle[data-withshadow="true"] h3,
+.PageTitle[data-withshadow="true"] p {
+    text-shadow: var(--textShadow);
+}

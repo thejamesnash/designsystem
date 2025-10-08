@@ -1,0 +1,34 @@
+.logo[data-colour="default"] {
+    fill: var(--textOnDark);
+}
+.logo[data-colour="primary"] {
+    fill: var(--buttonPrimaryButtonFillDefault);
+}
+.logo[data-colour="white"] {
+    fill: var(--textOnDark);
+}
+
+.logo[data-name="E4"],
+.logo[data-name="M4"],
+.logo[data-name="F4"],
+.logo[data-name="4S"] {
+    fill: var(--textOnDark);
+}
+  
+.logo[data-name="E4"] .primaryFill {
+    fill: rgb(151, 65, 255);
+}
+.logo[data-name="F4"] .primaryFill {
+    fill: rgb(230,30,47);
+}
+.logo[data-name="M4"] .primaryFill {
+    fill: rgb(86,190,60);
+}
+.logo[data-name="4S"] .primaryFill {
+    fill: rgb(91,199,201);
+}
+.logo {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+

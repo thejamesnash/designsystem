@@ -1,0 +1,63 @@
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Force base path for static assets
+      if (!window.STORYBOOK_PROPS) window.STORYBOOK_PROPS = {};
+      window.STORYBOOK_PROPS.baseUrl = '/styleguide/';
+    });
+  </script> -->
+  <!-- <base href="/styleguide/">
+<script>
+  // Ensure all manager assets use the correct base path
+  window.STORYBOOK_ROUTER_BASE = '/styleguide/';
+</script> -->
+<style>
+
+    .sidebar-item {
+        color: #FFF!important;
+        background-color: #1e1e1e!important;
+    }
+    .sidebar-item:hover {
+        color: #AAFF89!important;
+        background-color: #292929!important
+    }
+    .sidebar-item[data-selected="true"] {
+        color: #1e1e1e!important;
+        background-color: #AAFF89!important;
+    }
+    .sidebar-item[data-selected="true"]:hover {
+        color: #1e1e1e!important;
+        background-color: #AAFF89!important;
+    }
+
+    .sidebar-item svg {
+        color: #FFF!important;
+    }
+    .sidebar-item:hover svg {
+        color: #AAFF89!important;
+    }
+    .sidebar-item[data-selected="true"] svg {
+        color: #1e1e1e!important;
+    }
+    .sidebar-item[data-selected="true"]:hover svg {
+        color: #1e1e1e!important;
+    }
+    button[type="button"].tabbutton:hover {
+        color: #aaff89!important
+    }
+    .sb-bar button:hover {
+        color: #aaff89!important;
+        background-color: #1e1e1e!important;
+    }
+    .sbdocs {
+        background-color: red!important;
+    }
+    .sbdocs-wrapper {
+        background-color: green!important
+    }
+    #storybook-preview-wrapper {
+        background-color: rgb(30,30,30)!important
+    }
+
+
+    
+</style>

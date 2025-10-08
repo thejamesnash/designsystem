@@ -1,0 +1,27 @@
+
+.Meta {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    font: var(--Label1);
+    position: relative;
+    z-index: 1;
+    margin-top: 12rem
+}
+
+.Meta span {
+    font: var(--Label1);
+    /* text-shadow: var(--textShadow); */
+}
+.bslIcon,
+.metaIcon,
+.metaIcon svg {
+    width: 35rem;
+    height: 35rem;
+}
+.Meta .metaIcon[data-type="guidance"] {
+    color: var(--statusError);
+}
+.bslIcon {
+    transform: translate3d(0,4rem,0)
+}

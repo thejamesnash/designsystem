@@ -1,0 +1,313 @@
+.BrandPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920rem;
+    height: 1080rem;
+    overflow: hidden;
+}
+.logoWrapper {
+    position: absolute;
+    top: 96rem;
+    left: 96rem;
+    width: 63rem;
+    height: 86rem;
+    z-index: 1;
+}
+.pageTitle {
+    position: absolute;
+    top: 96rem;
+    left: 192rem;
+    z-index: 1;
+}
+.hubBg {
+    width: 1920rem;
+    height: 816rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    filter: brightness(0.6);
+    transform: translate3d(0,0,0);
+}
+.hubHero {
+    padding-bottom: 40rem;
+    box-sizing: border-box;
+    height: 816rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--textOnLight);
+    position: relative;
+}
+.hubHeroContent h1 {
+    font: var(--Title3);
+    margin: 0 0 32rem 180rem;
+}
+.titleTreatment {
+    position: relative;
+    width: 678rem;
+    height: 330rem;
+    top: 0;
+    margin: 0 0 32rem 180rem;
+    opacity: 1;
+    z-index: 1;
+}
+.btnWrap {
+    padding: 0 124rem 0 192rem;
+    box-sizing: border-box;
+    display: flex;
+    gap: 8rem;
+    position: relative;
+    opacity: 1;
+    align-items: center;
+    z-index: 1;
+
+}
+.hubMeta {
+    padding: 32rem 192rem; 
+    box-sizing: border-box;
+    height: 264rem;
+    opacity: 1;
+    background-color: var(--textOnLight);
+    position: relative;    
+}
+.hubMeta p {
+    font: var(--Body1);
+}
+.hubMeta .highlight {
+    font: var(--Title1);
+    color: var(--buttonPrimaryButtonFillDefault);
+}
+.hubMeta:after {
+    content: '';
+    background: transparent url('data:image/svg+xml,<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" data-name="chevron" class="Icon_Icon__NqGqa undefined"><path d="M16.7012 11.8564L16.6494 11.8135L8.14355 4.78418V3.30371L17.6494 11.1602H17.6504L17.8564 11.3291V12.6729L17.6504 12.8428L8.14355 20.6953V19.2148L16.6494 12.1895L16.7012 12.1465V11.8564Z" fill="%23ececec" stroke="%23ececec" stroke-width="0.28667"></path></svg>') center center no-repeat;
+    width: 48rem;
+    height: 48rem;
+    position: absolute;
+    bottom: 42rem;
+    left: calc( 50vw - 24rem );
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.seriesSelection {
+    height: 901rem;
+    box-sizing: border-box;
+    padding-top: 96rem;
+    background-color: var(--surfaceAppLayer00);
+}
+.seriesSelectionTitle {
+    font: var(--Title3);
+    margin: 0 0 91rem 192rem
+}
+
+.moreLikeThis {
+    position: relative;
+}
+.moreLikeThis:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: transparent url('/images/grad2.png') center center no-repeat;
+    background-size: cover;
+    height: 1080rem;
+    width: 1920rem;
+    filter: brightness(0.44) hue-rotate(-1deg)
+}
+
+.hubHeroContent {
+    z-index: 1
+}
+.BrandPage[data-state="series"] .pageTitle,
+.BrandPage[data-state="series"] .titleTreatment,
+.BrandPage[data-state="series"] .btnWrap,
+.BrandPage[data-state="series"] .hubMeta > div,
+.BrandPage[data-state="series"] .hubMeta:after,
+.BrandPage[data-state="series"] .hubBg,
+.BrandPage[data-state="more"] .pageTitle,
+.BrandPage[data-state="more"] .titleTreatment,
+.BrandPage[data-state="more"] .btnWrap,
+.BrandPage[data-state="more"] .hubMeta > div,
+.BrandPage[data-state="more"] .hubMeta:after,
+.BrandPage[data-state="more"] .hubBg {
+    opacity: 0;
+}
+
+.BrandPage[data-state="series"] .hubHeroContent,
+.BrandPage[data-state="series"] .hubMeta:after,
+.BrandPage[data-state="more"] .hubHeroContent,
+.BrandPage[data-state="more"] .hubMeta:after {
+    transform: translate3d(0,-86rem,0);
+}
+.BrandPage[data-state="series"] .pageTitle,
+.BrandPage[data-state="more"] .pageTitle {
+    transform: translate3d(0,-286rem,0);
+}
+
+.BrandPage[data-state="series"] .hubBg,
+.BrandPage[data-state="series"] .hubHero,
+.BrandPage[data-state="series"] .hubMeta,
+.BrandPage[data-state="more"] .hubBg,
+.BrandPage[data-state="more"] .hubHero,
+.BrandPage[data-state="more"] .hubMeta {
+    transform: translate3d(0,-816rem,0);
+}
+.seriesSelection {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 901rem;
+    transform: translate3d(0,0,0);
+}
+.seriesSelectionTitle {
+    opacity: 0;
+}
+
+.BrandPage[data-state="series"] .seriesSelection {
+    transform: translate3d(0,-100vh,0);
+}
+.BrandPage[data-state="series"] .seriesSelectionTitle {
+    opacity: 1;
+}
+.moreLikeThis {
+    position: absolute;
+    top: calc( 100vh + 901rem );
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translate3d(0,0,0);
+}
+.BrandPage[data-state="series"] .moreLikeThis {
+    transform: translate3d(0,-1080rem,0);
+}
+
+.BrandPage[data-state="more"] .seriesSelection {
+    transform: translate3d(0,-1981rem,0);
+    opacity: 0;
+}
+.BrandPage[data-state="more"] .seriesSelectionTitle {
+    opacity: 0;
+}
+.BrandPage[data-state="more"] .moreLikeThis {
+    transform: translate3d(0,-1981rem,0);
+}
+
+.BrandPage[data-animate="true"] .moreLikeThis {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.BrandPage[data-animate="true"] .seriesSelection {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.BrandPage[data-animate="true"] .pageTitle {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-out);
+}
+.BrandPage[data-animate="true"] .seriesSelectionTitle {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-out);
+    transition-delay: var(--animation-duration-medium);
+}
+
+.BrandPage[data-animate="true"] .hubHeroContent,
+.BrandPage[data-animate="true"] .hubMeta,
+.BrandPage[data-animate="true"] .hubBg,
+.BrandPage[data-animate="true"] .hubHero {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+    transform: translate3d(0,0,0);
+}
+.BrandPage[data-animate="true"] .titleTreatment,
+.BrandPage[data-animate="true"] .btnWrap,
+.BrandPage[data-animate="true"] .hubMeta > div,
+.BrandPage[data-animate="true"] .hubMeta:after {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-out);
+}
+
+
+
+
+
+.BrandPage .seriesSelection div[data-type="sliceMeta"] {
+    opacity: 0;
+}
+.BrandPage[data-state="series"] .seriesSelection:focus-within div[data-type="sliceMeta"] {
+    opacity: 1;
+}
+
+
+
+
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"] {
+    color: black;
+}
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"] svg {
+    color: var(--textOnLight);
+}
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"]:focus-within svg {
+    color: var(--textOnDark);
+}
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"]:focus svg {
+    color: var(--buttonPrimaryButtonFillDefault);
+}
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"]:after {
+    content: '';
+    width: 36rem;
+    height: 28rem;
+    background-color: var(--textOnDark);
+    position: absolute;
+    top: 26rem;
+    left: 22rem;
+    z-index: 0;
+    border-radius: 2rem;
+} 
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"]:focus {
+    color: var(--textOnLight)
+}
+.BrandPage[data-showsigned="true"] .hubHero button[data-ref="hubBSL"]:focus-within:after {
+    content: '';
+    width: 36rem;
+    height: 28rem;
+    background-color: var(--textOnLight);
+    position: absolute;
+    top: 26rem;
+    left: 38rem;
+    z-index: 0;
+    border-radius: 2rem;
+    
+} 
+.signedHubTitle {
+    position: absolute;
+    top: -228rem;
+    left: 196rem;
+    font: var(--Title3);
+    display: none;
+}
+.signedTitle {
+    display: none;
+}
+.BrandPage[data-showsigned="true"] .signedTitle,
+.BrandPage[data-showsigned="true"] .signedHubTitle {
+    display: inline;
+}
+/* .Hub[data-showsigned="true"] div[data-type="hubSeries"] */
+.BrandPage[data-istm="true"][data-showsigned="false"] div[data-type="hubSeries"] > div:nth-of-type(2),
+.BrandPage[data-istm="true"][data-showsigned="true"] div[data-type="hubSeries"] > div:nth-of-type(1)  {
+    display: none
+}

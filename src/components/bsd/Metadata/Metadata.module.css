@@ -1,0 +1,45 @@
+.Metadata {
+    display: block
+}
+.metaTitle {
+    font: var(--Body2);
+    color: var(--textOnDark);
+    padding-bottom: 4rem;
+}
+.metaHighlight {
+    font: var(--Title1);
+    color: var(--buttonPrimaryButtonFillDefault);
+    padding-bottom: 4rem;
+}
+.metaText {
+    font: var(--Body1);
+    color: var(--textOnDark);
+    max-width: 816rem;
+}
+.metaGuidance {
+    padding-top: 16rem;
+    font: var(--Label1);
+    color: var(--textOnDark);
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+}
+.guidance,
+.subtitles {
+    width: 48rem;
+    height: 48rem;
+}
+.guidance {
+    color: var(--statusError);
+}
+.audiodesc {
+    width: 48rem;
+    height: 40rem;
+    display: flex
+}
+
+.bsl {
+    width: 42rem;
+    height: 40rem;
+    display: flex
+}

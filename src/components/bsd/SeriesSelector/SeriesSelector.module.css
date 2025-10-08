@@ -1,0 +1,57 @@
+.SeriesSelector {
+    
+}
+.seriesBtns {
+    padding: 4rem 0 40rem 192rem;
+    display: flex;
+    gap: 16rem;
+    background-color: var(--textOnLight);
+    position: relative;
+    transform: translate3d(0,0,0);
+}
+.seriesBtn {
+    padding: 17rem 16rem;
+    background-color: var(--surfaceAppLayer01);
+    color: var(--textOnDark);
+    font: var(--Body1);
+    outline: 2rem solid var(--surfaceAppLayer00Opacity0);
+    box-shadow: 0 0 0 4rem var(--buttonPrimaryButtonFillDefaultOpacity0);
+    text-wrap: nowrap;
+    position: relative;
+}
+.seriesBtn:focus,
+.seriesBtn:hover {
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    color: var(--textOnLight);
+    outline: 2rem solid var(--surfaceAppLayer00);
+    box-shadow: 0 0 0 4rem var(--buttonPrimaryButtonFillDefault);
+}
+
+.episodeTitle {
+    color: var(--textOnDark);
+    font: var(--Body1);
+    padding: 0 0 0 192rem
+}
+
+.railWrapper {
+    position: absolute;
+    top: 230rem
+}
+
+
+
+
+.seriesBtns[data-animate="true"] {
+    transition: all 200ms linear;
+}
+.seriesBtn[data-animate="true"] {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-behavior:  linear;
+}
+.seriesBtns[data-animate="true"][data-animationtier="3"] {
+    transition-behavior:  ease-out;
+}
+.seriesBtn[data-animate="true"][data-animationtier="3"] {
+    transition-behavior:  var(--animation-ease-out);
+}

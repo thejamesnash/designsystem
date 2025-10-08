@@ -1,0 +1,192 @@
+.Button {
+    background-color: var(--buttonSecondaryButtonFillDefault);
+    color: var(--iconsAndInputsOnDark);
+    font: var(--Title1);   
+    outline: 2rem solid var(--surfaceAppLayer00Opacity0);
+    box-shadow: 0 0 0 4rem var(--buttonPrimaryButtonFillDefaultOpacity0);
+    text-align: left;
+    cursor: pointer;
+}
+.Button:focus,
+.Button:hover {
+    outline: 2rem solid var(--surfaceAppLayer00);
+    box-shadow: 0 0 0 4rem var(--buttonPrimaryButtonFillDefault);
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    color: var(--textOnLight);
+}
+.Button:has(b) {
+    padding: 21rem 79rem;
+}
+.Button:has(svg) {
+    display: flex;
+    align-items: center;
+    padding: 21rem 43rem;
+}
+.Button svg {
+    width: 48rem;
+    height: 48rem;
+    margin-right: 16rem;
+}
+.Button:has(b + b) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.Button b {
+    display: block;
+    text-align: left;
+    font: var(--Body1);
+}
+.Button b:first-of-type {
+    font: var(--Title1);
+}
+
+/* Icon */
+.Button[data-template="icon"] {
+    padding: 16rem;
+}
+.Button[data-template="icon"] svg {
+    margin: 0;
+    width: 40rem;
+    height: 40rem;
+}
+
+/* Keyboard */
+.Button[data-template="keyboard"]:has(b) {
+    padding: 0;
+    width: 80rem;
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Button[data-template="keyboard"] b {
+    padding: 0;
+    font: var(--Title3);
+}
+
+/* Expanding */
+.Button[data-template="expanding"] {
+    --characterCount: 0;
+    padding: 16rem;
+    width: 80rem;
+    height: 80rem;
+    display: block;
+    position: relative;
+}
+
+.Button[data-template="expanding"] svg {
+    margin: 0;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    z-index: 1;
+    transform: translate3d(0,0,0);
+}
+.Button[data-template="expanding"] b,
+.Button[data-template="expanding"] .btnText {
+    position: absolute;
+    top: 18rem;
+    left: 96rem;
+    opacity: 0;
+    width: fit-content;
+    display: block;
+    text-wrap: nowrap;
+}
+
+.Button[data-template="expanding"] .btnText b:nth-of-type(1) {
+    top: -14rem;
+    left: 0rem;
+}
+.Button[data-template="expanding"] .btnText b:nth-of-type(2) {
+    top: 16rem;
+    left: 0rem;
+}
+
+
+.Button[data-template="expanding"]:focus,
+.Button[data-template="expanding"]:hover {  
+    width: calc( ( var(--characterCount) * 16rem) + 120rem );   
+}
+.Button[data-template="expanding"]:focus svg,
+.Button[data-template="expanding"]:hover svg{  
+    transform: translate3d(16rem,0,0);
+}
+.Button[data-template="expanding"]:focus b,
+.Button[data-template="expanding"]:hover b,
+.Button[data-template="expanding"]:focus .btnText,
+.Button[data-template="expanding"]:hover .btnText {
+    opacity: 1;
+
+}
+
+
+
+
+
+/* Countdown */
+.Button[data-type="countdown"] {
+    --duration: 30s;
+    background-color: rgba(236, 236, 236, 0.40);
+    color: var(--textOnLight);
+    position: relative;
+    width: 390rem;
+}
+.Button[data-type="countdown"] > * {
+    position: relative;
+}
+@keyframes countdownBg {
+    0% { width: 0%; }
+    100% { width: 100% }
+}
+.Button[data-type="countdown"]:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+
+
+
+
+.Button[data-animate="true"][data-template="expanding"],
+.Button[data-animate="true"][data-template="expanding"] svg{
+    transition-property: all;
+    transition-duration: var(--animation-duration-xlarge);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Button[data-animate="true"][data-template="expanding"] b,
+.Button[data-animate="true"][data-template="expanding"] .btnText  {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-behavior:  var(--animation-ease-out);
+}
+
+.Button[data-animate="true"][data-template="expanding"]:focus b,
+.Button[data-animate="true"][data-template="expanding"]:hover b,
+.Button[data-animate="true"][data-template="expanding"]:focus .btnText,
+.Button[data-animate="true"][data-template="expanding"]:hover .btnText {
+    transition-delay: 360ms;
+    transition-duration: var(--animation-duration-medium);
+}
+
+.Button[data-animate="true"][data-type="countdown"]:before {
+    animation-timing-function: linear;
+    animation-duration: var(--duration);
+    animation-name: countdownBg;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.Button[data-animate="true"][data-type="countdown"]:focus:before {
+    animation-play-state: running;
+}
+.Button[data-template="catFilterPanelBtn"] b {
+    text-wrap: nowrap;
+}

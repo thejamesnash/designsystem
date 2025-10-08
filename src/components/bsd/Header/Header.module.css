@@ -1,0 +1,43 @@
+.Header {
+    --headerBgImg: url(../../../../public/images/grad2.png);
+    position: relative;
+    padding: 96rem 96rem 131rem 193rem;
+    box-sizing: border-box;
+    margin-bottom: 80rem;
+    width: 100vw;
+}
+.Header[data-fixedheader="true"] {
+    height: 328rem;
+}
+.Header[data-shortheader="true"] {
+    height: 288rem
+}
+.Header > div {
+    position: relative;
+    z-index: 1;
+}
+
+.Header[data-hasbg="true"]:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent var(--headerBgImg) center center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    filter: brightness(0.44);
+}
+.Header .logoWrapper {
+    width: 62rem;
+    height: 84rem;
+    position: absolute;
+    z-index: 10;
+    top: 96rem;
+    left: 96rem;
+}
+.Header h2 {
+    display: flex;
+    gap: 16rem
+}

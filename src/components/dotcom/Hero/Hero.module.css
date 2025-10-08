@@ -1,0 +1,268 @@
+.Hero { 
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+.heroTitle {
+    font: var(--Title2);
+    position: absolute;
+    z-index: 5;
+    padding: var(--gridGutter) var(--gridGutter) calc(var(--gridGutter)*2) var(--gridGutter);
+    width: 100%;
+    box-sizing: border-box;
+}
+.heroMeta {
+    display: flex;
+}
+.heroMeta svg {
+    width: 33rem;
+}
+.heroCTA {
+    padding: 17rem 16rem;
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    text-decoration: none;
+    font: var(--Title1);
+    color: var(--textOnLight);
+    width: fit-content;
+}
+.heroContent {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    min-height: 85vh;
+}
+.heroContent li {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--gridGutter);
+    /* padding-bottom: calc( ( 100vw - ( var(--gridGutter) * 2 ) ) / 3 ); */
+    background-size: cover;
+    background-position: center top;    
+    gap: 16rem;
+    box-sizing: border-box;
+    transform: translate3d(0,0,0);
+    /* transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-timing-function: var(--animation-ease-out); */
+}
+.Hero[data-active="1"] .heroContent li:nth-of-type(1),
+.Hero[data-active="2"] .heroContent li:nth-of-type(2),
+.Hero[data-active="3"] .heroContent li:nth-of-type(3),
+.Hero[data-active="4"] .heroContent li:nth-of-type(4),
+.Hero[data-active="5"] .heroContent li:nth-of-type(5) {
+    transform: translate3d(-100vw,0,0);
+}
+.Hero[data-active="2"] .heroContent li:nth-of-type(1),
+.Hero[data-active="3"] .heroContent li:nth-of-type(1),
+.Hero[data-active="3"] .heroContent li:nth-of-type(2),
+.Hero[data-active="4"] .heroContent li:nth-of-type(1),
+.Hero[data-active="4"] .heroContent li:nth-of-type(2),
+.Hero[data-active="4"] .heroContent li:nth-of-type(3),
+.Hero[data-active="5"] .heroContent li:nth-of-type(1),
+.Hero[data-active="5"] .heroContent li:nth-of-type(2),
+.Hero[data-active="5"] .heroContent li:nth-of-type(3),
+.Hero[data-active="5"] .heroContent li:nth-of-type(4) {
+    transform: translate3d(-200vw,0,0);
+}
+
+
+.heroContent li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+    /* background-image: radial-gradient(at bottom left, rgba(26,26,26,0.9),rgba(26,26,26,0)); */
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.75) 0%, rgba(17, 17, 17, 0.74) 3.84%, rgba(17, 17, 17, 0.73) 6.96%, rgba(17, 17, 17, 0.70) 9.48%, rgba(17, 17, 17, 0.66) 11.51%, rgba(17, 17, 17, 0.61) 13.15%, rgba(17, 17, 17, 0.56) 14.51%, rgba(17, 17, 17, 0.50) 15.71%, rgba(17, 17, 17, 0.44) 16.85%, rgba(17, 17, 17, 0.38) 18.05%, rgba(17, 17, 17, 0.31) 19.42%, rgba(17, 17, 17, 0.24) 21.06%, rgba(17, 17, 17, 0.18) 23.08%, rgba(17, 17, 17, 0.12) 25.6%, rgba(17, 17, 17, 0.06) 28.72%, rgba(17, 17, 17, 0.00) 32.56%), linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.01) 12.17%, rgba(17, 17, 17, 0.03) 22.48%, rgba(17, 17, 17, 0.06) 31.18%, rgba(17, 17, 17, 0.10) 38.51%, rgba(17, 17, 17, 0.15) 44.73%, rgba(17, 17, 17, 0.21) 50.07%, rgba(17, 17, 17, 0.27) 54.8%, rgba(17, 17, 17, 0.34) 59.15%, rgba(17, 17, 17, 0.40) 63.38%, rgba(17, 17, 17, 0.47) 67.72%, rgba(17, 17, 17, 0.54) 72.45%, rgba(17, 17, 17, 0.61) 77.78%, rgba(17, 17, 17, 0.68) 83.99%, rgba(17, 17, 17, 0.74) 91.31%, rgba(17, 17, 17, 0.80) 100%);
+    z-index: 0
+}
+@media screen and ( min-width: 768px ){
+    .heroContent li:after {
+        background: linear-gradient(90deg, rgba(17, 17, 17, 0.75) 0%, rgba(17, 17, 17, 0.70) 8.59%, rgba(17, 17, 17, 0.65) 15.92%, rgba(17, 17, 17, 0.60) 22.14%, rgba(17, 17, 17, 0.55) 27.38%, rgba(17, 17, 17, 0.49) 31.77%, rgba(17, 17, 17, 0.44) 35.46%, rgba(17, 17, 17, 0.38) 38.59%, rgba(17, 17, 17, 0.33) 41.29%, rgba(17, 17, 17, 0.27) 43.7%, rgba(17, 17, 17, 0.22) 45.96%, rgba(17, 17, 17, 0.17) 48.2%, rgba(17, 17, 17, 0.12) 50.56%, rgba(17, 17, 17, 0.08) 53.19%, rgba(17, 17, 17, 0.04) 56.21%, rgba(17, 17, 17, 0.00) 59.77%);
+    }
+}
+.heroContent li > * {
+    position: relative;
+    z-index: 1;
+}
+.heroContent .titleTreatment {
+    width: calc(100vw - ( var(--gridGutter) * 2 ));
+}
+@media screen and ( min-width: 768px ){
+    .heroContent .titleTreatment {
+        width: calc(50vw - ( var(--gridGutter) * 2 ));
+    }
+    .heroContent {
+        width: calc(100vw - var(--gridGutter));
+    }
+}
+@media screen and ( min-width: 1024px ){
+    .heroContent .titleTreatment {
+        /* width: calc(33vw - 64px); */
+    }   
+}
+.heroInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem
+}
+.heroContent h4 {
+    color: var(--buttonPrimaryButtonFillDefault);
+    text-shadow: var(--textShadow);
+    margin: 0;
+    padding: 0;
+}
+.heroContent p {
+    font: var(--Body1);
+    text-shadow: var(--textShadow);
+    margin: 0;
+    padding: 0;
+}
+
+.heroMetaAndLink {
+    display: flex;
+    align-items: center;
+    gap: 12rem
+}
+.heroMeta {
+    order: 4
+}
+.heroCTA {
+    order: 3
+}
+
+
+@media screen and ( min-width: 768px ){
+    .heroMeta {
+        order: 4
+    }
+    .heroCTA {
+        order: 3;
+
+    }
+}
+
+
+@media screen and ( max-width: 1023px ) {
+    .heroNavigation {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        gap: 8rem;
+        justify-content: center;
+        padding: 24rem;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    .heroNavigation .heroSliceBtn {
+        border: 0 none;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background-color: var(--progressBarRemaining);
+        display: block;
+    }
+    .Hero[data-active="1"] .heroNavigation .heroSliceBtn[data-index="1"],
+    .Hero[data-active="2"] .heroNavigation .heroSliceBtn[data-index="2"],
+    .Hero[data-active="3"] .heroNavigation .heroSliceBtn[data-index="3"],
+    .Hero[data-active="4"] .heroNavigation .heroSliceBtn[data-index="4"],
+    .Hero[data-active="5"] .heroNavigation .heroSliceBtn[data-index="5"] {
+        background-color: var(--progressBarElapsed);
+    }
+    .chevronLeft,
+    .chevronRight {
+        width: 24rem;
+        height: 24rem;
+        color: var(--textOnDark);
+        display: flex;
+    }
+    .chevronLeft {
+        transform: rotate(180deg);
+    }
+    
+    
+    .heroNavigation button img {
+        display: none;
+    }
+}
+@media screen and ( min-width: 1024px ) {
+    .heroNavigation {
+        position: absolute;
+        bottom: var(--gridGutter);
+        right: var(--gridGutter);
+        lefT: initial;
+        display: flex;
+        width: calc( 50vw - ( var(--gridGutter) * 2 ) );
+        gap: 4rem;
+    }
+    .heroNavigation .chevronLeft,
+    .heroNavigation .chevronRight {
+        display: none
+    }
+    .heroNavigation button {
+        width: 20%;
+        height: calc( 100% * 0.5625% );
+    }
+    .heroNavigation button img {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    .heroSliceBtn {
+        filter: brightness(0.5)
+    }
+    .Hero[data-active="1"] .heroNavigation .heroSliceBtn[data-index="1"],
+    .Hero[data-active="2"] .heroNavigation .heroSliceBtn[data-index="2"],
+    .Hero[data-active="3"] .heroNavigation .heroSliceBtn[data-index="3"],
+    .Hero[data-active="4"] .heroNavigation .heroSliceBtn[data-index="4"],
+    .Hero[data-active="5"] .heroNavigation .heroSliceBtn[data-index="5"] {
+        filter: brightness(1);
+        outline: 2rem solid var(--iconsAndInputsInactive);
+        outline-offset: -2rem;
+    }
+    .Hero[data-active] .heroNavigation .heroSliceBtn[data-index]:focus,
+    .Hero[data-active] .heroNavigation .heroSliceBtn[data-index]:hover {
+        outline-color: var(--iconsAndInputsSelected)
+    }
+}
+
+/* .Hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(red,green)
+} */
+@media screen and ( orientation: landscape ){
+    .heroInfo {
+        width: calc(50vw - ( var(--gridGutter) * 2 ));
+    }
+    .heroContent li {
+        padding-bottom: 56rem;
+    }
+    .titleTreatment {
+        width: 50vw;
+    }
+    /* .heroNavigation {
+        left: initial;
+        right: var(--gridGutter);
+        width: calc(50vw - var(--gridGutter));
+    } */
+
+}
+
+.Hero[data-animate="true"] .heroContent li {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-timing-function: var(--animation-duration-medium);
+}

@@ -1,0 +1,136 @@
+.Navigation {
+    display: block;
+    width: 448rem;
+    background-color: var(--surfaceAppLayer01);
+    height: 100vh;
+}
+.navBtns {
+    padding-top: 368rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transform: translate3d(0,0,0);
+}
+.Navigation button {
+    font-family: '4Text';
+    text-align: left;
+    display: flex;
+    padding: 16rem 0 16rem 112rem;
+    background-color: var(--surfaceAppLayer01);
+    /* color: var(--textOnDark); */
+    color: var(--buttonPrimaryButtonFillDefault);
+    font-weight: 400;
+    font-size: 28rem;
+    line-height: 39rem;
+    cursor: pointer;
+    outline: 0 none;
+    align-items: center;
+    filter: grayscale(1)
+}
+/* .Navigation button:focus,
+.Navigation button:hover, */
+.Navigation button[data-active="true"] {
+    color: var(--buttonPrimaryButtonFillDefault);
+    filter: grayscale(0)
+    /* color: var(--textOnLight); */
+}
+.navFooter {
+    position: absolute;
+    bottom: 88rem;
+}
+
+
+.navIcon {
+    width: 33rem;
+    height: 33rem;
+    padding-right: 32rem;
+}
+.navText {
+    transform: scale(1);
+    transform-origin: center left;
+}
+.Navigation button:focus .navText,
+.Navigation button[data-active="true"] .navText {
+    transform: scale(1.1785714286); 
+}
+.Navigation[data-animate="true"] .navText {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-fast);
+}
+.Navigation[data-animate="true"] button,
+.Navigation[data-animate="true"] .navBtns  {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-fast);
+}
+
+
+.Navigation button:has( + button[data-active="true"] )  {
+    opacity: 0.8
+}
+.Navigation button:has( + button + button[data-active="true"] )  {
+    opacity: 0.4
+}
+.Navigation button:has( + button + button + button[data-active="true"] )  {
+    opacity: 0;
+}
+.Navigation button:has( + button + button + button + button[data-active="true"] )  {
+    opacity: 0;
+}
+.Navigation button:has( + button + button + button + button + button[data-active="true"] )  {
+    opacity: 0
+}
+
+.Navigation:has(button[data-active="true"]:nth-of-type(1)) .navBtns {
+    transform: translate3d(0,0,0);
+}
+.Navigation:has(button[data-active="true"]:nth-of-type(2)) .navBtns {
+    transform: translate3d(0,-71rem,0);
+}
+.Navigation:has(button[data-active="true"]:nth-of-type(3)) .navBtns {
+    transform: translate3d(0,-142rem,0);
+}
+.Navigation:has(button[data-active="true"]:nth-of-type(4)) .navBtns {
+    transform: translate3d(0,-213rem,0);
+}
+.Navigation:has(button[data-active="true"]:nth-of-type(5)) .navBtns {
+    transform: translate3d(0,-284rem,0);
+}
+.Navigation:has(button[data-active="true"]:nth-of-type(6)) .navBtns {
+    transform: translate3d(0,-355rem,0);
+}
+.Navigation:has(button[data-active="true"]:nth-of-type(7)) .navBtns {
+    transform: translate3d(0,-426rem,0);
+}
+
+
+.profileSwitch {
+    margin-left: 112rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 84rem;
+    position: relative;
+}
+.profileSwitch:before {
+    content: 'P';
+    width: 64rem;
+    height: 64rem;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    background-color: var(--buttonSecondaryButtonFillDefault);
+    border: 3rem solid var(--textInactive);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: var(--Title1);
+}
+
+
+.profileSwitch span + span {
+    font: var(--Label1);
+}
+.profileSwitch span {
+    font: var(--Body1);
+}

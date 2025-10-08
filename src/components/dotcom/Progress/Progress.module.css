@@ -1,0 +1,15 @@
+.progress {
+    width: 100%;
+    display: block;
+    height: 4rem;
+    background-color: var(--surfaceAppLayer00);
+    min-width: 177rem;
+}
+.progress::-webkit-progress-bar {
+    background-color: var(--progressBarRemaining);
+}
+.progress::-webkit-progress-value {
+    background-color: var(--progressBarElapsed);
+}
+
+

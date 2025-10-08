@@ -1,0 +1,415 @@
+.Player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.logoWrapper {
+    position: absolute;
+    top: 96rem;
+    left: 96rem
+}
+.playerWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920rem;
+    height: 1080rem;
+    z-index: 0;
+    object-fit: cover;
+}
+.playerElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920rem;
+    height: 1080rem;
+    z-index: 0;
+    object-fit: cover;
+    /* filter: brightness(0.44); */
+    transform: translateZ(0);
+}
+.playerWrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920rem;
+    height: 1080rem;
+    display: block;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.4);
+}
+.playerHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 96rem 96rem 96rem 191rem;
+    display: flex;
+    justify-content: space-between;    
+    transform: translate3d(0,0,0)
+}
+.playerHeaderBtns {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+}
+
+.playerControls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 104rem 96rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16rem;
+    transform: translate3d(0,0,0)
+}
+.playerControls:before {
+    content: 'More Episodes';
+    width: 208rem;
+    height: 48rem;
+    position: absolute;
+    bottom: 40rem;
+    left: calc( 50vw - 152rem );
+    opacity: 1;    
+}
+.playerControls:after {
+    content: '';
+    background: transparent url('data:image/svg+xml,<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" data-name="chevron" class="Icon_Icon__NqGqa undefined"><path d="M16.7012 11.8564L16.6494 11.8135L8.14355 4.78418V3.30371L17.6494 11.1602H17.6504L17.8564 11.3291V12.6729L17.6504 12.8428L8.14355 20.6953V19.2148L16.6494 12.1895L16.7012 12.1465V11.8564Z" fill="%23ececec" stroke="%23ececec" stroke-width="0.28667"></path></svg>') center left no-repeat;
+    width: 48rem;
+    height: 48rem;
+    position: absolute;
+    bottom: 46rem;
+    left: calc( 50vw + 44rem );
+    transform: rotate(90deg);
+    opacity: 1;
+}
+.playStateIcon {
+    width: 48rem;
+    height: 48rem;
+    color: var(--textOnDark);
+    display: flex;
+    align-items: center;
+}
+.timecode {
+    width: 200rem;
+    text-align: left;
+}
+.playerFooter {
+    position: absolute;
+    bottom: -76vh;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 0 96rem 104rem 192rem;
+    transform: translate3d(0,0,0);
+}
+.playerFooter:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: transparent url('/images/grad2.png') center center no-repeat;
+    background-size: cover;
+    height: 814rem;
+    width: 100vw;
+    filter: brightness(0.44) hue-rotate(-5deg)
+}
+
+.Player[data-state="more"] .playerFooter {
+    transform: translate3d(0,-1490rem,0);
+}
+.Player[data-state="more"] .playerHeaderBtns,
+.Player[data-state="more"] .playerControls {
+    opacity: 0;
+}
+.Player[data-state="playback"] .playerHeader {
+    transform: translate3d(0,-294rem,0);
+    opacity: 0;
+}
+.Player[data-state="playback"] .playerControls {
+    transform: translate3d(0,260rem,0);
+    opacity: 0;
+}
+.Player[data-state="playback"] .playerWrapper:after {
+    opacity: 0
+}
+
+.tip {
+    width: fit-content;    
+    position: relative;
+    top: 80rem;
+    left: 640rem;
+    text-align: center;
+}
+.tip:after {
+    content: '';
+    background: transparent url('data:image/svg+xml,<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" data-name="chevron" class="Icon_Icon__NqGqa undefined"><path d="M16.7012 11.8564L16.6494 11.8135L8.14355 4.78418V3.30371L17.6494 11.1602H17.6504L17.8564 11.3291V12.6729L17.6504 12.8428L8.14355 20.6953V19.2148L16.6494 12.1895L16.7012 12.1465V11.8564Z" fill="%23ececec" stroke="%23ececec" stroke-width="0.28667"></path></svg>') center left no-repeat;
+    width: 48rem;
+    height: 48rem;
+    position: absolute;
+    top: -2rem;
+    right: -68rem;
+    transform: rotate(-90deg);
+    opacity: 1;
+}
+
+.playerAside {
+    height: 100vh;
+    width: 50vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: -50vw;
+    background-color: darkolivegreen;
+    z-index: 1;
+    transform: translate3d(0,0,0);
+}
+
+.playerAside img {
+    width: 50vw;
+}
+.playerAside h3 {
+    font: var(--Title3);
+    padding: 64rem 68rem 16rem 124rem;
+}
+.playerAside p {
+    width: 50vw;
+    padding: 0 68rem 16rem 124rem;
+    font: var(--Title1);
+    box-sizing: border-box;
+}
+.playerAside p:first-of-type {
+    font: var(--Body1);
+}
+.playerAsideBtns {
+    margin: 36rem 68rem 19rem 124rem;
+    display: flex;
+    gap: 12rem
+}
+.playerAside:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: transparent url('/images/grad2.png') top left no-repeat;
+    background-size: 85%;
+    height: 814rem;
+    width: 100vw;
+    filter: brightness(0.44); 
+}
+.asideTip {
+    position: relative
+}
+.asideTip:after {
+    content: '';
+    background: transparent url('data:image/svg+xml,<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" data-name="chevron" class="Icon_Icon__NqGqa undefined"><path d="M16.7012 11.8564L16.6494 11.8135L8.14355 4.78418V3.30371L17.6494 11.1602H17.6504L17.8564 11.3291V12.6729L17.6504 12.8428L8.14355 20.6953V19.2148L16.6494 12.1895L16.7012 12.1465V11.8564Z" fill="%23ececec" stroke="%23ececec" stroke-width="0.28667"></path></svg>') center left no-repeat;
+    width: 48rem;
+    height: 48rem;
+    position: absolute;
+    transform: rotate(90deg);
+    top: -6rem;
+    left: 300rem;
+    opacity: 1;
+}
+
+.Player[data-state="endofplayback"] .playerHeaderBtns,
+.Player[data-state="endofplayback"] .playerControls {
+    opacity: 0;
+}
+.Player[data-state="endofplayback"] .playerElement {
+    filter: brightness(0.44);
+    width: 50vw;
+}
+.Player[data-state="endofplayback"] .playerAside {
+    transform: translate3d(-50vw,0,0);
+}
+
+.progress {
+    --currentProgress: 10%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    display: block;
+    height: 8rem;
+    width: 100%;
+    outline: none;
+    background-color: var(--progressBarRemaining);
+    background-image: linear-gradient(to right, var(--progressBarElapsed) 0%, var(--progressBarElapsed) var(--currentProgress),  var(--progressBarRemaining) var(--currentProgress));
+    filter: grayscale(1);
+    position: relative;
+}
+
+.progress:focus {
+    filter: grayscale(0)
+}
+.progress:after {
+    content: '';
+    width: 32rem;
+    height: 32rem;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: rgb(236,236,236);
+    position: absolute;
+    top: -12rem;
+    left: -12rem;
+    transform: translate3d(calc(41.6875 * var(--currentProgress)),0,0);
+}
+
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32rem;
+    height: 32rem;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: rgb(236,236,236);
+}
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    opacity: 0
+}
+
+
+*:focus-within > .progress::-webkit-progress-bar {
+    background-color: var(--progressBarRemaining);
+}
+*:focus-within > .progress::-webkit-progress-value {
+    background-color: var(--progressBarElapsed);
+}
+
+.Player ::-webkit-media-text-track-container,
+.Player track {
+    display: inherit;
+}
+.Player[data-showsubs] ::-webkit-media-text-track-container,
+.Player[data-showsubs] track {
+    display: none;
+}
+
+.asideIndicator {
+    position: absolute;
+    top: 740rem;
+    left: 32rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+}
+.asideIndicator b {
+    display: block;
+    width: 24rem;
+    height: 24rem;
+    background-color: #ececec;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 0;
+    opacity: 0.4;
+}
+.Player[data-activeeop="1"] .asideIndicator b:nth-of-type(1),
+.Player[data-activeeop="2"] .asideIndicator b:nth-of-type(2),
+.Player[data-activeeop="3"] .asideIndicator b:nth-of-type(3) {
+    opacity: 1;
+}
+.asideContent {
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+
+.Player[data-activeeop="1"] .playerAside .asideContent[data-index="1"],
+.Player[data-activeeop="2"] .playerAside .asideContent[data-index="2"],
+.Player[data-activeeop="3"] .playerAside .asideContent[data-index="3"] {
+    transform: translate3d(0,-100vh,0);
+}
+
+.Player[data-activeeop="2"] .playerAside .asideContent[data-index="1"] {
+    transform: translate3d(0,-200vh,0);
+}
+.Player[data-activeeop="3"] .playerAside .asideContent[data-index="1"],
+.Player[data-activeeop="3"] .playerAside .asideContent[data-index="2"] {
+    transform: translate3d(0,-200vh,0);
+}
+
+.Player[data-signed="true"] div[data-name="pageTitle"] h2:after {
+    content: '- signed';
+    padding-left: 12rem;
+}
+
+
+.Player[data-animate="true"] .playerElement {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+
+.Player[data-animate="true"] .playerWrapper:after {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Player[data-animate="true"] .playerHeader {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Player[data-animate="true"] .playerHeaderBtns {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Player[data-animate="true"] .playerControls {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Player[data-animate="true"] .playerFooter {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Player[data-animate="true"] .playerAside {
+    transition-property: all;
+    transition-duration: var(--animation-duration-large);
+    transition-behavior:  var(--animation-ease-out);
+}
+.Player[data-animate="true"][data-state="endofplayback"] .playerElement {
+    transition-delay: 600ms;
+}
+.Player[data-animate="true"][data-state="endofplayback"] .playerAside {
+    transition-delay: 600ms;
+}
+
+
+.Player[data-animate="true"] .progress {
+    transition: background-image 0.3s ease;
+}
+
+.Player[data-animate="true"] .progress:after {
+    transition: all 0.3s ease;
+}
+
+.Player[data-animate="true"] .asideContent {
+    transition-property: all;
+    transition-duration: var(--animation-duration-medium);
+    transition-behavior:  var(--animation-ease-out);
+}

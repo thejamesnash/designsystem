@@ -1,0 +1,296 @@
+.Categories {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden */
+}
+.logoWrapper {
+    width: 62rem;
+    height: 84rem;
+    position: absolute;
+    z-index: 10;
+    top: 96rem;
+    left: 96rem;
+}
+
+.categoryLanding > header {
+    position: absolute;
+    z-index: 10;
+    
+}
+
+
+.filterBtn {
+    position: absolute;
+    z-index: 10;
+    top: 90rem;
+    left: 1462rem;
+}
+
+.resultsFilter {
+    position: absolute;
+    /* top: -328rem;
+    right: -448rem; */
+    top: 0;
+    left: 1920rem;
+    z-index: 10;
+    width: 448rem;
+    height: 100vh;
+    background-color: var(--surfaceAppLayer01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 80rem 0 64rem;
+    transform: translate3d(0,0,0);
+    
+}
+.Categories[data-showfilters="true"] .resultsFilter {
+    transform: translate3d(-448rem,0,0);
+}
+
+.Categories[data-showfilters="true"] header,
+.Categories[data-showfilters="true"] .results,
+.Categories[data-showfilters="true"] .resultsGrid {
+    filter: brightness(0.4)
+}
+
+
+.resultsFilter h2 {
+    font: var(--Label1);
+    margin-bottom: 16rem;;
+}
+.resultsFilterBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.resultsFilter button {
+    text-align: left;
+    font: var(--Body1);
+    color: var(--textOnDark);
+    padding: 0 0 32rem;
+    
+    display: flex;
+    gap: 12rem;
+    position: relative;
+}
+.resultsFilter button b {
+    position: absolute;
+    left: -44rem;
+    width: 33rem;
+    height: 33rem;
+    display: none;
+}
+.resultsFilter button svg {
+    width: 40rem;
+}
+.resultsFilter button b svg {
+    width: 33rem;
+    height: 33rem;
+}
+
+.resultsFilter button:focus {
+    color: var(--buttonPrimaryButtonFillDefault);
+    
+}
+.resultsFilter button span {
+    transform: scale(1);
+    transform-origin: left center;
+}
+.resultsFilter button:focus span {
+    transform: scale(1.178)
+}
+.Categories[data-currentfilter="audio-described"] .resultsFilter button[data-filter="audio-described"] b, 
+.Categories[data-currentfilter="signed"] .resultsFilter button[data-filter="signed"] b,
+.Categories[data-currentfilter="subtitled"] .resultsFilter button[data-filter="subtitled"] b, 
+.Categories[data-currentfilter="none"] .resultsFilter button[data-filter="none"] b {
+    display: block;
+}
+
+
+.categoryResults {
+    position: absolute;
+    top: 328rem;
+    width: 100vw;
+    left: 0;
+    z-index: 0;
+    height: calc( 1080rem - 328rem );
+}
+
+.results {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* .resultsGridWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--textOnLight);
+    height: calc( 1080rem - 320rem );
+    width: 100vw;
+    overflow: hidden;
+    padding: 64rem 416rem 0 188rem;
+    box-sizing: border-box;
+    transform: translate3d(0,0,0);
+}
+.resultsGrid {
+    
+} */
+.resultsGrid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--textOnLight);
+    height: calc( 1080rem - 320rem );
+    width: 100vw;
+    overflow: hidden;
+    padding: 64rem 416rem 0 188rem;
+    box-sizing: border-box;
+    transform: translate3d(0,0,0);
+}
+.resultsGridWrapper {
+    display: flex;
+    gap: 29rem;
+    flex-direction: column;
+}
+.resultsGrid button {
+    text-align: left;
+    display: flex;
+    gap: 48rem;
+    color: var(--textOnDark);
+}
+.resultsGrid button h3 {
+    font: var(--Body2);
+    margin-bottom: 4rem;
+}
+.resultsGrid button p {
+    font: var(--Body1);
+}
+
+
+.resultsGrid button img {
+    width: 304rem;
+    height: 171rem;
+    outline: 3rem solid var(--buttonPrimaryButtonFillDefaultOpacity0);
+    transform: scale(1);
+}
+.resultsGrid button:focus img {
+    outline: 3rem solid var(--buttonPrimaryButtonFillDefault);
+    transform: scale(1.105);
+}
+
+
+.resultsGrid button:has(~button:focus),
+.resultsGrid button:has(~button[data-active="true"]),
+.resultsGrid button:has(~button[data-navhistory="true"]) {
+    opacity: 0;
+}
+
+
+
+
+.Categories[data-catstate="landing"] .landing {
+    display: block
+}
+
+.Categories[data-catstate="landing"] .categoryLanding {
+    display: none
+}
+
+.Categories[data-catstate="editorialResults"] .landing {
+    display: none
+}
+
+.Categories[data-catstate="editorialResults"] .categoryLanding {
+    display: block
+}
+.Categories[data-catstate="editorialResults"] .categoryLanding .resultsGrid {
+    display: none
+}
+.Categories[data-catstate="filteredResults"] .categoryLanding .resultsGrid {
+    display: block
+}
+.Categories[data-catstate="filteredResults"]  .results {
+    display: none;
+    background-color: red;
+}
+
+
+
+@media ( prefers-reduced-motion: reduce ){
+    .RailTest[data-animate="true"] .scrollWrapper,
+    .RailTest[data-animate="true"] .railCTA {
+        transition: all 0.2s linear;
+    }
+
+}
+
+@media ( prefers-reduced-motion: no-preference ){
+    
+    .RailTest[data-animate="true"]  h2 {
+        transition: all 200ms linear;
+        transition-delay: 150ms
+    }
+    .RailTest[data-animate="true"] .scrollWrapper,
+    .RailTest[data-animate="true"] .rail,
+    .RailTest[data-animate="true"] .railCTA,
+    .resultsFilter {
+        transition: all 350ms linear;
+    }
+    .RailTest[data-animate="true"] .railCTA button,
+    .RailTest[data-animate="true"] .railMeta {
+        transition: all 200ms linear;
+    }
+
+    .RailTest[data-animate="true"][data-animationtier="2"] h2,
+    .RailTest[data-animate="true"][data-animationtier="2"] .scrollWrapper,
+    .RailTest[data-animate="true"][data-animationtier="2"] .rail,
+    .RailTest[data-animate="true"][data-animationtier="2"] .railCTA,
+    .RailTest[data-animate="true"][data-animationtier="2"] .railCTA button,
+    .RailTest[data-animate="true"][data-animationtier="2"] .railMeta {
+        transition-timing-function: ease-out;
+    }
+
+    .RailTest[data-animate="true"][data-animationtier="3"] h2,
+    .RailTest[data-animate="true"][data-animationtier="3"] .scrollWrapper,
+    .RailTest[data-animate="true"][data-animationtier="3"] .rail,
+    .RailTest[data-animate="true"][data-animationtier="3"] .railCTA,
+    .RailTest[data-animate="true"][data-animationtier="3"] .railCTA button,
+    .RailTest[data-animate="true"][data-animationtier="3"] .railMeta {
+        transition-timing-function: var(--animation-ease-out);
+    }
+    
+
+    
+}
+
+
+.Categories header p {
+    display: inline-block;
+}
+.Categories header p:after {
+    content: 'shows';
+    display: inline-block;
+    padding-left: 12rem;
+}
+.Categories[data-currentfilter="signed"] header p:after {
+    content: 'signed shows';
+}
+.Categories[data-currentfilter="audio-described"] header p:after {
+    content: 'audio described shows';
+}
+.Categories[data-currentfilter="subtitled"] header p:after {
+    content: 'subtitled shows';
+}
+
+
+
+
+

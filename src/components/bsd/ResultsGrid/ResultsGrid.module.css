@@ -1,0 +1,45 @@
+.ResultsGrid {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; */
+    /* background-color: var(--textOnLight); */
+    height: calc( 1080rem - 320rem );
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    gap: 29rem;
+    flex-direction: column;
+    padding: 64rem 416rem 0 188rem;
+    box-sizing: border-box;
+    transform: translate3d(0,0,0);
+}
+
+.ResultsGrid button {
+    text-align: left;
+    display: flex;
+    gap: 48rem;
+    color: var(--textOnDark);
+}
+.ResultsGrid button h3 {
+    font: var(--Body2);
+    margin-bottom: 4rem;
+}
+.ResultsGrid button h3 b {
+    color: var(--buttonPrimaryButtonFillDefault);
+}
+.ResultsGrid button p {
+    font: var(--Body1);
+    max-width: 600rem
+}
+.ResultsGrid button img {
+    width: 304rem;
+    height: 171rem;
+    outline: 3rem solid var(--buttonPrimaryButtonFillDefaultOpacity0);
+    transform: scale(1);
+}
+.ResultsGrid button:focus img {
+    outline: 3rem solid var(--buttonPrimaryButtonFillDefault);
+    transform: scale(1.105);
+}
+

@@ -1,0 +1,103 @@
+.Button {
+    font: var(--Title1);
+    color: var(--textOnLight);
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    padding: 17rem 16rem;
+    cursor: pointer;
+}
+.Button:hover {
+    background-color: var(--buttonPrimaryButtonFillHover);
+}
+.Button:focus {
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    outline: 1rem solid var(--surfaceAppLayer00); 
+    box-shadow: 0 0 0 2rem var(--buttonPrimaryButtonFillDefault); 
+}
+.Button:active {
+    background-color: var(--buttonPrimaryButtonFillPressed);
+    outline: 1rem solid var(--surfaceAppLayer00Opacity0); 
+    box-shadow: 0 0 0 2rem var(--buttonPrimaryButtonFillDefaultOpacity0); 
+}
+.Button:disabled {
+    color: var(--textInactive);
+    background-color: var(--buttonPrimaryButtonFillInactive);
+}
+
+.Button.secondary {
+    color: var(--textOnDark);
+    background-color: var(--buttonSecondaryButtonFillDefault);
+}
+.Button.secondary:hover {
+    background-color: var(--buttonSecondaryButtonFillHover);
+}
+.Button.secondary:focus {
+    background-color: var(--buttonSecondaryButtonFillDefault);
+    outline: 1rem solid var(--surfaceAppLayer00); 
+    box-shadow: 0 0 0 2rem var(--buttonPrimaryButtonFillDefault); 
+}
+.Button.secondary:active {
+    background-color: var(--buttonSecondaryButtonFillPressed);
+    outline: 1rem solid var(--surfaceAppLayer00Opacity0); 
+    box-shadow: 0 0 0 2rem var(--buttonPrimaryButtonFillDefaultOpacity0); 
+}
+
+.Button:has(svg) {
+    display: flex;
+    align-items: center;
+    padding: 17rem 16rem 17rem 16rem;
+}
+.Button svg {
+    width: 24rem;
+    height: 24rem;
+    margin-right: 8rem;
+}
+.Button:has(b + b) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.Button b {
+    display: block;
+    text-align: left;
+    font: var(--Body1);
+}
+.Button b:first-of-type {
+    font: var(--Title1);
+}
+
+.Button[data-template="icon"]:has(svg) {
+    padding: 16rem;
+}
+.Button[data-template="icon"] svg {
+    margin: 0;
+}
+
+.Button[data-animate="true"] {
+
+}
+
+.Button[data-animate="true"] {
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+
+}
+.Button[data-animate="true"]:before {
+    content: '';
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    z-index: -1;
+    transition: all var(--animation-duration-small) var(--animation-ease-in);
+}
+.Button[data-animate="true"]:hover:before {
+    transform: scale(1.045);
+    background-color: var(--buttonPrimaryButtonFillHover);
+}
+.Button[data-animate="true"]:active:before {
+    transform: scale(0.955);
+    background-color: var(--buttonPrimaryButtonFillPressed);
+}

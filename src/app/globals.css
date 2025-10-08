@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "4Moji";
+  src: url("/fonts/4mojis-Regular.WOFF") format("WOFF");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "4Text";
+  src: url("/fonts/4Text-Semibold.WOFF") format("WOFF");
+  font-weight: 600;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "4Text";
+  src: url("/fonts/4Text-Regular.WOFF") format("WOFF");
+  font-weight: 400;
+  font-display: fallback;
+}
+
+/* Root styles default to DotCom - platform flags for BSD and Mobile? */
+:root {
+  /* Colours */
+  --textOnDark: rgb(255, 255, 255);
+  --textOnLight: rgb(17, 17, 17);
+  --buttonPrimaryButtonFillDefault: #aaff89;
+  --buttonPrimaryButtonFillDefaultOpacity0: rgba(170, 255, 137,0);
+  --surfaceAppLayer01: rgb(26, 26, 26);
+  --surfaceAppLayer01Opacity0: rgba(26, 26, 26,0);
+  --surfaceAppLayer00: #111111;
+  --surfaceAppLayer00Opacity0: rgba(17, 17, 17,0);
+  --iconsAndInputsOnDark: rgb(255, 255, 255);
+  --iconsAndInputsOnLight: rgb(17, 17, 17);
+  --buttonPrimaryButtonFillHover: rgb(128, 255, 82);
+  --buttonPrimaryButtonFillPressed: rgb(102, 204, 61);
+  --buttonPrimaryButtonFillInactive: rgb(38, 38, 38);
+  --buttonSecondaryButtonFillDefault: rgb(46, 46, 46);
+  --buttonSecondaryButtonFillHover: rgb(38, 38, 38);
+  --buttonSecondaryButtonFillPressed: rgb(26, 26, 26);
+  --buttonSecondaryButtonFillInactive: rgb(38, 38, 38);
+  --surfaceLabelBg: rgb(170, 255, 137);
+  --textSelected: rgb(170, 255, 137);
+  --textInactive: rgb(211, 211, 211);
+  --inactive: rgb(104, 104, 104);
+  --overImage: rgba(17,17,17,0.5);
+  --iconsAndInputsSelected: rgb(170, 255, 137);
+  --iconsAndInputsInactive: rgb(211, 211, 211);
+  --statusError: rgb(255, 92, 92);
+  --statusSuccess: rgb(110, 255, 136);
+  --navigationFocusOutside: rgb(170, 255, 137);
+  --progressBarElapsed: rgb(170, 255, 137);
+  --progressBarRemaining: rgba(255, 255, 255, 0.4);
+  --navigationFocusInside: rgb(17, 17, 17);
+
+  /* Typography */
+  --Label1: normal 400 14rem/20rem '4Text';
+  --Label2: normal 600 14rem/20rem '4Text';
+  --Body1: normal 400 16rem/22rem '4Text';
+  --Body2: normal 400 23rem/32rem '4Text';
+  --Title1: normal 600 16rem/22rem '4Text';
+  --Title2: normal 600 23rem/32rem '4Text';
+  --Title3: normal 600 40rem/46rem '4Text';
+
+  /* Text Shadows */
+  --textShadow: 0 4rem 12rem rgba(17, 17, 17, 0.40);
+
+  /* Spacing */
+
+  /* Animation */
+  /* Animation */
+  --animation-duration-small: 200ms;
+  --animation-duration-medium: 400ms;
+  --animation-duration-medium: 400ms;
+  --animation-duration-large: 600ms;
+  --animation-duration-xlarge: 800ms;
+  --animation-easing-linear: cubic-bezier(0,0,1,1);
+  --animation-ease-fast: cubic-bezier(0.61,0,0.39,1);
+  --animation-ease-slow: cubic-bezier(0.36,0,0.64,1);
+  --animation-ease-in: cubic-bezier(0.42,0,1,1);
+  --animation-ease-out: cubic-bezier(0,0,0.58,1);
+
+
+  --gridGutter: 16rem;
+  --gridSingleColumnWidth: calc( ( 100vw - ( var(--gridGutter) * 2) ) / 12 );
+  --gridSpacing: 4rem;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--surfaceAppLayer00);
+  background-color: rgb(30,30,30);
+  color: var(--textOnDark);
+}
+html {
+  font-size: 1px;
+}
+html:has([data-platform="bsd"]) {
+  font-size: 0.052083333333334vw;
+  --gridGutter: 190rem;
+  --gridSingleColumnWidth: 154rem;
+  --Label1: normal 400 23rem/32rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Label2: normal 600 23rem/32rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Body1: normal 400 28rem/39rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Body2: normal 400 33rem/44rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Title1: normal 600 28rem/39rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Title2: normal 600 33rem/44rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Title3: normal 600 48rem/53rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --Label1: normal 400 24rem/33rem '4Text','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+  --textOnDark: #ececec;
+  --buttonPrimaryButtonFillDefault: #aaeb89;
+  --iconsAndInputsOnDark: #ececec;
+  --buttonPrimaryButtonFillHover: #80eb52;
+  --surfaceLabelBg: #aaeb89;
+  --textSelected: #aaeb89;
+  --textInactive: #c6c6c6;
+  --iconsAndInputsSelected: #aaeb89;
+  --iconsAndInputsInactive: #c6c6c6;
+  --statusError: #eb5c5c;
+  --navigationFocusOutside: #aaeb89;
+  --progressBarElapsed: #aaeb89;
+  --progressBarRemaining: #ececec66;
+}
+@media screen and ( min-width: 768px ) {
+  :root {
+      --gridGutter: 32rem;
+  }
+}
+@media screen and ( min-width: 1024px ) {
+  :root {
+      --gridGutter: 40rem;
+  }
+}
+@media screen and ( min-width: 1440px ) {
+  :root {
+      --gridGutter: 56rem;
+  }
+}
+@media screen and ( min-width: 1920px ) {
+  :root {
+      --gridGutter: calc( ( 100vw - 1808rem ) / 2 );
+  }
+}
+
+
+html:has([data-highcontrast="true"]) {
+  filter: invert(1)
+}
+html:has([data-highcontrast="true"]) img {
+  filter: invert(1);
+}
+
+body {
+  position: relative;
+  font: var(--Body1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a,aside,body,dd,div,dl,dt,footer,h1,h2,h3,h4,header,html,li,nav,ol,p,section,ul {
+  margin: 0;
+  padding: 0
+}
+li,ul,dl,dt,dd {
+  list-style: none
+}
+button, input, select, fieldset {
+  appearance: none;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font: var(--Body1);
+  outline: 0 none;
+}
+
+.visuallyHidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.skipLink {
+  background-color: red;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.skipLink:focus {
+  width: fit-content;
+  height: fit-content;  
+}
+
+
+html:has([data-animationtier="3"]) {
+  --animation-easing-linear: cubic-bezier(0,0,1,1);
+  --animation-ease-fast: cubic-bezier(0.61,0,0.39,1);
+  --animation-ease-slow: cubic-bezier(0.36,0,0.64,1);
+  --animation-ease-in: cubic-bezier(0.42,0,1,1);
+  --animation-ease-out: cubic-bezier(0,0,0.58,1);
+}
+html:has([data-animationtier="2"]) {
+  --animation-easing-linear: linear;
+  --animation-ease-fast: ease-in-out;
+  --animation-ease-slow: ease-in-out;
+  --animation-ease-in: ease-in;
+  --animation-ease-out: ease-out;
+}
+html:has([data-animationtier="1"]) {
+  --animation-easing-linear: linear;
+  --animation-ease-fast: linear;
+  --animation-ease-slow: linear;
+  --animation-ease-in: linear;
+  --animation-ease-out: linear;
+}

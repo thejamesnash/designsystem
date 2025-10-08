@@ -1,0 +1,32 @@
+/* .LiveTV {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--surfaceAppLayer00);
+    box-sizing: border-box;
+    padding: 96rem 0 0 192rem;
+    overflow: hidden;
+}
+
+
+.MyShowsPage {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 0 0 192rem
+} */
+.fixedHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 288rem;
+    z-index: 1
+}
+.fixedContent {
+    position: absolute;
+    top: 288rem;
+    left: 0;
+    width: 100vw;
+    height: 1536rem;
+}
