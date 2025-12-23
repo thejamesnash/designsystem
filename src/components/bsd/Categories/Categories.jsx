@@ -5,7 +5,7 @@ import Header from '../Header/Header.jsx';
 import Icon from '../../global/Icon/Icon.jsx';
 import Button from '../Button/Button.jsx';
 import Meta from '../Meta/Meta.jsx';
-import Rail from '../Rail/Rail.jsx';
+import Rail from '../Railv1/Rail.jsx';
 import { returnImg } from '../../../functions/returnImg';
 import styles from './Categories.module.css';
 import dramaData from '../../../../../public/data/platform/drama-signed.json';

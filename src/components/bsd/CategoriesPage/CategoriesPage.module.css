@@ -1,0 +1,106 @@
+.CategoriesPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--surfaceAppLayer00);
+}
+.logoWrapper {
+    position: absolute;
+    top: 96rem;
+    left: 96rem;
+    width: 63rem;
+    height: 86rem;
+    z-index: 1;
+}
+.categoriesLanding > section {
+    transform: translate3d(0,0,0);
+    transform-origin: left top;
+}
+.categoriesLanding > section:nth-of-type(1) {
+    transform: translate3d(0,18rem,0);
+}
+.categoriesLanding > section:nth-of-type(2) {
+    transform: translate3d(0,44rem,0);
+}
+.categoriesLanding > section:nth-of-type(3) {
+    transform: translate3d(0,-22rem,0);
+}
+
+.categoriesLanding:has( > section:nth-of-type(2):focus-within) > section:nth-of-type(1),
+.categoriesLanding:has( > section:nth-of-type(3):focus-within) > section:nth-of-type(1) {
+    transform: translate3d(0,-384rem,0);
+}
+.categoriesLanding:has( > section:nth-of-type(2):focus-within) > section:nth-of-type(2) {
+    transform: translate3d(0,-364rem,0);
+}
+.categoriesLanding:has( > section:nth-of-type(2):focus-within) > section:nth-of-type(3) {
+    transform: translate3d(0,-164rem,0);
+}
+
+.categoriesLanding:has( > section:nth-of-type(3):focus-within) > section:nth-of-type(2) {
+    transform: translate3d(0,-864rem,0);
+}
+.categoriesLanding:has( > section:nth-of-type(3):focus-within) > section:nth-of-type(3) {
+    transform: translate3d(0,-864rem,0);
+}
+.categoriesLanding,
+.categoriesResults {
+    display: none;
+}
+
+.CategoriesPage[data-state="landing"] .categoriesLanding,
+.CategoriesPage[data-state="results"] .categoriesResults {
+    display: block;
+}
+
+
+
+@media ( prefers-reduced-motion: reduce ){
+    .CategoriesPage[data-animate="true"] .categoriesLanding section {
+        transition: all 100ms linear;
+    }
+
+}
+
+@media ( prefers-reduced-motion: no-preference ){
+
+    .CategoriesPage[data-animate="true"] .categoriesLanding section {
+        /* transition-delay: 200ms; */
+        transition-property: all;
+        transition-duration: var(--animation-duration-medium);
+        transition-timing-function: var(--animation-ease-in);    
+    }    
+}
+
+
+.categoriesResults {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.categoriesResults > button {
+    border: 10px solid red;
+    background-color: red;
+    padding: 0;
+}
+.categoriesResults > button b {
+    background-color: green;
+    order: 1;
+    padding: 0;
+}
+.categoriesResults > button svg {
+    background-color: yellow;
+    order: 2;
+    padding: 0;
+}
+
+.filtersMenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 474rem;
+    z-index: 1
+}

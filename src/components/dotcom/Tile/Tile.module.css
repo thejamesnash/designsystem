@@ -1,3 +1,214 @@
 .Tile {
+    --itemHeight: 0;
+    --initialHeight: 0;
+    --metaHeight: 0;
+    --totalHeight: 0;
+    --movementAmount: 0;
     max-width: 652rem;
+    margin: 0;
+    padding: 0;
+    --gridSliceCount: 10;
+    height: fit-content;
+    position: relative;
+    text-align: left;
+    --sliceWidth: calc(  var(--gridSingleColumnWidth) * var(--gridSliceCount) );
+    width: var(--sliceWidth);
+}
+
+.Tile[data-size="xs"] {
+    --gridSliceCount: 10;
+}
+.Tile[data-size="s"] {
+    --gridSliceCount: 10;
+}
+.Tile[data-size="portrait"] {
+    --gridSliceCount: 10;
+}
+.Tile[data-size="m"] {
+    --gridSliceCount: 10;
+}
+.Tile[data-size="l"] {
+    --gridSliceCount: 10;
+}
+.Tile[data-size="xl"] {
+    --gridSliceCount: 10;
+}
+
+@media screen and (min-width: 390px) {
+    .Tile[data-size="xs"] {
+        --gridSliceCount: 6;
+    }
+    .Tile[data-size="s"] {
+        --gridSliceCount: 6;
+    }
+    .Tile[data-size="portrait"] {
+        --gridSliceCount: 6;
+    }
+    .Tile[data-size="m"] {
+        --gridSliceCount: 9;
+    }
+    .Tile[data-size="l"] {
+        --gridSliceCount: 9;
+    }
+    .Tile[data-size="xl"] {
+        --gridSliceCount: 9;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Tile[data-size="xs"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="s"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="portrait"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="m"] {
+        --gridSliceCount: 6;
+    }
+    .Tile[data-size="l"] {
+        --gridSliceCount: 6;
+    }
+    .Tile[data-size="xl"] {
+        --gridSliceCount: 6;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Tile[data-size="xs"] {
+        --gridSliceCount: 3;
+    }
+    .Tile[data-size="s"] {
+        --gridSliceCount: 3;
+    }
+    .Tile[data-size="portrait"] {
+        --gridSliceCount: 3;
+    }
+    .Tile[data-size="m"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="l"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="xl"] {
+        --gridSliceCount: 4;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .Tile[data-size="xs"] {
+        --gridSliceCount: 2;
+    }
+    .Tile[data-size="s"] {
+        --gridSliceCount: 2;
+    }
+    .Tile[data-size="portrait"] {
+        --gridSliceCount: 2;
+    }
+    .Tile[data-size="m"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="l"] {
+        --gridSliceCount: 4;
+    }
+    .Tile[data-size="xl"] {
+        --gridSliceCount: 4;
+    }
+} 
+@media screen and (min-width: 1920px) {
+    .Tile[data-size="xs"] {
+        --gridSliceCount: 2;
+    }
+    .Tile[data-size="s"] {
+        --gridSliceCount: 2;
+    }
+    .Tile[data-size="portrait"] {
+        --gridSliceCount: 2;
+    }
+    .Tile[data-size="m"] {
+        --gridSliceCount: 3;
+    }
+    .Tile[data-size="l"] {
+        --gridSliceCount: 3;
+    }
+    .Tile[data-size="xl"] {
+        --gridSliceCount: 4;
+    }
+} 
+.tileLink {
+    text-decoration: none;
+    position: relative;
+    outline: none;
+    transition: all 300ms ease-out;
+}
+.tileLink img {
+    outline: 2rem solid var(--buttonPrimaryButtonFillDefaultOpacity0);
+}
+
+.tileLink:focus img,
+.tileLink:hover img {
+    outline: 2rem solid var(--buttonPrimaryButtonFillDefault)
+}
+/* Badge */
+.tileLink > p {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 0
+}
+
+
+.Tile:hover a,
+.Tile:focus-within a,
+.Tile a:hover,
+.Tile a:focus-within  {
+    /* position: absolute; */
+    transform: translate3d(0,var(--itemHeight),0);
+}
+.Tile:hover .metadata,
+.Tile:focus-within .metadata {
+    /* position: absolute; */
+}
+.Tile:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.Tile[data-expanding="true"] .metaData {
+    height: 0;
+}
+.metadata {
+    overflow: hidden;
+    display: block;
+    transition: all 0.3s ease-out;
+    transform: translate3d(0,0,0)
+}
+.metadata > div {
+    height: fit-content;
+}
+.Tile[data-expanding="true"] .metadata > div {
+    opacity: 0;
+    transition: all 0.3s  ease-out
+}
+.Tile[data-active="true"] .tileLink {
+    position: absolute;
+    top: 0;
+    transform: translate3d(0,var(--movementAmount),0); 
+}
+.Tile[data-active="true"] .metadata {
+    position: absolute;
+    top: var(--initialHeight);
+    transform: translate3d(0,var(--movementAmount),0);
+    height: var(--metaHeight)
+}
+.Tile[data-active="true"] .metadata > div {
+    opacity: 1;
+}
+.Tile[data-active="true"] {
+    z-index: 10
 }

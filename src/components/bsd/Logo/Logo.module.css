@@ -1,0 +1,38 @@
+.Logo {
+    width: 100%;
+    height: 100%;
+}
+.Logo path {
+    fill: #ececec;
+}
+.Logo .contrastFill {
+    fill: #ececec
+}
+.Logo[data-name="four"] .contrastFill {
+    fill: #AAFF89
+}
+.Logo[data-name="fourextra"] .contrastFill {
+    fill: #9741FF
+}
+.Logo[data-name="fourseven"] .contrastFill {
+    fill: #00C8C8
+}
+.Logo[data-name="efour"] .contrastFill {
+    fill: #9741FF
+}
+.Logo[data-name="morefour"] .contrastFill {
+    fill: #56BE3C
+}
+.Logo[data-name="fourmusic"] .contrastFill {
+    fill: #FF3C87
+}
+.Logo[data-name="filmfour"] .contrastFill {
+    fill: #E61E2F
+}
+
+.Logo[data-grayscale="true"] path {
+    fill: rgb(52,52,52)
+}
+.Logo[data-grayscale="true"] .contrastFill {
+    fill: rgb(112,112,112)
+}

@@ -1,0 +1,6 @@
+.Grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22rem 4rem;
+}

@@ -7,7 +7,7 @@ import Metadata from '../Metadata/Metadata';
 import AnimatedLogo from '../AnimatedLogo/AnimatedLogo';
 import PageTitle from '../PageTitle/PageTitle';
 import SeriesSelector from '../SeriesSelector/SeriesSelector';
-import Rail from '../Rail/Rail';
+import Rail from '../Railv1/Rail';
 
 
 export const BrandPage = (props) => {
@@ -328,7 +328,8 @@ const railBtnBehaviour = (el, dir, appWrapper) => {
          data-animate={props.animate} 
          data-animationtier={props.animationTier} 
          data-name="hubpage"
-         ref={hubWrapRef}
+         ref={hubWrapRef} 
+         data-designOverlay="1"
         >
             { props.showLogo ? <div className={styles.logoWrapper}><AnimatedLogo logoState={1} /></div> : null }
             <div>

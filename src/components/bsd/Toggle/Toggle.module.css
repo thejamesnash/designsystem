@@ -1,0 +1,145 @@
+.Toggle {
+    padding: 64rem 0 64rem 64rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.Toggle div {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.Toggle label {
+    font: var(--Title2);
+    margin-bottom: 24rem;
+    transform: scale(1);
+    transform-origin: left center;
+}
+.Toggle:has(.toggleInput[data-active="true"]) label {
+    /* font: var(--Title3); */
+    transform: scale(1.45);
+}
+.Toggle p {
+    font: var(--Body1);
+    margin-bottom: 24rem;
+    max-width: 902rem
+}
+.Toggle p span {
+    display: block;
+}
+.Toggle p span:has(+span) {
+    padding-bottom: 24rem;
+}
+.Toggle input {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+.toggleVisualState {
+    width: 120rem;
+    height: 60rem;
+    display: block;
+    border-radius: 60rem;
+    background-color: var(--buttonSecondaryButtonFillDefault);
+    position: relative;
+    box-shadow: 0 0 0 6rem var(--buttonPrimaryButtonFillDefaultOpacity0);
+    outline: 4rem solid var(--surfaceAppLayer00Opacity0);
+}
+.toggleInput[data-active="true"] + .toggleVisualState {
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    box-shadow: 0 0 0 6rem var(--buttonPrimaryButtonFillDefault);
+    outline: 4rem solid var(--surfaceAppLayer00);
+}
+
+.toggleVisualState span {
+    color: var(--iconsAndInputsOnLight);
+    text-transform: uppercase;
+    font: var(--Label2);
+    position: absolute;
+    top: 16rem;
+    opacity: 0;
+}
+
+.toggleInput[data-active="true"]:checked + .toggleVisualState span[data-state="on"],
+.toggleInput[data-active="true"]:not(:checked) + .toggleVisualState span[data-state="off"] {
+    opacity: 1;
+}
+
+.toggleVisualStateOff {
+    right: 20rem;
+}
+.toggleVisualStateOn {
+    left: 20rem;
+}
+
+.toggleVisualIndicator {
+    background-color: var(--iconsAndInputsInactive);
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+.toggleInput:checked + .toggleVisualState .toggleVisualIndicator {
+    transform: translate3d(60rem,0,0);
+    background-color: var(--iconsAndInputsSelected);
+}
+.toggleInput:not(:checked) + .toggleVisualState .toggleVisualIndicator {
+    transform: translate3d(0,0,0);
+    background-color: var(--iconsAndInputsInactive);
+}
+.toggleInput[data-active="true"] + .toggleVisualState .toggleVisualIndicator {
+    background-color: var(--textOnLight);
+}
+
+.toggleVisualIndicator:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none"><path d="M31.4074 12.0282L16.1871 30L8 20.0977L10.2048 18.0971L16.2134 25.3643L29.2254 10L31.4074 12.0282Z" fill="%23AAEB89"/></svg>');
+    background-color: var(--buttonSecondaryButtonFillDefault)
+}
+.toggleInput:not(:checked) + .toggleVisualState .toggleVisualIndicator:after {
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none"><path d="M11.0002 11.7682L18.7332 19.9981L11 28.2323L12.661 30L20.3941 21.766L28.1272 30L29.7882 28.2323L22.0549 19.9981L29.788 11.7682L28.1274 10L20.3941 18.2301L12.6608 10L11.0002 11.7682Z" fill="%232E2E2E"/></svg>')
+}
+.toggleInput[data-active="true"] + .toggleVisualState .toggleVisualIndicator:after {
+    background-color: var(--buttonPrimaryButtonFillDefault);
+}
+
+
+.alwayson {
+    color: var(--textInactive);
+    font: var(--Label2);
+    text-transform: uppercase;
+    display: flex;
+    gap: 8rem;
+}
+.alwayson svg {
+    width: 27rem;
+}
+
+.Toggle label,
+.Toggle[data-animate="true"] .toggleVisualState,
+.Toggle[data-animate="true"] .toggleVisualState:after,
+.Toggle[data-animate="true"] .toggleVisualState span,
+.Toggle[data-animate="true"] .toggleVisualIndicator,
+.Toggle[data-animate="true"] .toggleVisualIndicator:after  {
+    transition: all var(--animation-duration-small) var(--animation-ease-out);
+}
+.Toggle button {
+    width: fit-content
+}
+
+.Toggle h2 {
+    font: var(--Title2);
+    transform: scale(1);
+    transform-origin: left bottom;
+}
+.Toggle:focus-within h2 {
+    transform: scale(1.41)
+}

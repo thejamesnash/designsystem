@@ -1,0 +1,83 @@
+.Banner {
+    width: 100vw;
+    position: relative;
+}
+.Banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent url('/images/grad2.png') center center no-repeat; 
+    background-size: cover;
+    filter: brightness(0.4);
+    z-index: 0
+}
+.bannerContent {
+    padding: 67rem 48rem 67rem 192rem;
+    position: relative;
+    z-index: 1;
+    width: 50vw;
+    box-sizing: border-box;
+}
+.Banner[data-size="small"] .bannerContent {
+    padding: 66rem 48rem 50rem 192rem;
+}
+.Banner:focus-within .bannerContent {
+    padding: 96rem 48rem 79rem 192rem;
+}
+.Banner[data-size="small"]:focus-witin .bannerContent {
+    padding: 96rem 48rem 41rem 192rem;
+}
+.bannerContent h2  {
+    font: var(--Title3);
+    text-shadow: var(--textShadow);
+    transform: scale(0.8);
+    transform-origin: center left;
+}
+.bannerContent .titleEmoji {
+    font: var(--emoji);
+    font-size: 42rem
+}
+.bannerContent h3 {
+    font: var(--Body2);
+    text-shadow: var(--textShadow);
+    transform: scale(0.8);
+    transform-origin: center left;
+}
+.Banner:focus-within .bannerContent h2,
+.Banner:focus-within .bannerContent h3 {
+    transform: scale(1);
+}
+.bannerContent p  {
+    font: var(--Body1);
+    text-shadow: var(--textShadow);
+    padding-top: 16rem
+}
+.bannerBtnWrap {
+    display: flex;
+    gap: 8rem;
+    padding-top: 48rem;
+}
+.bannerImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50vw;
+    height: 100%;
+    display: block;
+    background: transparent var(--bannerImg) center center no-repeat;
+    background-size: cover;
+
+}
+
+
+.Banner[data-animate="true"] .bannerContent,
+.Banner[data-animate="true"] h2,
+.Banner[data-animate="true"] h3 {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-behavior:  linear;
+}

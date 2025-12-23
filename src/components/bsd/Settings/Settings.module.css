@@ -1,69 +1,36 @@
 .Settings {
+    display: flex;
+}
+.Settings h1 {
+    font: var(--Title3);
+    position: absolute;
+    top: 96rem;
+}
+.settingsNavWrap {
     height: 100vh;
-    width: 100vw;
+    width: 448rem;
+    background-color: var(--surfaceAppLayer01);
+    box-sizing: border-box;
+    padding: 0 0 0 96rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.settingsNav {
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+}
+.settingsNav button {
+    font: var(--Body1);
+    color: var(--textOnDark);
+    text-align: left;
+}
+.settingsNav button:focus {
+    font: var(--Title2);
+    color: var(--buttonPrimaryButtonFillDefault);
 }
 .settingsContent {
-    padding: 96rem 0 0 192rem;
-    box-sizing: border-box;
-}
-.settingsContent legend {
-    padding: 58rem 0 64rem;
-    font: var(--Title2);
-    text-shadow: var(--textShadow);
-}
-.settingsContent ul {
-    position: relative;
-}
-.settingsContent p {
-    font: var(--Label1);
-    position: absolute;
-    top: 0;
-    right: 124rem;
-    width: 320rem;
-    text-shadow: var(--textShadow);
-    display: none;
-}
-.settingsContent label {
-    font: var(--Title1);
-    display: block;
-    padding: 20rem 32rem;
-    background-color: rgba(46,46,46,0.3);
-    margin: 4rem 0;
-    box-sizing: border-box;
-    width: 1159rem;
-    position: relative;    
-}
-.settingsContent input:focus + label + p {
-    display: block
-}
-.settingsContent input:focus + label {
-    outline: 4rem solid var(--buttonPrimaryButtonFillDefault);
-}
-.settingsContent label:before {
-    content: '';
-    width: 120rem;
-    height: 60rem;
-    display: block;
-    position: absolute;
-    top: 10rem;
-    right: 40rem;
-    background-color: var(--textOnLight);
-}
-.settingsContent label:after {
-    content: '';
-    width: 50rem;
-    height: 50rem;
-    display: block;
-    position: absolute;
-    top: 15rem;
-    right: 105rem;
-    background-color: var(--iconsAndInputsInactive);
-    transition-property: all;
-    transition-duration: var(--animation-duration-medium);
-    transition-behavior:  var(--animation-ease-fast);
-}
-
-.settingsContent input:checked + label:after {
-    right: 45rem;
-    background-color: var(--buttonPrimaryButtonFillDefault);
+    padding-top: 240rem;
 }

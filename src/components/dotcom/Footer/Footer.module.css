@@ -1,0 +1,72 @@
+.Footer {
+    font: var(--Label1);
+    background-color: var(--surfaceAppLayer00);
+    padding: var(--gridGutter);
+}
+
+.smallText {
+    padding: 0 16rem 48rem 0;
+    font: var(--footer1); 
+}
+
+.logo {
+    height: 53rem;
+    width: 34rem;
+    margin: 24rem 0 10rem 0;
+}
+.footerDetails {
+    padding: 26rem 14rem 26rem 0;
+    border-bottom: 1px solid var(--buttonSecondaryButtonFillDefault);
+}
+.footerDetails summary {
+    font: var(--footer2);
+    cursor: pointer
+}
+
+.footerDetails ul {
+    padding-top: 16rem;
+}
+.footerDetails a {
+    text-decoration: none;
+    color: var(--textOnDark);
+    font: var(--footer1);
+}
+.footerDetails a:hover {
+    text-decoration: underline;
+}
+.footerDetails a:focus {
+    text-decoration: none;
+    outline: 1px solid var(--buttonPrimaryButtonFillDefault);
+}
+
+@media screen and ( min-width: 944px ){
+    .footerLinks {
+        display: flex;
+        width: 100%;
+    }
+    .footerLinks .footerDetails {
+        width: 25%;
+    }
+    .footerDetails {
+        display: block;
+        height: fit-content;
+        border-bottom: 0 none;
+    }    
+    .footerDetails ul {
+        height: fit-content;
+    }
+    .footerDetails::details-content {
+        height: fit-content;
+        display: block;
+        content-visibility: visible;
+    }
+    .footerLinks {
+        border-bottom: 1px solid var(--buttonSecondaryButtonFillDefault);
+    }
+    .footerDetails summary::marker {
+        content: '';
+    }
+}
+
+
+

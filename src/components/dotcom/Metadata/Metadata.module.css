@@ -1,0 +1,63 @@
+.metadata {
+    display: block;
+    padding: 16rem 16rem 48rem;
+    position: relative;
+}
+.metadata[data-showbg="true"] {
+    background-color: var(--surfaceAppLayer01);
+}
+.metadata progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.metaTitle {
+    font: var(--Body2);
+    color: var(--textOnDark);
+    padding-bottom: 4rem;
+}
+.metaHighlight {
+    font: var(--Title1);
+    color: var(--buttonPrimaryButtonFillDefault);
+    padding-bottom: 4rem;
+}
+.metaText {
+    font: var(--Body1);
+    color: var(--textOnDark);
+    max-width: 816rem;
+}
+.metaGuidance {
+    padding-top: 16rem;
+    font: var(--Label1);
+    color: var(--textOnDark);
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+.guidance,
+.subtitles {
+    width: 20rem;
+    height: 20rem;
+}
+.guidance {
+    color: var(--statusError);
+}
+.audiodesc {
+    height: 22rem;
+    display: flex
+}
+.bsl {
+    height: 18rem;
+    display: flex
+}
+.metaTextWrap {
+    padding-top: 8rem;
+    display: flex;
+    gap: 8rem;
+}
+.metaAdd {
+    position: absolute;
+    bottom: 16rem;
+    right: 16rem;
+}

@@ -1,23 +1,37 @@
 .MyShows {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 0 0 0 192rem
+    position: relative;
 }
-.fixedHeader {
+.logoWrapper {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 328rem;
-    z-index: 1
+    top: 96rem;
+    left: 96rem
 }
-.fixedContent {
-    position: absolute;
-    top: 328rem;
-    left: 0;
-    width: 100vw;
-    height: 1248rem;
+.header {
+    padding-bottom: 47rem;
+}
+.header h2 {
+    font: var(--Title2);
+}
+.header .emoji {
+    font: var(--emoji);
+}
+.header p {
+    font: var(--Body2);
 }
 
+.scrollWrapper {
+    position: relative;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 96rem 0 0 192rem;
+}
+
+.noDataPanel button {
+    margin-top: 32rem;
+}
+.noDataPanel {
+    margin-bottom: 64rem
+}
+.noDataPanel p {
+    max-width: 700rem;
+}

@@ -2,7 +2,7 @@ import { BrandPage } from './BrandPage';
 // import data from '../../../../public/data/taskmaster.json';
 import data from '../../../../public/data/peepshowHubData.json';
 const meta = {
-    title: 'DROPS/Drop #1/BSD/Brand Page',
+    title: 'Design System/BSD/Pages/Brand Page',
     component: BrandPage,
     argTypes:{
         animate: {
@@ -28,7 +28,10 @@ const meta = {
 export default meta;
 export const Default = {
     parameters: {
-    // layout:'centered'
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=24837-112591&m=dev',
+        },
     },
     args:{
         animate: true,

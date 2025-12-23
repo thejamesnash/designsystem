@@ -1,826 +1,104 @@
-.rail {
-    --transformXIndex: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-}
-.rail:has(button[data-active="true"]) {
-    transform: translate3d(0,0,0)
-}
-.rail[data-template="gradient-featured"]:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: transparent url('/public/images/grad2.png') center center no-repeat; 
-    background-size: cover;
-    filter: brightness(0.4);
-}
-.rail[data-template="featured"]:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background: transparent url('/public/images/grad2.png') center center no-repeat; 
-    background-size: cover;
-    filter: brightness(0.4);
-    transform: scaleY(0.77);
-    transform-origin: center top;
-}
-.rail[data-template="featured"]:has(button[data-active="true"]):before {
-    transform: scaleY(1);
-}
-.rail h2 {
-    font: var(--Title1);
-    font-size: 33rem;
-    margin: 64rem 0 40rem 192rem;
-    transform: scale(1) translate3d(0,0,0);
-    transform-origin: bottom left;
-}
-.rail:focus-within h2,
-.rail:has(button[data-navhistory="true"]) h2 {
-    transform: scale(1.4545454545) translate3d(0,30rem,0);
-}
-
-.railCTA {
-    --transformYPosition: 0;
-    --transformXPosition: 0;
-    --railItemWidth: -304rem;
-    --calculatedXPosition: calc( ( var(--transformXIndex) * var(--railItemWidth) ) + ( var(--transformXIndex) * -4rem ));
-    padding: 0 0 0 192rem;
-    width: fit-content;
-    display: flex;
-    gap: 4rem;
-    will-change: transform;
-    transform: translate3d(var(--calculatedXPosition),var(--transformYPosition),0);
-}
-.rail[data-type="large"] .railCTA {
-    --railItemWidth: -512rem;
-}
-.rail:has(button[data-active="true"]) .railCTA,
-.rail:has(button[data-navhistory="true"]) .railCTA {
-    --transformYPosition: 64rem
-}
-
-.railCTA button {
-    --railindex: 0;
+.Rail {
+    box-sizing: border-box;
+    padding: 64rem 0 64rem 192rem;
     position: relative;
-    width: 304rem;
-    height: 171rem;
-    background-color: #333;
-    will-change: transform;
+    width: fit-content;
+}
+.Rail[data-nopadding="true"] {
+    box-sizing: border-box;
+    padding: 64rem 0;
+    position: relative;
+}
+
+.Rail[data-bg="true"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background: transparent url(../../../../public/images/grad2.png) center center no-repeat;
+    background-size: cover;
+    filter: brightness(0.4)
+}
+.Rail:has(a:focus):before,
+.Rail:has(a:hover):before {
+    height: 654rem;
+} 
+.railTitleWrap {
+    position: relative;
+}
+.Rail:has(a:focus) .railTitleWrap,
+.Rail:has(a:hover) .railTitleWrap {
+    transform: translate3d(0,32rem,0);
+}
+.railTitle {
+    font: var(--Title2);
     transform: scale(1);
-    z-index: 0;
-    outline: 3rem solid var(--buttonPrimaryButtonFillDefaultOpacity0);
+    transform-origin: left bottom
 }
- 
-.rail[data-type="large"] button,
-.rail[data-template="gradient-featured"] button,
-.rail[data-template="categoryEditorial"] button {
-    width: 512rem;
-    height: 288rem;
-    /* 117 diff */
+.railEmoji {
+    font-family: '4moji';
+    padding-left: 12rem;
 }
-.rail[data-type="portrait"] button {
-    width: 304rem;
-    height: 404rem;
-    /* 233 diff */
+.railSubtitle {
+    font: var(--Label1);
+    transform: scale(1);
+    transform-origin: left center
 }
-
-.railCTA button:focus {
-    outline: 3rem solid var(--buttonPrimaryButtonFillDefault);
-    transform: scale(1.105);
-    z-index: 1
-}
-.railCTA button img {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.rail[data-template="featured"] .railCTA button img {
-    filter: grayscale(1) contrast(1.6) brightness(0.8);
-    transition: all 0.3s ease-in
-}
-.rail[data-template="featured"] .railCTA button[data-active="true"] img {
-    filter: grayscale(0) contrast(1) brightness(1);
-}
-
-.railCTA button .bslFlag {
-    background-color: var(--buttonPrimaryButtonFillDefault);
-    color: var(--textOnDark);
-    width: 40rem;
-    height: 31rem;
-    z-index: 3;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    padding: 8rem;
-}
-.railCTA button .bslFlag svg {
-    color: var(--textOnLight);
-}
-.railMetaWrap {
-    height: 254rem;
+.railList {
+    margin: 40rem 0 0;
     width: fit-content;
-    padding: 0 0 0 192rem;
-    will-change: transform;
-    transform: scaleY(0) translate3d(0,51rem,0);
-    display: flex;  
-    transform-origin: top left;
-    opacity: 0;
-}
-.rail[data-type="large"] .railMetaWrap {
-    transform: scaleY(0) translate3d(0,100rem,0);
-    /* 117 diff */
-}
-.rail[data-type="portrait"] .railMetaWrap {
-    transform: scaleY(0) translate3d(0,181rem,0);
-    /* 233 diff */
-}
-
-.rail:has(button[data-active="true"]) .railMetaWrap,
-.rail:has(button[data-navhistory="true"]) .railMetaWrap {
-    transform: scaleY(1) translate3d(0,51rem,0);
-}
-.rail[data-type="large"]:has(button[data-active="true"]) .railMetaWrap,
-.rail[data-type="large"]:has(button[data-navhistory="true"]) .railMetaWrap {
-    transform: scaleY(1) translate3d(0,60rem,0);
-    /* 117 diff */
-}
-.rail[data-type="portrait"]:has(button[data-active="true"]) .railMetaWrap,
-.rail[data-type="portrait"]:has(button[data-navhistory="true"]) .railMetaWrap {
-    transform: scaleY(1) translate3d(0,80rem,0);
-    /* 233 diff */
-}
-.rail:focus-within .railMetaWrap,
-.rail:has(button[data-active="true"]) .railMetaWrap, 
-.rail:has(button[data-navhistory="true"]) .railMetaWrap {
-    opacity: 1;
-}
-
-.railMeta {
-    --transformXPosition: 0;
-    height: 222rem;
-    width: 768rem;
-    will-change: transform;
-    transform: translate3d(calc( ( var(--transformXIndex) * -768rem )),30rem,0);
-    opacity: 0;
-}
-.railMeta[data-type="nowNext"] {
-    gap: 270rem;
     display: flex;
-    width: 1592rem;
-    transform: translate3d(calc( ( var(--transformXIndex) * -1592rem )),30rem,0);
-}
-.railMeta[data-visible="true"] {
-    opacity: 1
+    gap: 4rem; 
+    counter-reset: item-counter;
 }
 
-.railMeta h3 {
-    font: var(--Body2);
-    padding: 10rem 0 4rem 0;
-}
-.railMeta p {
-    padding-top: 0rem;
-    /* max-width: 660rem; */
-    max-width: 760rem;
-}
-.railMeta p:last-of-type {
-    
-}
-.railOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(17,17,17,0.5);
-    text-align: left;
-    padding: 24rem;
-    box-sizing: border-box;
-    color: var(--textOnDark);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.rail[data-template="fast"] button .txLogo {
-    display: flex;
-}
-.rail[data-template="fast"] button .txLogo p {
-    font: var(--Title3);
-    font-size: 58rem;
-    font-size: 40rem;
-    font-weight: 300;
-    padding-left: 4rem;
-    margin-top: -10rem;
-    letter-spacing: -2rem
-}
-.rail[data-template="fast"] button .txLogo svg {
-    height: 32rem;
-}
-.rail[data-template="livetv"] .txLogo {
-    height: 64rem;
-    width: 98rem;
-}
-.rail[data-template="livetv"]  button:nth-of-type(1) .txLogo {
-    height: 64rem;
-    width: 48rem;
+.Rail:has(a:focus) .railList,
+.Rail:has(a:hover) .railList {
+    transform: translate3d(0,92rem,0);
 }
 
-.railOverlayContent h3 {
-    font: var(--Body1);
-    padding-bottom: 2rem;
-    text-shadow: var(--textShadow);
-}
-.railOverlayContent p {
-    font: var(--Label1);
-    padding-bottom: 4rem;
-    text-shadow: var(--textShadow);
+.Rail:has(a:focus) .railTitle,
+.Rail:has(a:hover) .railTitle,
+.Rail:has(a:focus) .railSubtitle,
+.Rail:has(a:hover) .railSubtitle
+ {
+    transform: scale(1.45)
 }
 
-
-
-
-.extraMeta {
-    display: flex;
-    align-items: center;
-    gap: 16rem;
-    font: var(--Label1);
-    position: relative;
-    z-index: 1;
-    margin-top: 12rem
+.Rail[data-titlescale="false"]:has(a:focus) .railList,
+.Rail[data-titlescale="false"]:has(a:hover) .railList {
+    transform: translate3d(0,0,0);
 }
 
-.extraMeta span {
-    font: var(--Label1);
-    /* text-shadow: var(--textShadow); */
+.Rail[data-titlescale="false"]:has(a:focus) .railTitle,
+.Rail[data-titlescale="false"]:has(a:hover) .railTitle,
+.Rail[data-titlescale="false"]:has(a:focus) .railTitleWrap,
+.Rail[data-titlescale="false"]:has(a:hover) .railTitleWrap,
+.Rail[data-titlescale="false"]:has(a:focus) .railSubtitle,
+.Rail[data-titlescale="false"]:has(a:hover) .railSubtitle
+ {
+    transform: scale(1)
 }
-.metaIcon,
-.metaIcon svg {
-    width: 35rem;
-    height: 35rem;
-}
-.extraMeta .metaIcon:first-of-type {
-    color: var(--statusError);
-}
-
-
-
-.rail button:has(~button:focus),
-.rail button:has(~button[data-active="true"]),
-.rail button:has(~button[data-navhistory="true"]) {
-    filter: brightness(0.4)
-}
-
-
-/* Handle previous slices */
-.rail:has(~ .rail button[data-active="true"]) {
-    transform: translate3d(0,-540rem,0);
-}
-.rail[data-type="large"]:has(~ .rail button[data-active="true"]) {
-    transform: translate3d(0,-690rem,0);
-}
-.rail[data-type="portrait"]:has(~ .rail button[data-active="true"]) {
-    transform: translate3d(0,-770rem,0);
-}
-
-
-.rail:has(button[data-active="true"]) ~ .rail  {
-    transform: translate3d(0,608rem,0)
-}
-.rail:has(button[data-active="true"]) ~ .rail + .rail {
-    transform: translate3d(0,960rem,0)
-}
-.rail:has(button[data-active="true"]) ~ .rail + .rail + .rail {
-    transform: translate3d(0,100vh,0)
-}
-
-
-.rail[data-type="large"]:has(button[data-active="true"]) ~ .rail  {
-    transform: translate3d(0,728rem,0)
-}
-.rail[data-type="large"]:has(button[data-active="true"]) ~ .rail + .rail {
-    transform: translate3d(0,100vh,0)
-}
-
-.rail[data-type="portrait"]:has(button[data-active="true"]) ~ .rail  {
-    transform: translate3d(0,838rem,0)
-}
-.rail[data-type="portrait"]:has(button[data-active="true"]) ~ .rail + .rail {
-    transform: translate3d(0,100vh,0)
-}
-
-.rail:has(button[data-active="true"]) ~ .rail[data-type="portrait"] + .rail,
-.rail:has(button[data-active="true"]) ~ .rail[data-type="large"] + .rail  {
-    transform: translate3d(0,100vh,0)
-}
-/* .rail[data-template="livetv"]:has(button[data-active="true"]) ~ .rail[data-type="large"]  {
-    transform: translate3d(0,534rem,0)
-} */
-/* 
-.rail[data-parent="myshows"]:has(button[data-active="true"]) ~ .rail[data-type="large"],
-.rail[data-parent="livetv"]:has(button[data-active="true"]) ~ .rail[data-type="large"] {
-    transform: translate3d(0,464rem,0)
-} */
-
-/* Hero */
-.rail[data-template="hero"]:has(button[data-active="true"]) + .rail  {
-    transform: translate3d(0,940rem,0)
-}
-
-/* My Shows page */
-.rail[data-parent="myshows"]:has(button[data-active="true"]) ~ .rail[data-type="large"] {
-    transform: translate3d(0,464rem,0)
-}
-.rail[data-parent="myshows"][data-index="1"] {
-    transform: translate3d(0,-44rem,0)
-}
-
-/* Categories Landing page */
-.rail[data-template="catTrigger"]:has(button[data-active="true"]) + .rail  {
-    transform: translate3d(0,440rem,0);
-}
-.rail[data-template="catTrigger"]:has(button[data-active="true"]) + .rail + .rail {
-    transform: translate3d(0,976rem,0);
-}
-
-/* Live TV page */
-.rail[data-parent="livetv"]:has(button[data-active="true"]) ~ .rail {
-    transform: translate3d(0,594rem,0)
-}
-.rail[data-parent="livetv"][data-index="1"] {
-    transform: translate3d(0,-44rem,0)
-}
-
-
-/* Category page - editorial rails */
-
-.rail[data-template="categoryEditorialSmall"]:has(button[data-active="true"])   {
-    transform: translate3d(0,-50rem,0)
-}
-.rail[data-template="categoryEditorial"][data-index="2"]:has(button[data-active="true"])   {
-    transform: translate3d(0,-50rem,0)
-}
-.rail[data-template="categoryEditorialSmall"]:has(button[data-active="true"]) + .rail {
-    transform: translate3d(0,560rem,0)
-}
-.rail[data-template="categoryEditorial"]:has(button[data-active="true"]) + .rail {
-    transform: translate3d(0,560rem,0)
-}
-.rail[data-template="categoryEditorial"]:has(button[data-active="true"]) + .rail + .rail {
-    transform: translate3d(0,1800rem,0)
-}
-
 
 
 @media ( prefers-reduced-motion: reduce ){
-    .rail[data-animate="true"] .scrollWrapper,
-    .rail[data-animate="true"] .railCTA,
-    .rail[data-template="featured"]:before {
-        transition: all 0.2s linear;
+    .Rail[data-animate="true"] .railTitle,
+    .Rail[data-animate="true"] .railSubtitle {
+        transition: all 100ms linear;
     }
 
 }
 
 @media ( prefers-reduced-motion: no-preference ){
-    
-    .rail[data-animate="true"]  h2 {
-        transition: all 200ms linear;
-        transition-delay: 150ms
-    }
-    .rail[data-template="featured"]:before {
-        transition: all 200ms linear;
-    }
 
-    .rail[data-animate="true"] .scrollWrapper,
-    .rail[data-animate="true"] .rail,
-    .rail[data-animate="true"] .railCTA {
-        transition: all 350ms linear;
-    }
-    .rail[data-animate="true"],
-    .rail[data-animate="true"] .railCTA button,
-    .rail[data-animate="true"] .railMeta {
-        transition: all 200ms linear;
-    }
-
-    .rail[data-animate="true"][data-animationtier="2"] h2,
-    .rail[data-animate="true"][data-animationtier="2"] .scrollWrapper,
-    .rail[data-animate="true"][data-animationtier="2"] .rail,
-    .rail[data-animate="true"][data-animationtier="2"] .railCTA,
-    .rail[data-animate="true"][data-animationtier="2"] .railCTA button,
-    .rail[data-animate="true"][data-animationtier="2"] .railMeta {
-        transition-timing-function: ease-out;
-    }
-
-    .rail[data-animate="true"][data-animationtier="3"],
-    .rail[data-animate="true"][data-animationtier="3"] h2,
-    .rail[data-animate="true"][data-animationtier="3"] .scrollWrapper,
-    .rail[data-animate="true"][data-animationtier="3"] .rail,
-    .rail[data-animate="true"][data-animationtier="3"] .railCTA,
-    .rail[data-animate="true"][data-animationtier="3"] .railCTA button,
-    .rail[data-animate="true"][data-animationtier="3"] .railMeta {
-        transition-timing-function: var(--animation-ease-out);
-    }
-    
-
-    
-}
-
-.rail[data-template="hero"] {
-    width: 100vw;
-    height: 87vh;
-    overflow: hidden;
-    position: relative;
-}
-.rail[data-template="hero"]:has(~ .rail button[data-active="true"]) {
-    transform: translate3d(0,-1080rem,0)
-}
-.heroContents {
-    width: 435.4166666666vw;
-    height: 87vh;
-    position: relative;
-}
-.heroContents > div  {
-    width: 87.08vw;
-    height: 87vh;
-    position: absolute;
-    top: 0;
-    background-size: cover;
-}
-.heroContents > div:nth-of-type(1) {
-    left: 0;
-}
-.heroContents > div:nth-of-type(2) {
-    left: 87.08vw;
-}
-.heroContents > div:nth-of-type(3) {
-    left: 174.16vw;
-}
-.heroContents > div:nth-of-type(4) {
-    left: 261.24vw;
-}
-.heroContents > div:nth-of-type(5) {
-    left: 348.32vw;
-}
-.heroContentBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 87.08vw;
-    height: 87vh;
-    background-size: cover;
-    filter: brightness(0.44)
-}
-.heroContentMeta {
-    position: absolute;
-    left: 10vw;
-    bottom: 25.5555555556vh;
-    opacity: 0;
-}
-.heroContentMeta img {
-    height: 30.5555555556vh;
-    width: 35.3125vw;
-}
-.heroContentMeta p {
-    font: var(--Body1);
-    color: var(--textOnDark);
-    text-shadow: var(--textShadow);
-}
-.heroContentMeta .highlight {
-    font: var(--Title1);
-    color: var(--buttonPrimaryButtonFillDefault);
-    text-shadow: var(--textShadow);
-}
-
-.heroRail {
-    position: absolute;
-    bottom: 128rem;
-    bottom: 64rem;
-    left: 0;
-    height: 15.83vh;
-    width: 80vw;
-    display: flex;
-    gap: 0.208vw;
-    will-change: transform;
-}
-.heroRail button {
-    outline: 3rem solid var(--buttonPrimaryButtonFillDefaultOpacity0);
-    border: 3rem solid var(--surfaceAppLayer01Opacity0);
-    width: 15.83vw;
-    will-change: transform;
-    position: relative;
-    z-index: 0;
-}
-.heroRail button:focus,
-.heroRail button[data-active="true"] {
-    transform: scale(1.105);
-    z-index: 1;
-    outline: 3rem solid var(--buttonPrimaryButtonFillDefault);
-    border: 3rem solid var(--surfaceAppLayer01);
-}
-.heroRail button:has(~button:focus),
-.heroRail button:has(~button[data-active="true"]),
-.heroRail button:has(~button[data-history="true"]) {
-    filter: brightness(0.4)
-}
-.heroRail button img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Hero BG positions  */
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(1)[data-history="true"]) .heroContents {
-    transform: translate3d(0vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-history="true"]) .heroContents {
-    transform: translate3d(-87.08vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-history="true"]) .heroContents {
-    transform: translate3d(-174.16vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-history="true"]) .heroContents {
-    transform: translate3d(-261.24vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-history="true"]) .heroContents {
-    transform: translate3d(-348.32vw,0,0);
-}
-
-/* Hero rail position */
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(1)[data-history="true"]) .heroRail {
-    transform: translate3d(0vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-history="true"]) .heroRail {
-    transform: translate3d(-16.04166666667vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-history="true"]) .heroRail {
-    transform: translate3d(-32.08333333334vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-history="true"]) .heroRail {
-    transform: translate3d(-48.125vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-history="true"]) .heroRail {
-    transform: translate3d(-64.1666666667vw,0,0);
-}
-
-/* Hero meta opacity */
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(1)[data-history="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-history="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-history="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-history="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-history="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta {
-    opacity: 1;
-}
-
-
-/* Rail movement */
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(2)[data-history="true"]) .heroRail {
-    transform: translate3d(-16.04166666667vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(3)[data-history="true"]) .heroRail {
-    transform: translate3d(-32.08333333334vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(4)[data-history="true"]) .heroRail {
-    transform: translate3d(-48.125vw,0,0);
-}
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroRail,
-.rail[data-template="hero"]:has(.heroRail button:nth-of-type(5)[data-history="true"]) .heroRail {
-    transform: translate3d(-64.1666666667vw,0,0);
-}
-
-@media ( prefers-reduced-motion: reduce ){
-    .rail[data-template="hero"][data-animate="true"] .heroRail {
-        transition: all linear 100ms;
-    }
-}
-
-@media ( prefers-reduced-motion: no-preference ){
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroContentMeta p {
-        transform: translate3d(5vw,0,0);
-        opacity: 0
-    }
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta img,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta img {
-        transform: translate3d(0,0,0);
-        opacity: 1;
-        transition-delay: 750ms
-    }
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta p {
-        transform: translate3d(0,0,0);
-        opacity: 1;
-        transition-delay: 900ms
-    }
-
-    .rail[data-template="hero"][data-animate="true"] .heroContents {
-        transition: all linear 750ms;
-    }
-    .rail[data-template="hero"][data-animate="true"] .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"] .heroContentMeta img, 
-    .rail[data-template="hero"][data-animate="true"] .heroContentMeta p {
-        transition: all linear 200ms;
-    }
-    .rail[data-template="hero"][data-animate="true"]:has(.heroRail button:nth-of-type(1)[data-active="true"]) .heroContents > div:nth-of-type(1) .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"]:has(.heroRail button:nth-of-type(2)[data-active="true"]) .heroContents > div:nth-of-type(2) .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"]:has(.heroRail button:nth-of-type(3)[data-active="true"]) .heroContents > div:nth-of-type(3) .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"]:has(.heroRail button:nth-of-type(4)[data-active="true"]) .heroContents > div:nth-of-type(4) .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"]:has(.heroRail button:nth-of-type(5)[data-active="true"]) .heroContents > div:nth-of-type(5) .heroContentMeta {
-        transition-delay: 750ms
-    }
-    
-    .rail[data-template="hero"][data-animate="true"] .heroRail {
-        transition: all linear 350ms;
-        transition-delay: 400ms;
-    }
-    .rail[data-template="hero"][data-animate="true"] .heroRail button {
-        transition: all linear 350ms;
-    }
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="1"] .heroContents,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="1"] .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="1"] .heroContentMeta img, 
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="1"] .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="1"] .heroRail,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="1"] .heroRail button {
-        transition-timing-function: linear;
-    }
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroContents,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroContentMeta img, 
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroRail,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="2"] .heroRail button {
-        transition-timing-function: ease-in;
-    }
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroContents,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroContentMeta,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroContentMeta img, 
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroContentMeta p,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroRail,
-    .rail[data-template="hero"][data-animate="true"][data-animationtier="3"] .heroRail button {
-        transition-timing-function: var(--animation-ease-in);
-    }
-
-}
-
-
-
-.rail .iconBtn {
-    background-color: var(--surfaceAppLayer01);
-    color: var(--buttonPrimaryButtonFillDefault);
-    outline: 3rem solid var(--surfaceAppLayer01);
-    font: var(--Label1);
-    filter: grayscale(1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 17rem;
-    box-sizing: border-box;
-    padding: 26rem 0;
-}
-
-.rail .iconBtn[data-active="true"] {
-    outline: 3rem solid var(--buttonPrimaryButtonFillDefault);
-    filter: grayscale(0);
-}
-.rail .iconBtn:has(~button:focus),
-.rail .iconBtn:has(~button[data-active="true"]) {
-    filter: grayscale(1) brightness(0.4)
-}
-.rail .iconBtn .emoji {
-    font-family: "4Moji";
-    font-size: 80rem;
-    line-height: 80rem;
-}
-.rail .iconBtn .icon {
-    width: 74rem;
-    height: 58rem;
-    
-    margin: 0 auto;
-}
-
-
-
-.rail[data-template="promo"] {
-    padding: 0;
-    display: flex;
-    height: 432rem;
-}
-.rail[data-template="promo"] h2 {
-    margin: 64rem 0 40rem 0
-}
-.rail[data-template="promo"] .plusIcon {
-    width: 50rem;
-    height: 50rem;
-    display: block;
-    position: absolute;
-    top: 96rem;
-    left: 156rem;
-    color: var(--buttonPrimaryButtonFillDefault);
-}
-.rail[data-template="promo"] img {
-    width: 768rem;
-    height: initial;
-}
-.promoBannerContent {
-    /* padding: 0 199rem 52rem 192rem; */
-    padding: 0 199rem 52rem 242rem;
-    position: relative
-}
-.promoBannerContent:before {
-    content: '';
-    background: transparent url(/images/grad2.png) center center no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    padding-left: 242rem;
-    left: -242rem;
-    filter: brightness(0.4)
-}
-.promoBannerContent .sliceTitle {
-    padding-bottom: 12rem;
-}
-.rail[data-template="promo"]:focus-within .sliceTitle {
-    padding-bottom: 12rem
-}
-.promoBannerContent button[data-template="promo"]{
-    padding: 25rem 16rem;
-    margin-top: 25rem;
-    margin-right: 12rem;
-    font-size: 28rem;
-    line-height: 30rem;
-    font-weight: 600;
-    color: var(--textOnDark);
-    background-color: var(--buttonPrimaryButtonFillInactive);
-    position: relative;
-    z-index: 1
-}
-.promoBannerContent button[data-template="promo"]:focus {
-    color: var(--textOnLight);
-    background-color: var(--buttonPrimaryButtonFillDefault);
-
-}
-.promoBannerContent h2,
-.promoBannerContent p, 
-.promoBannerContent + img {
-    position: relative;
-    z-index: 1;
-    /* color: var(--black100); */
-}
-
-.onNow {
-    font: var(--Label2);
-}
-.onNow .emoji {
-    font-family: '4Moji'
-}
-
-.rail button[data-issigned="true"] {
-    overflow: hidden;
-}
-.rail button[data-issigned="true"] img {
-    transform-origin: center bottom;
-    transform: scale(1.3);
+    .Rail[data-animate="true"] .railTitle,
+    .Rail[data-animate="true"] .railSubtitle,
+    .Rail[data-animate="true"] .railTitleWrap,
+    .Rail[data-animate="true"] .railList {
+        transition-property: all;
+        transition-duration: var(--animation-duration-small);
+        transition-timing-function: var(--animation-ease-out);    
+    }    
 }

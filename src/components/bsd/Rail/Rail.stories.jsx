@@ -1,44 +1,75 @@
 import { Rail } from './Rail';
-import data from '../../../../public/data/slices.json';
-const meta = {
+import data from '../../../../public/data/homepageData.json';
+import catNavData from '../../../../public/data/categoriesNavigation.json';
+import collectionstNavData from '../../../../public/data/collectionsNavigation.json';
+export default {
     title: 'Design System/BSD/Molecules/Rail',
     component: Rail,
-    argTypes:{
-        animate: {
+    args: {
+        animate: true,
+        animationTier: 3,
+        platform: 'bsd',
+        size: 'small',
+        orientation: '169',
+        background: false
+    },
+    argTypes: {
+        size: {
             control:{
                 type: 'select'
             },
-            options: [true,false]
+            options: ["small","large"]
         },
-        animationTier: {
+        orientation: {
             control:{
                 type: 'select'
             },
-            options: [0,1,2,3]
+            options: ["169","34"]
         }
     }
-};
-export default meta;
-export const Default = {
-    parameters: {
-    // layout:'centered'
-    },
-    args:{
-        animate: true,
-        animationTier: 3,
-        data: data.slices[3],
-        platform: 'bsd'
-    }
-};
-export const ContinueWatching = {
-    parameters: {
-    // layout:'centered'
-    },
-    args:{
-        animate: true,
-        animationTier: 3,
-        data: data.slices[1],
-        platform: 'bsd'
-    }
-};
+}
 
+export const Brand = {
+    args: {
+        data: data.sliceGroups[0].slices[1],
+        showMeta: true,
+        railSubtitle: 'Fresh goodness!'
+    }
+}
+export const Categories = {
+    args: {
+        data: catNavData,
+        type: 'categories'
+    }
+}
+export const Collections = {
+    args: {
+        data: collectionstNavData,
+        showMeta: true
+    }
+}
+export const WatchNow = {
+    args: {
+        data: data.sliceGroups[0].slices[23],
+        showMeta: true,
+        showMeta: true,
+        type: "slot",
+        size: "large",
+        channelLogo: true
+    }
+}
+export const Portrait = {
+    args: {
+        data: data.sliceGroups[0].slices[7],
+        orientation: 34,
+        showMeta: true
+    }
+}
+export const Top10 = {
+    args: {
+        data: data.sliceGroups[0].slices[10],
+        orientation: 34,
+        showMeta: true,
+        top10: true
+    }
+}

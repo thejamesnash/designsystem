@@ -1,0 +1,64 @@
+.Cookies {
+    
+}
+
+.cookieContent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 62.3vw;
+}
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+    box-sizing: border-box;
+    padding: 240rem 64rem 0;
+}
+.btnWrap {
+    padding-top: 28rem;
+    display: flex;
+    gap: 12rem;
+    flex-direction: row;
+    width: calc( 62.3vw - 128rem );
+}
+.btnWrap button {
+    white-space: nowrap;
+    display: block;
+}
+
+.exitCookies,
+.thanksCookies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Cookies .thanksCookies,
+.Cookies .exitCookies,
+.Cookies .manageCookies,
+.Cookies[data-state="manage"] .intro {
+    display: none;
+}
+.Cookies[data-state="exit"] .exitCookies,
+.Cookies[data-state="thanks"] .thanksCookies,
+.Cookies[data-state="manage"] .manageCookies  {
+    display: block;
+}
+
+.manageCookies {
+    padding-top: 240rem
+}
+.saveSettings {
+    padding: 64rem;
+}
+.saveSettings h2 {
+
+}
+.saveSettings p {
+    padding: 24rem 0 20rem;
+}

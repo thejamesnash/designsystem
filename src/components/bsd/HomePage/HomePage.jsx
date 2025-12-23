@@ -1,6 +1,6 @@
 import React,{useState, useRef, useEffect, useCallback} from 'react';
 import styles from './HomePage.module.css';
-import Rail from '../Rail/Rail';
+import Rail from '../Railv1/Rail';
 
 export const HomePage = (props) => {
     const homePageRef = useRef();

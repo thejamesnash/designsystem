@@ -1,0 +1,23 @@
+.SignIn {
+    
+}
+.step {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 132rem 0 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+.btnWrap {
+    display: flex;
+    gap: 16rem
+}
+.step .btnWrap,
+.step .instructions {
+    padding: 64rem 0
+}

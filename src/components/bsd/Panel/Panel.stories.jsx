@@ -46,7 +46,7 @@ const panelData = [
 
 
 const meta = {
-    title: 'DROPS/Drop #1/BSD/Panel',
+    title: 'Design System/BSD/Molecules/End Of Playback',
     component: Panel,
     argTypes:{
         animate: {
@@ -66,7 +66,13 @@ const meta = {
                 type: 'select'
             },
             options: [0,1,2]
-        }
+        },
+        platform: {
+            control:{
+                type: 'select'
+            },
+            options: ['bsd','dotcom']
+        },
     }
 };
 export default meta;

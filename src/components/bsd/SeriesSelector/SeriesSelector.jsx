@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SeriesSelector.module.css';
-import Rail from '../Rail/Rail.jsx';
+import Rail from '../Railv1/Rail.jsx';
 
 export const SeriesSelector = (props) => {
     let episodeData = {sliceItems: props.episodeData,title:''};

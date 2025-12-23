@@ -1,0 +1,6 @@
+.brandpage {
+    background-color: var(--surfaceAppLayer00);
+}
+.seriesSelector {
+    margin: 32rem 0 0 var(--gridGutter)
+}

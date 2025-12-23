@@ -1,0 +1,53 @@
+.List {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 57rem
+}
+.List[data-size="small"]{
+    gap: 30rem
+}
+.List button {
+    text-align: left;
+    display: flex;
+    gap: 48rem;
+    color: var(--textOnDark);
+    width: 1376rem;
+}
+.List img {
+    width: 512rem;
+    height: 288rem;
+    transform-origin: center center;
+    transform: scale(1);
+    outline: 2rem solid var(--surfaceAppLayer00Opacity0);
+    box-shadow: 0 0 0 6rem var(--buttonPrimaryButtonFillDefaultOpacity0);
+}
+.List[data-size="small"] img {
+    width: 304rem;
+    height: 171rem;   
+}
+.List button:focus img {
+    transform: scale(1.0625);
+    outline: 2rem solid var(--surfaceAppLayer00);
+    box-shadow: 0 0 0 6rem var(--buttonPrimaryButtonFillDefault);
+}
+.List h2 {
+    font: var(--Title2);
+    margin-bottom: 4rem;
+}
+.List p {
+    font: var(--Body1);
+    margin-bottom: 8rem;
+}
+.List[data-animate="true"] img {
+    transition: all 200ms linear;
+}
+.List[data-animate="true"][data-animationtier="2"] img {
+    transition-timing-function: ease-out;
+}
+.List[data-animate="true"][data-animationtier="3"] img {
+    transition-timing-function: var(--animation-ease-out);
+}
+
+
+

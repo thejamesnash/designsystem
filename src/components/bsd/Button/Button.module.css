@@ -50,6 +50,25 @@
     height: 40rem;
 }
 
+.Button[data-template="nopadding"] {
+    padding: 20.5rem 0;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    
+}
+.Button[data-template="nopadding"] b {
+    text-align: center;
+    width: 100%;
+    color: var(--textOnDark);
+    white-space: nowrap;
+    display: block;
+}
+.Button[data-template="nopadding"]:focus b,
+.Button[data-template="nopadding"]:hover b {
+    color: var(--textOnLight);
+}
+
 /* Keyboard */
 .Button[data-template="keyboard"]:has(b) {
     padding: 0;
@@ -151,7 +170,20 @@
     z-index: 0;
 }
 
-
+.Button[data-type="text"] {
+    padding: 20rem 0;
+    background-color: transparent;
+    outline: 0 none;
+    box-shadow: none;
+}
+.Button[data-type="text"]:focus,
+.Button[data-type="text"]:hover {
+    background-color: transparent;
+    color: var(--buttonPrimaryButtonFillDefault);
+    outline: 0 none;
+    text-decoration: underline;
+    box-shadow: none;
+}
 
 
 

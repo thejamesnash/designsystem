@@ -2,14 +2,13 @@
     display: block
 }
 .metaTitle {
-    font: var(--Body2);
+    font: var(--Title2);
     color: var(--textOnDark);
     padding-bottom: 4rem;
 }
 .metaHighlight {
     font: var(--Title1);
     color: var(--buttonPrimaryButtonFillDefault);
-    padding-bottom: 4rem;
 }
 .metaText {
     font: var(--Body1);
@@ -17,7 +16,7 @@
     max-width: 816rem;
 }
 .metaGuidance {
-    padding-top: 16rem;
+    padding-top: 10rem;
     font: var(--Label1);
     color: var(--textOnDark);
     display: flex;

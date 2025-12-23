@@ -1,0 +1,10 @@
+/* Obviously !important is an unholy property, but it's needed here to override the lazy load dimensions */
+.img,
+.img img {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: 100%;  
+ }
+  

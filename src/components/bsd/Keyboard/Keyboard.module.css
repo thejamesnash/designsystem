@@ -1,0 +1,44 @@
+.keyboard {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.keyboard[data-type="search"] {
+    width: 500rem;
+}
+.keyboard[data-type="full"] {
+    width: 1004rem;
+}
+.key {
+    height: 80rem;
+    width: 80rem;
+    font: var(--Body2);
+    color: var(--textOnDark);
+    background-color: var(--buttonSecondaryButtonFillDefault);
+    outline: 0 none;
+}
+.key:focus {
+    color: var(--textOnLight);
+    background-color: var(--buttonPrimaryButtonFillDefault);
+    outline: 4rem solid var(--surfaceAppLayer01);
+    box-shadow: 0 0 0 5rem var(--buttonPrimaryButtonFillDefault) 
+}
+.key[value="Delete"]{
+    width: 248rem;
+}
+.key[value="Space"]{
+    width: 248rem;
+}
+.key[value="#+?"],
+.key[value="ABC"],
+.key[value="Clear All"],
+.keyboard[data-type="full"] .key[value="Delete"] {
+    width: 164rem;
+}
+.key[value="@gmail"],
+.key[value="@hotmail"],
+.key[value="@yahoo"],
+.key[value=".com"],
+.key[value=".co.uk"]{
+    width: 164rem;
+}

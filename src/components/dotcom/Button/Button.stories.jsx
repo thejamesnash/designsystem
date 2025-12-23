@@ -80,3 +80,17 @@ export const IconButton = {
         platform: 'dotcom'
     }
 };
+
+export const RailIconButton = {
+    parameters: {
+        layout: 'centered',
+    },
+    args: {
+        animate: false,
+        type: 'railIcon',
+        platform: 'dotcom',
+        btnText: 'Comedy',
+        withEmoji: 'c'
+    }
+};
+

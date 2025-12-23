@@ -1,0 +1,36 @@
+.PopUp {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--surfaceAppLayer00);
+}
+.PopUp svg {
+    width: 160rem;
+    height: 160rem;
+    margin-bottom: 32rem
+}
+.PopUp h2 {
+    font: var(--Title3);
+    margin-bottom: 8rem;
+    max-width: 902rem;
+    text-align: center;
+}
+.PopUp .errorSubtitle {
+    font: var(--Title1);
+    color: var(--statusError);
+    margin-bottom: 32rem;
+}
+.PopUp p {
+    font: var(--Body1);
+    margin-bottom: 56rem;
+    max-width: 902rem;
+    text-align: center;
+}
+.btnWrap {
+    display: flex;
+    gap: 12rem
+}
+

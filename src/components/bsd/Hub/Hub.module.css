@@ -410,3 +410,7 @@
     width: 100vw;
     filter: brightness(0.7) hue-rotate(-45deg)
 } */
+
+.Hub[data-designOverlay="true"] {
+    background-color: red
+}

@@ -1,12 +1,29 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import styles from './Img.module.css';
 
 const IMAGE_DIMENSIONS = {
-  titleTreatment: { width: 678, height: 330 },
-  bg: { width: 1920, height: 1080 },
-  rail: {
-    169: { width: 592, height: 332 },
-    34: { width: 353, height: 470 },
+  dotcom: {
+    titleTreatment: { width: 678, height: 330 },
+    bg: { width: 1920, height: 1080 },
+    rail: {
+      169: { width: 592, height: 332 },
+      34: { width: 353, height: 470 },
+    },
+  },
+  bsd: {
+    titleTreatment: { width: 678, height: 330 },
+    bg: { width: 1920, height: 1080 },
+    rail: {
+      169: {
+        small: { width: 304, height: 171 },
+        large: { width: 512, height: 288 },
+      },
+      34: {
+        small: { width: 304, height: 414 },
+        large: { width: 304, height: 414 },
+      },
+    },
   },
 };
 
@@ -15,7 +32,6 @@ const getImageUrl = (src, type) => {
     return src;
   }
 
-  // Map component types to imageType values in the array
   const typeMapping = {
     titleTreatment: 'TITLE_TREATMENT',
     bg: 'PRIMARY_HERO',
@@ -27,24 +43,41 @@ const getImageUrl = (src, type) => {
   return match?.href || src[0]?.href || '';
 };
 
-const modifyUrlQuality = (url, quality) => {
-  // Handle templated URLs with {&resize} placeholder
-  const cleanUrl = url.replace('{&resize}', '');
+const modifyUrlForDimensions = (url, width, height, quality) => {
+  // Replace {&resize} with actual resize parameters
+  let modifiedUrl = url.replace('{&resize}', `&resize=${width}:${height}`);
   
-  if (cleanUrl.includes('output-quality=')) {
-    return cleanUrl.replace(/output-quality=\d+/, `output-quality=${quality}`);
+  // If {&resize} wasn't found, add resize parameter
+  if (modifiedUrl === url && width && height) {
+    const separator = modifiedUrl.includes('?') ? '&' : '?';
+    modifiedUrl = `${modifiedUrl}${separator}resize=${width}:${height}`;
   }
   
-  // If no quality param exists, add it
-  const separator = cleanUrl.includes('?') ? '&' : '?';
-  return `${cleanUrl}${separator}output-quality=${quality}`;
+  // Update or add output-quality
+  if (modifiedUrl.includes('output-quality=')) {
+    modifiedUrl = modifiedUrl.replace(/output-quality=\d+/, `output-quality=${quality}`);
+  } else {
+    const separator = modifiedUrl.includes('?') ? '&' : '?';
+    modifiedUrl = `${modifiedUrl}${separator}output-quality=${quality}`;
+  }
+  
+  return modifiedUrl;
 };
 
-const getDimensions = (type, aspect) => {
+const getDimensions = (type, aspect, platform = 'dotcom', size = 'large') => {
+  const platformDimensions = IMAGE_DIMENSIONS[platform];
+  
   if (type === 'rail' && aspect) {
-    return IMAGE_DIMENSIONS.rail[aspect];
+    const railDimensions = platformDimensions.rail[aspect];
+    
+    if (platform === 'bsd' && railDimensions.small && railDimensions.large) {
+      return railDimensions[size];
+    }
+    
+    return railDimensions;
   }
-  return IMAGE_DIMENSIONS[type];
+  
+  return platformDimensions[type];
 };
 
 export const PerformantImage = ({
@@ -53,6 +86,8 @@ export const PerformantImage = ({
   aspect = 169,
   alt = '',
   priority = false,
+  platform = 'dotcom',
+  size = 'large',
 }) => {
   const [isInView, setIsInView] = useState(false);
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -90,9 +125,9 @@ export const PerformantImage = ({
   }, [priority]);
 
   const imageUrl = getImageUrl(src, type);
-  const dimensions = getDimensions(type, aspect);
-  const lowQualityUrl = modifyUrlQuality(imageUrl, 10);
-  const highQualityUrl = modifyUrlQuality(imageUrl, 90);
+  const dimensions = getDimensions(type, aspect, platform, size);
+  const lowQualityUrl = modifyUrlForDimensions(imageUrl, dimensions.width, dimensions.height, 10);
+  const highQualityUrl = modifyUrlForDimensions(imageUrl, dimensions.width, dimensions.height, 90);
 
   return (
     <div
@@ -101,8 +136,13 @@ export const PerformantImage = ({
         width: dimensions.width,
         height: dimensions.height,
         position: 'relative',
-        backgroundColor: '#1a1a1a',
-      }}
+        backgroundColor: 'rgba(17,17,17,0.1)'
+      }} 
+      data-name={'railimg'} 
+      data-aspectratio={aspect}
+      data-platform={platform}
+      data-size={size}
+      className={styles.img}
     >
       {!isInView ? (
         <div
@@ -128,6 +168,7 @@ export const PerformantImage = ({
                 transform: 'scale(1.1)',
               }}
               priority={priority}
+              unoptimized={true} // Disable Next.js image optimization
             />
           )}
           <Image
@@ -144,6 +185,7 @@ export const PerformantImage = ({
               transition: 'opacity 0.3s ease-in-out',
             }}
             priority={priority}
+            unoptimized={true} // Disable Next.js image optimization
           />
         </>
       )}

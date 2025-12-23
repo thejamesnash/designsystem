@@ -7,6 +7,10 @@ export default meta;
 export const Default = {
     parameters: {
         layout: 'centered',
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=28-952&m=dev',
+        },
     },
     args: {
         animate: false,

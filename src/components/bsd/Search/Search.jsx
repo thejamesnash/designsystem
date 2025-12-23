@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect, useRef, useCallback, memo } from 'react';
 import styles from './Search.module.css';
-import Rail from '../Rail/Rail.jsx';
+import Rail from '../Railv1/Rail.jsx';
 import { fetchSearchData } from '../../../functions/api.js';
 import ResultsGrid from '../ResultsGrid/ResultsGrid';
 

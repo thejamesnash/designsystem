@@ -101,3 +101,163 @@
     transform: scale(0.955);
     background-color: var(--buttonPrimaryButtonFillPressed);
 }
+.Button i {
+    font: var(--emoji);
+}
+
+
+.Button[data-template="railIcon"][data-size="xs"] {
+    --gridSliceCount: 10;
+}
+.Button[data-template="railIcon"][data-size="s"] {
+    --gridSliceCount: 10;
+}
+.Button[data-template="railIcon"][data-size="portrait"] {
+    --gridSliceCount: 10;
+}
+.Button[data-template="railIcon"][data-size="m"] {
+    --gridSliceCount: 10;
+}
+.Button[data-template="railIcon"][data-size="l"] {
+    --gridSliceCount: 10;
+}
+.Button[data-template="railIcon"][data-size="xl"] {
+    --gridSliceCount: 10;
+}
+
+@media screen and (min-width: 390px) {
+    .Button[data-template="railIcon"][data-size="xs"] {
+        --gridSliceCount: 6;
+    }
+    .Button[data-template="railIcon"][data-size="s"] {
+        --gridSliceCount: 6;
+    }
+    .Button[data-template="railIcon"][data-size="portrait"] {
+        --gridSliceCount: 6;
+    }
+    .Button[data-template="railIcon"][data-size="m"] {
+        --gridSliceCount: 9;
+    }
+    .Button[data-template="railIcon"][data-size="l"] {
+        --gridSliceCount: 9;
+    }
+    .Button[data-template="railIcon"][data-size="xl"] {
+        --gridSliceCount: 9;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Button[data-template="railIcon"][data-size="xs"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="s"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="portrait"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="m"] {
+        --gridSliceCount: 6;
+    }
+    .Button[data-template="railIcon"][data-size="l"] {
+        --gridSliceCount: 6;
+    }
+    .Button[data-template="railIcon"][data-size="xl"] {
+        --gridSliceCount: 6;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Button[data-template="railIcon"][data-size="xs"] {
+        --gridSliceCount: 3;
+    }
+    .Button[data-template="railIcon"][data-size="s"] {
+        --gridSliceCount: 3;
+    }
+    .Button[data-template="railIcon"][data-size="portrait"] {
+        --gridSliceCount: 3;
+    }
+    .Button[data-template="railIcon"][data-size="m"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="l"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="xl"] {
+        --gridSliceCount: 4;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .Button[data-template="railIcon"][data-size="xs"] {
+        --gridSliceCount: 2;
+    }
+    .Button[data-template="railIcon"][data-size="s"] {
+        --gridSliceCount: 2;
+    }
+    .Button[data-template="railIcon"][data-size="portrait"] {
+        --gridSliceCount: 2;
+    }
+    .Button[data-template="railIcon"][data-size="m"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="l"] {
+        --gridSliceCount: 4;
+    }
+    .Button[data-template="railIcon"][data-size="xl"] {
+        --gridSliceCount: 4;
+    }
+} 
+@media screen and (min-width: 1920px) {
+    .Button[data-template="railIcon"][data-size="xs"] {
+        --gridSliceCount: 2;
+    }
+    .Button[data-template="railIcon"][data-size="s"] {
+        --gridSliceCount: 2;
+    }
+    .Button[data-template="railIcon"][data-size="portrait"] {
+        --gridSliceCount: 2;
+    }
+    .Button[data-template="railIcon"][data-size="m"] {
+        --gridSliceCount: 3;
+    }
+    .Button[data-template="railIcon"][data-size="l"] {
+        --gridSliceCount: 3;
+    }
+    .Button[data-template="railIcon"][data-size="xl"] {
+        --gridSliceCount: 4;
+    }
+} 
+
+
+.Button[data-template="railIcon"] {
+    --itemHeight: 0;
+    --initialHeight: 0;
+    --metaHeight: 0;
+    --totalHeight: 0;
+    --movementAmount: 0;
+    max-width: 652rem;
+    margin: 0;
+    padding: 0;
+    --gridSliceCount: 10;
+    height: fit-content;
+    position: relative;
+    text-align: left;
+    --sliceWidth: calc(  var(--gridSingleColumnWidth) * var(--gridSliceCount) );
+    width: var(--sliceWidth);
+    min-height:100rem;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: transparent;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.01) 11.79%, rgba(17, 17, 17, 0.03) 21.38%, rgba(17, 17, 17, 0.06) 29.12%, rgba(17, 17, 17, 0.10) 35.34%, rgba(17, 17, 17, 0.15) 40.37%, rgba(17, 17, 17, 0.20) 44.56%, rgba(17, 17, 17, 0.26) 48.24%, rgba(17, 17, 17, 0.33) 51.76%, rgba(17, 17, 17, 0.40) 55.44%, rgba(17, 17, 17, 0.47) 59.63%, rgba(17, 17, 17, 0.54) 64.66%, rgba(17, 17, 17, 0.61) 70.88%, rgba(17, 17, 17, 0.68) 78.62%, rgba(17, 17, 17, 0.74) 88.21%, rgba(17, 17, 17, 0.80) 100%);
+    color: var(--textOnDark);
+    font: var(--Title1);
+}
+
+.Button[data-template="railIcon"]:hover {
+    outline: 4rem solid var(--buttonPrimaryButtonFillDefault)
+}

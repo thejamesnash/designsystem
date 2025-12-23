@@ -1,8 +1,8 @@
-import { Rail } from '../Rail/Rail.jsx';
+import { Rail } from '../Railv1/Rail.jsx';
 // import data from '../../../../public/data/taskmaster.json';
 import data from '../../../../public/data/homepageData.json';
 const meta = {
-    title: 'DROPS/Drop #1/BSD/Hero',
+    title: 'Design System/BSD/Molecules/Hero',
     component: Rail,
     argTypes:{
         animate: {

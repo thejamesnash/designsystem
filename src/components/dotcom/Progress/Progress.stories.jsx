@@ -13,4 +13,3 @@ export const Default = {
         progressTotal: 100
     }
   };
-

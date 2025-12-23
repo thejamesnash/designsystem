@@ -1,0 +1,125 @@
+.ContentRail {
+
+}
+.livetv {
+    display: flex;
+    flex-direction: column;
+    padding: 0 81rem 0 192rem;
+    gap: 64rem;
+}
+.livetv article dl {
+    display: flex;
+    position: relative;
+}
+.livetv dt {
+    position: absolute;
+    top: -67rem;
+    font: var(--Title2);
+    visibility: hidden;
+}
+.livetv article[data-active="true"] dt {
+    visibility: visible;
+}
+.livetv article dt:nth-of-type(1) {
+    left: 544rem;
+}
+.livetv article dt:nth-of-type(2) {
+    left: 1248rem;
+}
+
+.livetv dd {
+    position: relative;
+    display: flex;
+}
+.livetv article dd:nth-of-type(1) {
+    width: 1184rem;
+    margin-right: 64rem
+}
+.livetv article dd:nth-of-type(2) {
+    width: 399rem;
+}
+.livetv button {
+    position: relative;
+    margin-right: 32rem;
+}
+.livetv .txLogo {
+    position: absolute;
+    z-index: 1;
+    width: 84rem;
+    height: 64rem;
+    top: 33rem;
+    left: 36rem;
+}
+
+.livetv button:focus,
+.livetv button:hover {
+    
+}
+
+.livetv img {
+    width: 512rem;
+    height: 288rem;
+    filter: brightness(0.5);
+    transform: scale(1);
+    transform-origin: center center;
+    outline: 2rem solid var(--surfaceAppLayer00Opacity0);
+    box-shadow: 0 0 0 6rem var(--buttonPrimaryButtonFillDefaultOpacity);
+}
+.livetv button:focus img,
+.livetv button:hover img {
+    transform: scale(1.066);
+    outline: 2rem solid var(--surfaceAppLayer00);
+    box-shadow: 0 0 0 6rem var(--buttonPrimaryButtonFillDefault);
+}
+.livetv h3 {
+    font: var(--Title2);
+}
+.livetv time {
+    font: var(--Title1);
+    margin-bottom: 4rem;
+}
+.livetv p {
+    font: var(--Body1);
+}
+.livetv progress {
+    position: absolute;
+    bottom: 16rem;
+    margin: 0 24rem;
+    width: 464rem;
+}
+
+
+.metaGuidance {
+    color: var(--textOnDark);
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 12rem
+}
+.metaGuidance li {
+    height: 100%;
+    width: 40rem;
+}
+.metaGuidance svg {
+    width: 100%;
+}
+
+/* .guidance,
+.subtitles {
+    width: 48rem;
+    height: 48rem;
+}
+.guidance {
+    color: var(--statusError);
+}
+.audiodesc {
+    width: 48rem;
+    height: 40rem;
+    display: flex
+}
+
+.bsl {
+    width: 42rem;
+    height: 40rem;
+    display: flex
+} */

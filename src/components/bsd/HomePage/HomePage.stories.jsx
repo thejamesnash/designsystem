@@ -2,7 +2,7 @@ import { HomePage } from './HomePage';
 // import data from '../../../../public/data/taskmaster.json';
 import data from '../../../../public/data/homepageData.json';
 const meta = {
-    title: 'DROPS/Drop #1/BSD/Home Page',
+    title: 'Design System/BSD/Pages/Home Page',
     component: HomePage,
     argTypes:{
         animate: {
@@ -15,7 +15,7 @@ const meta = {
             control:{
                 type: 'select'
             },
-            options: [0,1,2,3]
+            options: [1,2,3]
         },
         hubState: {
             control:{

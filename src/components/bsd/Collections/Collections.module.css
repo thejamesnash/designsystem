@@ -1,0 +1,49 @@
+.Collections {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--surfaceAppLayer00);
+}
+.logoWrapper {
+    position: absolute;
+    top: 96rem;
+    left: 96rem;
+    width: 63rem;
+    height: 86rem;
+    z-index: 1;
+}
+.pageTitle {
+    position: absolute;
+    top: 96rem;
+    left: 192rem;
+    z-index: 1;
+    transform: translate3d(0,0rem,0);
+}
+.Collections:has(div[data-template="default"]:focus-within) .pageTitle {
+    
+    transform: translate3d(0,-240rem,0);
+}
+
+
+@media ( prefers-reduced-motion: reduce ){
+    .Collections[data-animate="true"],
+    .Collections[data-animate="true"] .pageTitle
+      {
+        transition: all 100ms linear;
+    }
+
+}
+
+@media ( prefers-reduced-motion: no-preference ){
+
+    .Collections[data-animate="true"],
+    .Collections[data-animate="true"] .pageTitle  {
+        /* transition-delay: 200ms; */
+        transition-property: all;
+        transition-duration: var(--animation-duration-medium);
+        transition-timing-function: var(--animation-ease-in);    
+    }    
+}

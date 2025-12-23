@@ -85,11 +85,11 @@
 .hubMeta:after {
     content: '';
     background: transparent url('data:image/svg+xml,<svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" data-name="chevron" class="Icon_Icon__NqGqa undefined"><path d="M16.7012 11.8564L16.6494 11.8135L8.14355 4.78418V3.30371L17.6494 11.1602H17.6504L17.8564 11.3291V12.6729L17.6504 12.8428L8.14355 20.6953V19.2148L16.6494 12.1895L16.7012 12.1465V11.8564Z" fill="%23ececec" stroke="%23ececec" stroke-width="0.28667"></path></svg>') center center no-repeat;
-    width: 48rem;
-    height: 48rem;
+    width: 56rem;
+    height: 56rem;
     position: absolute;
-    bottom: 42rem;
-    left: calc( 50vw - 24rem );
+    bottom: 60rem;
+    left: calc( 50vw - 28rem );
     transform: rotate(90deg);
     opacity: 1;
 }
@@ -102,7 +102,7 @@
 }
 .seriesSelectionTitle {
     font: var(--Title3);
-    margin: 0 0 91rem 192rem
+    margin: 0 0 82rem 192rem
 }
 
 .moreLikeThis {
@@ -311,3 +311,29 @@
 .BrandPage[data-istm="true"][data-showsigned="true"] div[data-type="hubSeries"] > div:nth-of-type(1)  {
     display: none
 }
+
+
+/* .BrandPage[data-designOverlay]:after {
+    background-color: red;
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent url('/images/figma/brandhub-hero.png') top left no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    filter: invert(1);
+    pointer-events: none;
+}
+.BrandPage[data-designOverlay][data-state="hero"]:after {
+    background-image: url('/images/figma/brandhub-hero.png');
+}
+.BrandPage[data-designOverlay][data-state="series"]:after {
+    background-image: url('/images/figma/brandhub-series.png');
+}
+.BrandPage[data-designOverlay][data-state="more"]:after {
+    background-image: url('/images/figma/brandhub-more.png');
+} */

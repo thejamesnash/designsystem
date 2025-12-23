@@ -1,4 +1,6 @@
-import { create } from 'storybook/internal/theming';
+// import { create } from 'storybook/internal/theming';
+import { create } from 'storybook/theming';
+
 
 export default create({
   base: 'dark',

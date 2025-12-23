@@ -1,3 +1,9 @@
+.LiveTV {
+    background-color: var(--textOnLight);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 /* .LiveTV {
     width: 100vw;
     height: 100vh;

@@ -1,0 +1,26 @@
+.TabMenu {
+    border-bottom: 2rem solid var(--inactive);
+    display: flex;
+    gap: 36rem;
+    overflow: scroll;
+}
+
+.tabBtn {
+    font: var(--Title1);
+    color: var(--textInactive);
+    border-bottom: 4px solid transparent;
+    padding: 13rem 16rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.tabBtn:hover {
+    color: var(--buttonPrimaryButtonFillDefault);
+}
+.tabBtn[aria-selected="true"] {
+    color: var(--buttonPrimaryButtonFillDefault);
+    border-bottom-color: var(--buttonPrimaryButtonFillDefault);
+}
+.tabBtn span {
+    display: block;
+}

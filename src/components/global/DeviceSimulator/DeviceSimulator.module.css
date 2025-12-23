@@ -1,0 +1,56 @@
+
+.DeviceSimulator {
+    --frameWidth: 0;
+    --frameHeight: 0;
+    border: 1px solid green;
+    border-color: #999 #333 #333 #999;
+    background-color: #1e1e1e;
+    resize: both;
+    width: calc( var(--frameWidth) + 6px );
+    height: calc( var(--frameHeight) + 92px );
+    overflow: auto;
+    margin: 2vh 0 0 2vh;
+    padding: 30px 2px 60px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.DeviceSimulator:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #1F1F1F;
+    position: absolute;
+    bottom: 15px;
+    left: calc( 50% - 15px );
+    border-radius: 50%;
+    border: 1px solid black;
+    border-color: #333 #999 #999 #333;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+    overflow: auto;
+    background-color: #000;
+    cursor: url("https://www.svgrepo.com/show/505217/circle.svg");
+    cursor: progress
+}
+
+.diagnostics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 30px;
+    color: #666
+}

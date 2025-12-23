@@ -1,6 +1,6 @@
 import { Navigation } from './Navigation';
 const meta = {
-    title: 'Components/BSD/Main Menu',
+    title: 'Design System/BSD/Molecules/Main Menu',
     component: Navigation,
 };
 export default meta;

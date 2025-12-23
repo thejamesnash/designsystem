@@ -1,0 +1,52 @@
+.FilterMenu {
+    display: flex;
+    gap: 32rem;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 92rem 0 68rem;
+    background-color: var(--surfaceAppLayer01);
+}
+.FilterMenu h2 {
+    color: var(--textInactive);
+    font: var(--Label1);
+}
+.FilterMenu button {
+    color: var(--textOnDark);
+    display: flex;
+    gap: 19rem;
+    align-items: center;
+    font: var(--Body1);
+    position: relative;
+}
+.FilterMenu button:focus,
+.FilterMenu button:hover {
+    color: var(--buttonPrimaryButtonFillDefault);
+}
+
+.FilterMenu button svg {
+    width: 33rem;
+}
+.FilterMenu button span {
+    position: absolute;
+    left: 56rem;
+    top: -4rem;
+    /* font: var(--Body1); */
+    transform: scale(1);
+    transform-origin: left center;
+}
+.FilterMenu button:focus span,
+.FilterMenu button:hover span {
+    /* font: var(--Title2); */
+    transform: scale(1.14);
+}
+
+@media ( prefers-reduced-motion: no-preference ){
+
+    .FilterMenu[data-animate="true"] button,
+    .FilterMenu[data-animate="true"] button span {
+        transition-property: all;
+        transition-duration: var(--animation-duration-small);
+        transition-timing-function: var(--animation-ease-out);    
+    }    
+}

@@ -1,0 +1,47 @@
+.Splash {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.splashVideo {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.splashVideo video {
+    object-fit: contain;
+    height: 100vh;
+    width: 100vw;
+}
+.Splash[data-size="full"] .splashVideo {
+    width: 100vw;
+}
+.Splash[data-size="half"] .splashVideo {
+    width: 50vw;
+}
+.Splash[data-size="third"] .splashVideo {
+    width: 37.7vw;
+}
+
+.logoWrapper {
+    position: absolute;
+    width: 276rem;
+    height: 377rem;
+}
+.logoWrapper div {
+    position: absolute;
+    transform: scale(4.4) translate3d(17.5rem,32.5rem,0);
+}
+
+.Splash[data-animate="true"] .splashVideo {
+    transition: all 200ms linear;
+}
+.Splash[data-animate="true"][data-animationtier="2"] .splashVideo {
+    transition-timing-function: ease-out;
+}
+.Splash[data-animate="true"][data-animationtier="3"] .splashVideo {
+    transition-timing-function: var(--animation-ease-out);
+}

@@ -1,0 +1,190 @@
+.Banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.Banner:after {
+    background: transparent url(/images/grad2.png) center left no-repeat;
+    background-size: cover;
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4)
+}
+.gradient {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+.bannerContent {
+    position: relative;
+    z-index: 1;
+    order: 2;
+    padding: 16rem;
+    box-sizing: border-box;
+}
+.bannerImage {
+    position: relative;
+    z-index: 1;
+    order: 1;
+    width: 100vw;
+    height: 56.25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.bannerVideo {
+    position: relative;
+    z-index: 1;
+    order: 1;
+    width: 100vw;
+    height: 56.25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.Banner h2 {
+    font: var(--Title2);
+    padding-bottom: 16rem;
+}
+.Banner h3 {
+    font: var(--Title1);
+    padding-bottom: 16rem;
+}
+.Banner p {
+    font: var(--Body1);
+    padding-bottom: 16rem;
+}
+.bannerLogo {
+    height: 52rem;
+    width: 63rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 24rem;
+}
+.bannerLogo svg {
+    height: 100%;
+}
+.btnWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    flex-wrap: wrap;
+}
+.btnWrap a {
+    width: 100%;
+}
+
+.trailerPlayer {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and ( min-width: 390px  ){
+    .btnWrap {
+        flex-direction: row;
+    }    
+}
+@media screen and ( min-width: 768px  ){
+    .Banner {
+        flex-direction: row;
+
+    }
+    .bannerImage {
+        order: 2;
+        width: 50vw;
+        height: inherit;
+    }
+    .bannerVideo {
+        order: 2;
+        width: 50vw;
+        height: 28.125vw;
+    }
+    .bannerContent {
+        order: 1;
+        width: 50vw;
+        display: flex;
+        gap: 24rem;
+        padding: 28rem 40rem 28rem 32rem; 
+    }
+    .bannerLogo {
+        width: 60rem;
+        height: 50rem;
+    }
+    .btnWrap a {
+        width: fit-content;
+    }
+}
+@media screen and ( min-width: 1024px  ){
+    .bannerContent {
+        padding: 65rem 56rem;
+        gap: 32rem;
+    }
+    .bannerLogo {
+        width: 78rem;
+        height: 65rem;
+    }
+    .bannerTextContent {
+        /* width: calc( 50vw - 150rem );
+        padding: 65rem 0; */
+    }
+}
+@media screen and ( min-width: 1440px  ){
+    .bannerContent {
+        padding: 112rem 56rem;
+        gap: 52rem;
+    }
+    .bannerLogo {
+        width: 104rem;
+        height: 86rem;
+    }
+    .bannerTextContent {
+    }
+    .Banner h2 {
+        font: var(--Title3);
+    }
+    .Banner h3 {
+        font: var(--Title2);
+    }
+    .Banner p {
+        font: var(--Body2);
+    }
+}
+@media screen and ( min-width: 1920px  ){
+    .bannerContent {
+        gap: 32rem;
+        padding: 210rem 68rem;
+    }
+    
+}
+.bannerVideo {
+    --subtitleSize: 20rem;
+}
+.trailerPlayer {
+    
+    position: relative
+}
+.bannerVideo[data-subtitles="top"] .trailerPlayer::-webkit-media-text-track-display {
+    bottom: initial!important;
+    top: 10%!important;
+}
+.bannerVideo[data-subtitles="bottom"] .trailerPlayer::-webkit-media-text-track-display {
+    top: initial!important;
+    bottom: 10%!important;
+}
+.trailerPlayer::cue {
+    font: var(--Body2);
+    font-size: var(--subtitleSize);
+    color: var(--textOnDark);
+    background-color: rgba(17,17,17,1);
+    background-image: linear-gradient(to bottom, black, black);
+}

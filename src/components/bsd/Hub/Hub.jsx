@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './Hub.module.css';
-import Rail from '../Rail/Rail';
+import Rail from '../Railv1/Rail';
 import Button from '../Button/Button.jsx';
 import Metadata from '../Metadata/Metadata.jsx';
 import SeriesSelector from '../SeriesSelector/SeriesSelector';
@@ -360,7 +360,8 @@ const keyDownHandler = (evt) => {
           data-animate={props.animate} 
           data-animationtier={props.animationTier} 
           data-showsigned={false} 
-          data-istm={isTaskmaster}
+          data-istm={isTaskmaster} 
+          data-designOverlay={true} 
           >
             <div>
                 <div className={styles.hubHero}>

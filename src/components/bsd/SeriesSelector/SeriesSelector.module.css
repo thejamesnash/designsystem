@@ -1,8 +1,8 @@
 .SeriesSelector {
-    
+
 }
 .seriesBtns {
-    padding: 4rem 0 40rem 192rem;
+    padding: 0 0 0 192rem;
     display: flex;
     gap: 16rem;
     background-color: var(--textOnLight);
@@ -32,12 +32,10 @@
     font: var(--Body1);
     padding: 0 0 0 192rem
 }
-
 .railWrapper {
     position: absolute;
-    top: 230rem
+    top: 208rem
 }
-
 
 
 

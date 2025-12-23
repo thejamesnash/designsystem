@@ -1,0 +1,33 @@
+.Breadcrumbs {
+    display: flex;    
+}
+.Breadcrumbs ol {
+    display: flex;
+    gap: 8rem;
+    flex-direction: row;
+}
+.Breadcrumbs li,
+.Breadcrumbs a {
+    text-decoration: none;
+    font: var(--Label1);
+    color: var(--textOnDark);
+    text-shadow: var(--textShadow);
+}
+.Breadcrumbs a {
+    color: var(--textInactive)
+}
+.Breadcrumbs li:after {
+    content: '>';
+    color: var(--textInactive);
+    text-decoration: none;
+    padding-left: 8rem;
+    pointer-events: none;
+}
+.Breadcrumbs li:last-of-type:after {
+    display: none;
+}
+.Breadcrumbs a:hover,
+.Breadcrumbs a:focus {
+    text-decoration: underline;
+    color: var(--textOnDark);
+}

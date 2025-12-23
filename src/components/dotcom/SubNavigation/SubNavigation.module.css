@@ -1,0 +1,26 @@
+.SubNavigation {
+    padding: 0;
+}
+.SubNavigation ul {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 4rem;
+}
+.SubNavigation li {
+    
+}
+.SubNavigation a {
+    font: var(--Title1);
+    text-decoration: none;
+    color: var(--textOnDark);
+    display: block;
+    padding: 17rem 16rem;
+    background-color: var(--overImage);
+    white-space: nowrap;
+}
+.SubNavigation a[data-active="true"] { 
+    color: var(--textSelected);
+}
+
+

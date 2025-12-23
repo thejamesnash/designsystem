@@ -5,7 +5,7 @@ import PageTitle from '../PageTitle/PageTitle.jsx';
 import AnimatedLogo from '../AnimatedLogo/AnimatedLogo.jsx';
 import Icon from '../../global/Icon/Icon.jsx';
 import Progress from '../Progress/Progress.jsx';
-import Rail from '../Rail/Rail.jsx';
+import Rail from '../Railv1/Rail.jsx';
 
 export const Player = (props) => {
   // Add early return if props.data is undefined

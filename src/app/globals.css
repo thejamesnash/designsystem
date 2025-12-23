@@ -53,6 +53,8 @@
   --navigationFocusInside: rgb(17, 17, 17);
 
   /* Typography */
+  --footer1: normal 400 12rem/22rem '4Text';
+  --footer2: normal 600 12rem/20rem '4Text'; 
   --Label1: normal 400 14rem/20rem '4Text';
   --Label2: normal 600 14rem/20rem '4Text';
   --Body1: normal 400 16rem/22rem '4Text';
@@ -60,6 +62,7 @@
   --Title1: normal 600 16rem/22rem '4Text';
   --Title2: normal 600 23rem/32rem '4Text';
   --Title3: normal 600 40rem/46rem '4Text';
+  --emoji: normal 400 34rem/34rem '4Moji';
 
   /* Text Shadows */
   --textShadow: 0 4rem 12rem rgba(17, 17, 17, 0.40);
@@ -69,8 +72,7 @@
   /* Animation */
   /* Animation */
   --animation-duration-small: 200ms;
-  --animation-duration-medium: 400ms;
-  --animation-duration-medium: 400ms;
+  --animation-duration-medium: 350ms;
   --animation-duration-large: 600ms;
   --animation-duration-xlarge: 800ms;
   --animation-easing-linear: cubic-bezier(0,0,1,1);
@@ -117,6 +119,7 @@ html:has([data-platform="bsd"]) {
   --textInactive: #c6c6c6;
   --iconsAndInputsSelected: #aaeb89;
   --iconsAndInputsInactive: #c6c6c6;
+  --iconsAndInputsInactive2: rgb(104,104,104);
   --statusError: #eb5c5c;
   --navigationFocusOutside: #aaeb89;
   --progressBarElapsed: #aaeb89;
@@ -157,7 +160,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-a,aside,body,dd,div,dl,dt,footer,h1,h2,h3,h4,header,html,li,nav,ol,p,section,ul {
+a,aside,body,dd,div,dl,dt,footer,h1,h2,h3,h4,header,html,li,nav,ol,p,section,ul, cite, blockquote {
   margin: 0;
   padding: 0
 }

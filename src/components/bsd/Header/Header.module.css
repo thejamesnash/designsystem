@@ -12,6 +12,12 @@
 .Header[data-shortheader="true"] {
     height: 288rem
 }
+.Header[data-fixedheader="true"][data-shortheader="true"] {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 128rem;
+}
+
 .Header > div {
     position: relative;
     z-index: 1;

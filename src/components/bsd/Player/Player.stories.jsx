@@ -2,7 +2,7 @@ import { Player } from './Player';
 // import data from '../../../../public/data/taskmaster.json';
 import data from '../../../../public/data/peepshowHubData.json';
 const meta = {
-    title: 'DROPS/Drop #1/BSD/Player Page',
+    title: 'Design System/BSD/Pages/Player',
     component: Player,
     argTypes:{
         animate: {

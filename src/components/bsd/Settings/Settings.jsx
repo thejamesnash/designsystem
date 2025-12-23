@@ -1,58 +1,75 @@
 import React from 'react';
 import styles from './Settings.module.css';
-import PageTitle from '../PageTitle/PageTitle.jsx';
-import { useAppState }  from '../../../context/AppContext';
+import Toggle from '../Toggle/Toggle';
 
 export const Settings = (props) => {
-    const { animationState, animationTier } = useAppState();
-
     return (
-        <div data-platform="bsd" className={styles.Settings}>
-            <div className={styles.settingsContent}>
-                <PageTitle titleText="Settings" hasEmoji="j" />
-                <fieldset>
-                    <legend>Let's get Channel 4 set up the way you like it</legend>
-                    <ul>
-                        <li>
-                            <input 
-                                type="checkbox" 
-                                id="reducedmotion" 
-                                data-type="settingsInput" 
-                                defaultChecked={animationTier === 1}
-                            />
-                            <label htmlFor="reducedmotion">Reduced Motion</label>
-                            <p>Select this option to reduce motion and animation across the app</p>
-                        </li>
-                        <li>
-                            <input 
-                                type="checkbox" 
-                                id="nomotion" 
-                                data-type="settingsInput" 
-                                defaultChecked={!animationState}
-                            />
-                            <label htmlFor="nomotion">No Motion</label>
-                            <p>Select this option to turn off all motion and animation across the app</p>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="subtitles" data-type="settingsInput" />
-                            <label htmlFor="subtitles">Subtitles</label>
-                            <p>Always show subtitles</p>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="audiodesc" data-type="settingsInput" />
-                            <label htmlFor="audiodesc">Audio Description</label>
-                            <p>Only show Audio Described shows</p>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="autoplay" data-type="settingsInput" />
-                            <label htmlFor="autoplay">Next Episode Autoplay</label>
-                            <p>Select this option to toggle autoplaying content.</p>
-                        </li>
-                    </ul>
-                </fieldset>
+        <section data-platform="bsd" className={styles.Settings}>
+            <div className={styles.settingsNavWrap}>
+                <h1>Settings</h1>
+                <div className={styles.settingsNav} role="tablist" aria-label='Settings'>
+                    {props.tabItems.map(function(tabitem,i) {
+                        return (
+                            <button 
+                                id={`settingsTab${i}`} 
+                                role="tab" 
+                                aria-selected={i===0 ? true : false} 
+                                aria-controls={`settingsPanel${i}`}>{tabitem}</button>
+                        )
+                    })}
+                </div>
             </div>
-        </div>
+            <div className={styles.settingsContent}>
+                <div id="settingsPanel1" role="tabpanel" tabindex="0" aria-labelledby="settingsTab1">
+                    <Toggle 
+                        animate={props.animate} 
+                        animationTier={props.animationTier} 
+                        platform="bsd"
+                        labelTitle="Subtitles" 
+                        labelText="You can get subtitles on all programmes available to watch on Channel 4. You can turn subtitles on here, or you can also enable subtitles during playback by going to the speech bubble button." 
+                        toggleOptions={["Off","On"]} 
+                        name="subtitles" 
+                        checked={true}
+                        active={true}
+                    />
+                    <Toggle 
+                        animate={props.animate} 
+                        animationTier={props.animationTier} 
+                        platform="bsd"
+                        labelTitle="Audio Description" 
+                        labelText="Many shows have Audio description available. This can be toggled here and also in playback by selecting the AD button." 
+                        toggleOptions={["Off","On"]} 
+                        name="audiodesc" 
+                        checked={false}
+                        active={false}
+                    />
+                    <Toggle 
+                        animate={props.animate} 
+                        animationTier={props.animationTier} 
+                        platform="bsd"
+                        labelTitle="Autoplay" 
+                        labelText="Autoplay automatically plays the next episode so you can keep watching without interruption." 
+                        toggleOptions={["Off","On"]} 
+                        name="audiodesc" 
+                        checked={false}
+                        active={false}
+                    />
+                    <Toggle 
+                        animate={props.animate} 
+                        animationTier={props.animationTier} 
+                        platform="bsd"
+                        labelTitle="Low Motion Mode" 
+                        labelText="Low Motion Mode reduces on-screen motion on Channel 4, creating a simpler, more focused browsing experience for users who prefer less on-screen movement." 
+                        toggleOptions={["Off","On"]} 
+                        name="audiodesc" 
+                        checked={false}
+                        active={false}
+                    />
+                    
+                </div>
+            </div>
+        </section>
     )
 };
 
-export default React.memo(Settings);
+export default Settings

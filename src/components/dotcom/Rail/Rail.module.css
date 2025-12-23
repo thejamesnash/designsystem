@@ -1,0 +1,91 @@
+.rail {
+    padding: 32rem var(--gridGutter);
+    box-sizing: border-box;
+    width: 100vw;
+    position: relative;
+}
+.rail[data-hasbg="true"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent url(../../../../public/images/grad2.png) center center no-repeat;
+    background-size: cover;
+    filter: brightness(0.4)
+}
+.rail:focus-within,
+.rail:hover {
+    z-index: 100
+}
+.rail:focus-within ~ .rail,
+.rail:hover ~ .rail {
+    z-index: 0
+}
+
+
+.railTitle {
+    padding-bottom: 24rem;
+    position: relative;
+}
+.railList {
+    --railOffset: 0;
+    display: flex;
+    gap: 4rem;
+    width: fit-content;
+
+    transform: translate3d(var(--railOffset),0,0);
+    transition: all var(--animation-duration-xlarge) var(--animation-ease-out);
+}
+.railList li:hover {
+    z-index: 1;
+    /* transform: translate3d(0,-60rem,0) */
+}
+
+
+.slideControl {
+    width: var(--gridGutter);
+    height: calc( 100% - 110px );
+    position: absolute;
+    top: 78rem;
+    left: 0;
+    background-color: rgba(17,17,17,0.8);
+    cursor: pointer;
+    z-index: 10;
+    color: var(--textOnDark);
+    overflow: hidden;
+}
+.slideControl svg {
+    height: initial;
+    width: 50%;
+    pointer-events: none;
+}
+.slideControl:first-of-type {
+    left: 0;
+}
+.slideControl:first-of-type svg {
+    transform: rotate(180deg)
+}
+.slideControl:last-of-type {
+    left: calc( 100vw - var(--gridGutter) );
+}
+
+@media screen and ( max-width: 1024px ){
+    .slideControl {
+        width: calc( var(--gridGutter) * 2 );
+    }
+    .slideControl:last-of-type {
+        left: calc( 100vw - calc( var(--gridGutter) * 2 ) );
+    }   
+}
+
+.rail:has(ul[data-currentview="0"]) .slideControl:first-of-type {
+    opacity: 0;
+    pointer-events: none;
+}
+.rail:has(ul[data-canmove="false"]) .slideControl:last-of-type {
+    opacity: 0;
+    pointer-events: none;
+}
+
