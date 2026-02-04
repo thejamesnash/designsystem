@@ -7,3 +7,11 @@
     overflow: hidden;
     background-color: var(--surfaceAppLayer00);
 }
+.logoWrapper {
+    position: absolute;
+    top: 96rem;
+    left: 96rem;
+    width: 63rem;
+    height: 86rem;
+    z-index: 1;
+}

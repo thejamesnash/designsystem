@@ -1,6 +1,8 @@
 import { BrandPage } from './BrandPage';
 // import data from '../../../../public/data/taskmaster.json';
-import data from '../../../../public/data/peepshowHubData.json';
+//import data from '../../../../public/data/peepshowHubData.json';
+// import data from '../../../../public/data/patience.json';
+import data from '../../../../public/data/gbbo.json';
 const meta = {
     title: 'Design System/BSD/Pages/Brand Page',
     component: BrandPage,

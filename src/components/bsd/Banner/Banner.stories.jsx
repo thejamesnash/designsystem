@@ -2,6 +2,12 @@ import { Banner } from './Banner';
 export default {
     title: 'Design System/BSD/Molecules/Banner',
     component: Banner,
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=2959-59391&m=dev',
+        },
+    },
     argTypes:{
         animate: {
             control:{

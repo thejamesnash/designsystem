@@ -46,6 +46,7 @@ export const Player = (props) => {
   const playerWrapRef = useRef(null);
   const progressElRef = useRef(null);
   const timeoutRef = useRef(null);
+  
   const [isBSLMode, setIsBSLMode] = useState(false);
 
 
@@ -235,7 +236,8 @@ const handleLoadedMetadata = useCallback(() => {
   const handleTimeUpdate = useCallback((evt) => {
     if (evt.target.currentTime > 154 && playerState !== 'endofplayback') {
       setPlayerState('endofplayback');
-      playerWrapRef.current?.querySelector('button[data-type="countdown"]')?.focus({preventScroll: true});
+      playerWrapRef.current.querySelector('button[data-ref="eopBtn"]').focus({preventScroll: true});
+      // progressElRef.current?.focus({preventScroll: true});
     }
     let rawCurrentTime = 3419.960667 + evt.target.currentTime;
     setProgessString(`${(rawCurrentTime / 3600) * 100}%`);
@@ -265,6 +267,20 @@ const handleLoadedMetadata = useCallback(() => {
   
   let allowMove = true;
 
+  const handleLostFocus = () => {
+    const playerPage = playerWrapRef.current;
+    console.log(playerState);
+    if( playerState === "playback" ){
+      progressElRef.current.focus({preventScroll:true});
+      setPlayerState('showcontrols');
+    } else if( playerState === "showcontrols" ){
+      progressElRef.current.focus({preventScroll:true});
+      setPlayerState('showcontrols');
+    } else if( playerState === "endofplayback" ){
+      playerPage.querySelector('button[data-ref="eopBtn"]').focus({preventScroll: true});
+    } 
+  }
+
   // Expose cancel function globally for navigation.js
   useEffect(() => {
     window.cancelVideoModeTimer = cancelModeTimer;
@@ -276,10 +292,11 @@ const handleLoadedMetadata = useCallback(() => {
 
   useEffect(() => {
     setPlayerState(props.state);
+    const playerPage = playerWrapRef.current;
     if (props.state === 'endofplayback') {
       console.log('EOP');
       const timer = setTimeout(() => {
-        document.querySelector('button[data-type="countdown"]')?.focus({preventScroll: true});
+        playerPage.querySelector('button[data-ref="eopBtn"]').focus({preventScroll: true});
       }, 1000);
       return () => clearTimeout(timer);
     }
@@ -296,9 +313,12 @@ const handleLoadedMetadata = useCallback(() => {
 };
 
 const handlePlayerProgress = ( el,dir,appWrapper ) => {
-    //console.log('On progress');
-    const playerPage = appWrapper;
+    console.log('On progress');
+    // const playerPage = appWrapper;
+    const playerPage = playerWrapRef.current; 
+
     const playerVideo = playerPage.querySelector('video');
+    console.log(playerPage.dataset.state);
     //console.log(playerPage);
     if( dir === 'ArrowDown' ){
         playerPage.dataset.state = 'more';
@@ -310,12 +330,23 @@ const handlePlayerProgress = ( el,dir,appWrapper ) => {
         playerPage.querySelector('button[data-type="playerHeader"]').focus({preventScroll:true});
         //playerPage.querySelector('div[data-parent="player"] button[data-template="gradient-featured"]').focus({preventScroll:true});
     } else if( dir === 'ArrowRight' ){
+        if(playerPage.dataset.state === 'showcontrols' || playerPage.dataset.state === 'playback') {
+          playerPage.dataset.state = 'showcontrols';
+          playerVideo.pause();
+          const videoCurrentTime = Number(playerVideo.currentTime);
+          playerVideo.currentTime = videoCurrentTime + 5;
+          playerVideo.play();
+
+        } else if( playerPage.dataset.state = 'endofplayback' ){
+            console.log('EOP');
+        }
         // advance
-        playerPage.dataset.state = 'showcontrols';
-        playerVideo.pause();
-        const videoCurrentTime = Number(playerVideo.currentTime);
-        playerVideo.currentTime = videoCurrentTime + 5;
-        playerVideo.play();
+        
+        // if( playerPage.dataset.state = 'endofplayback' ){
+        //   console.log('EOP');
+        // } else {
+          
+        // }
     } else if( dir === 'ArrowLeft' ){
         // advance
         playerVideo.pause();
@@ -332,7 +363,7 @@ const handlePlayerHeaderBtn = (el,dir,appWrapper) => {
     playerPage.dataset.state = 'showcontrols';
     if( dir === 'ArrowDown' ){
         playerPage.dataset.state = 'showcontrols';
-        playerPage.querySelector('input[data-type="progress"]').focus({preventScroll:true});
+        progressElRef.current.focus({preventScroll:true});
     } if( dir === 'ArrowRight' ){
         el.nextElementSibling.focus({preventScroll:true});
     }
@@ -345,7 +376,7 @@ const handlePlayerIconBtn = (el,dir,appWrapper) => {
     playerPage.dataset.state = 'showcontrols';
     if( dir === 'ArrowDown' ){
         playerPage.dataset.state = 'showcontrols';
-        playerPage.querySelector('input[data-type="progress"]').focus({preventScroll:true});
+        progressElRef.current.focus({preventScroll:true});
     } else if( dir === 'ArrowLeft' ){
         el.previousElementSibling.focus({preventScroll:true});
     }
@@ -357,7 +388,7 @@ const handlePlayerAsideBtn = (el, dir, appWrapper) => {
     const playerPage = appWrapper;
     const currentAsideIndex = Number(playerPage.dataset.activeeop);
     console.log(playerPage.dataset.activeeop);
-
+    console.log(el);
     if( dir === 'ArrowDown' ){
         if( Number(el.dataset.index) === 1 ){
             playerPage.dataset.state = 'endofplayback';
@@ -380,7 +411,7 @@ const handlePlayerAsideBtn = (el, dir, appWrapper) => {
         }
     } else if( dir === 'ArrowLeft' ){
         playerPage.dataset.state = 'showcontrols';
-        playerPage.querySelector('input[data-type="progress"]').focus({preventScroll:true});
+        progressElRef.current.focus({preventScroll:true});
     }
     allowMove = true;
 }
@@ -433,6 +464,7 @@ const keyDownHandler = (evt) => {
     const el = evt.target;
     const dir = evt.key;
     const elType = el.dataset.type;
+    console.log(elType);
     const appWrapper = playerWrapRef.current;
     if( dir === 'ArrowUp' || dir === 'ArrowDown' || dir === 'ArrowLeft' ||dir === 'ArrowRight' ){
                 switch(elType) {
@@ -473,6 +505,9 @@ const keyDownHandler = (evt) => {
                         handleSettingsInput(el, dir, appWrapper);
                         break;
                     case 'countdown':
+                        handlePlayerAsideBtn(el, dir, appWrapper);
+                        break;
+                    case 'eop':
                         handlePlayerAsideBtn(el, dir, appWrapper);
                         break;
                     case 'playerAsideBtn':
@@ -521,7 +556,7 @@ const keyDownHandler = (evt) => {
         : null}
         <PageTitle 
           titleText={brandTitle} 
-          subTitle={'Series 21 Episode 1'} 
+          subTitle={'Series 16 Episode 10'} 
           withTextShadow 
         />
         <div className={styles.playerHeaderBtns}>
@@ -540,7 +575,8 @@ const keyDownHandler = (evt) => {
           onTimeUpdate={handleTimeUpdate} 
           onPlay={handleVideoPlay}
           playsInline 
-          muted
+          muted 
+          autoPlay
         >
           <source src={videoSrcState} type="video/mp4" />
           <track 
@@ -568,7 +604,8 @@ const keyDownHandler = (evt) => {
           style={{'--currentProgress': `${progressString}`}} 
           onChange={handleProgressChange} 
           ref={progressElRef} 
-          onFocus={handleProgressFocus}
+          onFocus={handleProgressFocus} 
+          
         />
         <p className={styles.timecode}>{totalTime}</p>
       </div>
@@ -602,7 +639,8 @@ const keyDownHandler = (evt) => {
               <p>Knead more Bake Off? We take another bite, for when one helping just isn't enough</p>
           </>
           <div className={styles.playerAsideBtns}>
-            <Button btnText="Playing Next in" withIcon="play" duration={10} type="countdown" animate={true} index="1"/>
+            {/* <Button btnText="Playing Next in" withIcon="play" duration={10} type="countdown" animate={true} index="1"/> */}
+            <Button withIcon="play" btnText="Play next episode" ref={'eopBtn'} type="eop" index="1" />
             <Button btnText="Add to My List" />
           </div>
           <p className={styles.asideTip}>More like this</p>

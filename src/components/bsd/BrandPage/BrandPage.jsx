@@ -342,7 +342,7 @@ const railBtnBehaviour = (el, dir, appWrapper) => {
                     }
                     { props.pageTitle ? <div className={styles.pageTitle}><PageTitle titleText={props.pageTitle} hasEmoji={props.hasEmoji} platform={props.platform} subTitle={props.subTitle} withTextShadow={true} /></div> : null } 
                     <div className={styles.btnWrap} data-type="hubBtns">
-                        <Button ref={'hubPlay'} animate={props.animate} btnText={playAction.title} btnSubText={playAction.secondaryTitle} withIcon="play"  type="expanding" />
+                        <Button ref={'hubPlay'} animate={props.animate} btnText={'Continue Watching'} btnSubText={"Series 16 Episode 10"} withIcon="play"  type="expanding" />
                         { props.hasTrailer ? <Button animate={props.animate} withIcon="trailer" expandingText={'Add'} type="expanding" ref="hubTrailer" btnText={'Play trailer'} /> : null }
                         <Button animate={props.animate} withIcon="add" expandingText={'Add'} btnText={'Add to My List'} type="expanding" ref="hubAdd" />
                         <Button animate={props.animate} withIcon="fourplus" expandingText={'Add'} btnText={'Go Ad Free'} type="expanding" ref="hubUpgrade" />
@@ -382,7 +382,7 @@ const railBtnBehaviour = (el, dir, appWrapper) => {
                             index={0} 
                             platform='bsd' 
                             parent={'hub'} 
-                            hasGradient={true} 
+                            hasGradient={false} 
                             template="gradient-featured" 
                             titleEmoji={'a'} 
                             size="l" 

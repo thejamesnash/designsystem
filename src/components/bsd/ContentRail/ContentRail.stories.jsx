@@ -8,7 +8,13 @@ export default {
         animate: true,
         animationTier: 3,
         platform: 'bsd',
-    }
+    },
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=3685-87698&m=dev',
+        },
+    },
 }
 
 export const Default = {

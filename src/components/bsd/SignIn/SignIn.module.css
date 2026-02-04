@@ -1,5 +1,6 @@
 .SignIn {
-    
+    position: relative;
+
 }
 .step {
     height: 100vh;
@@ -8,6 +9,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .pagination {
     display: flex;
@@ -19,5 +25,104 @@
 }
 .step .btnWrap,
 .step .instructions {
-    padding: 64rem 0
+    padding: 64rem 0 24rem
+}
+
+.emoji {
+    font-family: '4moji';
+}
+.step h1 {
+    font: var(--Title3);
+    text-align: center;
+    max-width: 880rem;
+    padding-bottom: 4rem;
+}
+.step p {
+    font: var(--Body1);
+    text-align: center;
+    max-width: 880rem;
+}
+
+.step {
+    opacity: 0;
+    transition: opacity var(--animation-duration-small) var(--animation-ease-in);
+}
+.SignIn[data-state="intro"] .step:nth-of-type(1){
+     opacity: 1
+}
+.SignIn[data-state="qr"] .step:nth-of-type(2){
+     opacity: 1
+}
+.SignIn[data-state="welcome"] .step:nth-of-type(3){
+     opacity: 1
+}
+
+.qrWrap {
+    width: 298rem;
+    height: 298rem;
+    background: var(--textOnDark) url(https://c4sb.vercel.app/static/media/qr.4f7d9bfd.png) center center no-repeat;
+    background-size: cover;
+}
+.SignIn .step:nth-of-type(2) {
+    align-items: flex-start;
+}
+.SignIn .step:nth-of-type(2) button {
+    margin-bottom: 126rem
+}
+.step h2 {
+    font: var(--Title3);
+
+}
+.step .instructions {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32rem;
+    gap: 24rem;
+}
+.instructions ol {
+    margin-left: 24rem;
+}
+.instructions ol li {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.instructions ol li {
+    padding-bottom: 24rem;
+    font: var(--Body1);
+}
+.instructions ol li i {
+    font-style: normal;
+    color: var(--buttonPrimaryButtonFillDefault);
+    display: block;
+}
+.instructions ol li b {
+    color: var(--buttonPrimaryButtonFillDefault);
+    display: block;
+    font-size: 64rem;
+    font-weight: 600;
+    line-height: 53rem;
+    position: relative;
+    top: 12rem;
+    left: -32rem
+}
+.step svg {
+    width: 160rem;
+    height: 160rem;
+    margin-bottom: 32rem;
+}
+
+.SignIn .step:nth-of-type(3) h2, .SignIn .step:nth-of-type(3) h3 {
+    font: var(--Title3);
+}
+.SignIn .step:nth-of-type(3) p {
+    padding: 24rem 0 64rem
+}
+
+.SignIn[data-state="qr"] .step:nth-of-type(1),
+.SignIn[data-state="welcome"] .step:nth-of-type(2) {
+     transition-delay: 0ms;
+}
+.SignIn[data-state="qr"] .step:nth-of-type(2),
+.SignIn[data-state="welcome"] .step:nth-of-type(3) {
+     transition-delay: 500ms;
 }

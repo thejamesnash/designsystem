@@ -1,6 +1,6 @@
 import { Logo } from './Logo';
 export default  {
-    title: 'Design System/BSD/Atoms/Logo',
+    title: 'Design System/Global/Logos',
     component: Logo,
     args: {
         a11yHidden: false,

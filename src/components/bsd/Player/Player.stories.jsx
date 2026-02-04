@@ -1,6 +1,7 @@
 import { Player } from './Player';
 // import data from '../../../../public/data/taskmaster.json';
-import data from '../../../../public/data/peepshowHubData.json';
+//import data from '../../../../public/data/peepshowHubData.json';
+import data from '../../../../public/data/gbbo.json';
 const meta = {
     title: 'Design System/BSD/Pages/Player',
     component: Player,
@@ -23,7 +24,15 @@ const meta = {
             },
             options: ["playback","showcontrols","more","endofplayback"]
         }
-    }
+    },
+    parameters: {
+    
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=9182-108717&m=dev',
+        },
+    },
+    
 };
 export default meta;
 export const Default = {

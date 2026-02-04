@@ -29,7 +29,11 @@ export default {
         }
     },
     parameters: {
-        layout: "centered"
+        layout: "centered",
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=438-1360&m=dev',
+        },
     }
 }
 

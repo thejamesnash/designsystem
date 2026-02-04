@@ -2,6 +2,14 @@ import { PopUp } from './PopUp';
 export default {
     title: 'Design System/BSD/Molecules/PopUp',
     component: PopUp,
+    parameters: {
+
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=9868-49480&m=dev',
+        },
+    },
+    
 }
 
 export const Error = {

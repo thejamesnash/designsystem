@@ -7,7 +7,7 @@ const config = {
   ],
 
   "addons": [
-    "@storybook/addon-essentials", 
+    // "@storybook/addon-essentials", 
     "@storybook/addon-docs",
     "@storybook/addon-designs"],
 

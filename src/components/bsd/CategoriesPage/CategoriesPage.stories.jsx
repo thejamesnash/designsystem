@@ -27,7 +27,13 @@ export default {
             },
             options: ["landing","results"]
         }
-    }
+    },
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=9124-522616&m=dev',
+        },
+    },
 };
 
 export const Landing = {

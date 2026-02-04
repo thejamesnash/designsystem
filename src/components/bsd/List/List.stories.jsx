@@ -5,6 +5,12 @@ import data from '../../../../public/data/homepageData.json';
 export default {
     title: 'Design System/BSD/Molecules/List',
     component: List,
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=3685-87698&m=dev',
+        },
+    },
 };
 export const Small = {
     parameters: {},

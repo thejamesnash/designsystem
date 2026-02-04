@@ -1,6 +1,6 @@
 import { HomePage } from './HomePage';
 // import data from '../../../../public/data/taskmaster.json';
-import data from '../../../../public/data/homepageData.json';
+import data from '../../../../public/data/hpd.json';
 const meta = {
     title: 'Design System/BSD/Pages/Home Page',
     component: HomePage,
@@ -28,7 +28,11 @@ const meta = {
 export default meta;
 export const Default = {
     parameters: {
-    // layout:'centered'
+        
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=9125-531882&m=dev',
+        },
     },
     args:{
         animate: true,

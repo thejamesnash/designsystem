@@ -9,13 +9,20 @@ export const MyShows = (props) => {
 
     useEffect(() => {
         console.log('My Shows');
-        if( props.signedIn && props.myShowsData ){
-            document.querySelector('section[data-platform="bsd"] button').focus({preventScroll: true});    
-        } else if( props.signedIn && props.continueWatchingData ){
-            document.querySelector('section[data-platform="bsd"] a').focus({preventScroll: true});
+        if( props.signedIn === true ){
+            if( props.myShowsData ){
+                document.querySelector('section[data-platform="bsd"] button').focus({preventScroll: true});
+            } else if( props.continueWatchingData ){
+                document.querySelector('section[data-platform="bsd"] a').focus({preventScroll: true});
+            } else if( props.continueWatchingData && props.myShowsData ){
+                document.querySelector('section[data-platform="bsd"] a').focus({preventScroll: true});
+            } else {
+                document.querySelector('section[data-platform="bsd"] button').focus({preventScroll: true});
+            }
         } else {
-            document.querySelector('section[data-platform="bsd"] button').focus({preventScroll: true});
+            document.querySelector('section[data-platform="bsd"] button').focus({preventScroll: true});    
         }
+        
         
     }, []);
 

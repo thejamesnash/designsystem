@@ -7,7 +7,13 @@ export default {
     args:{
         showLogo: true,
         signedIn: true
-    }
+    },
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=11550-57595&m=dev',
+        },
+    },
 };
 
 export const NotSignedIn = {
@@ -46,16 +52,6 @@ export const NoMyShows = {
         animationTier: 3,
         platform: 'bsd',
         myShowsData: null,
-        continueWatchingData: data.sliceGroups[0].slices[2],
-    }
-};
-export const SignedIn = {
-    parameters: {},
-    args: {
-        animate: true,
-        animationTier: 3,
-        platform: 'bsd',
-        myShowsData: data.sliceGroups[0].slices[1],
         continueWatchingData: data.sliceGroups[0].slices[2],
     }
 };

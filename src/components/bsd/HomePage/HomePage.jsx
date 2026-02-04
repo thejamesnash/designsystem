@@ -1,6 +1,7 @@
 import React,{useState, useRef, useEffect, useCallback} from 'react';
 import styles from './HomePage.module.css';
 import Rail from '../Railv1/Rail';
+import AnimatedLogo from '../AnimatedLogo/AnimatedLogo';
 
 export const HomePage = (props) => {
     const homePageRef = useRef();
@@ -200,6 +201,8 @@ export const HomePage = (props) => {
             data-animationtier={props.animationTier} 
             data-platform="bsd" 
         >
+            { props.showLogo ? <div className={styles.logoWrapper}><AnimatedLogo logoState={1} /></div> : null }
+           
                 {props.data.sliceGroups[0].slices.map(function(data,i) {
                     return (
                         <Rail 

@@ -10,7 +10,13 @@ export default {
         platform: 'bsd',
         data: data,
         signedin: true
-    }
+    },
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=9104-202220&m=dev',
+        },
+    },
 };
 export const Landing = {
     parameters: {},

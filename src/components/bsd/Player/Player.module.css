@@ -5,6 +5,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-color: var(--surfaceAppLayer00);
 }
 .logoWrapper {
     position: absolute;
@@ -19,13 +20,18 @@
     height: 1080rem;
     z-index: 0;
     object-fit: cover;
+    display: flex;
+    align-items: center;
 }
 .playerElement {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 1920rem;
-    height: 1080rem;
+    height: 1080rem;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
     z-index: 0;
     object-fit: cover;
     /* filter: brightness(0.44); */
@@ -234,7 +240,9 @@
 .Player[data-state="endofplayback"] .playerElement {
     filter: brightness(0.44);
     width: 50vw;
+    height: auto;
 }
+
 .Player[data-state="endofplayback"] .playerAside {
     transform: translate3d(-50vw,0,0);
 }

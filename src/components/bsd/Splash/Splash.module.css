@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-color: var(--surfaceAppLayer00);
 }
 .splashVideo {
     width: 100vw;
@@ -37,7 +38,7 @@
 }
 
 .Splash[data-animate="true"] .splashVideo {
-    transition: all 200ms linear;
+    transition: all var(--animation-duration-xlarge) linear;
 }
 .Splash[data-animate="true"][data-animationtier="2"] .splashVideo {
     transition-timing-function: ease-out;

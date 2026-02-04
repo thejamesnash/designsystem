@@ -74,7 +74,7 @@
   --animation-duration-small: 200ms;
   --animation-duration-medium: 350ms;
   --animation-duration-large: 600ms;
-  --animation-duration-xlarge: 800ms;
+  --animation-duration-xlarge: 750ms;
   --animation-easing-linear: cubic-bezier(0,0,1,1);
   --animation-ease-fast: cubic-bezier(0.61,0,0.39,1);
   --animation-ease-slow: cubic-bezier(0.36,0,0.64,1);

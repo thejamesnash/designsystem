@@ -3,6 +3,7 @@ const meta = {
     title: 'Design System/Global/Icon',
     component: Icon,
     tags: ['autodocs'],
+  
 };
 export default meta;
 

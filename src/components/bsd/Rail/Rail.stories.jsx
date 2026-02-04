@@ -26,7 +26,14 @@ export default {
             },
             options: ["169","34"]
         }
-    }
+    },
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=2959-24024&m=dev',
+        },
+    },
+    
 }
 
 export const Brand = {

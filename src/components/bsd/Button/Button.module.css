@@ -187,7 +187,11 @@
 
 
 
-
+.Button[data-animate="true"] {
+    transition-property: all;
+    transition-duration: var(--animation-duration-small);
+    transition-behavior:  var(--animation-ease-out);
+}
 .Button[data-animate="true"][data-template="expanding"],
 .Button[data-animate="true"][data-template="expanding"] svg{
     transition-property: all;

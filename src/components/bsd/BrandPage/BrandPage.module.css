@@ -115,7 +115,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background: transparent url('/images/grad2.png') center center no-repeat;
+    /* background: transparent url('/images/grad2.png') center center no-repeat; */
     background-size: cover;
     height: 1080rem;
     width: 1920rem;

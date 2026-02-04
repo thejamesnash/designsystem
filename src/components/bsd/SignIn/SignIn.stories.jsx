@@ -1,6 +1,6 @@
 import { SignIn } from './SignIn';
 const meta = {
-    title: 'Design System/BSD/Pages/SignIn',
+    title: 'Design System/BSD/Molecules/SignIn',
     component: SignIn,
 };
 export default meta;

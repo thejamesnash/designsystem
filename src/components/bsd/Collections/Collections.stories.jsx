@@ -23,7 +23,13 @@ const meta = {
             },
             options: ["hero","series","more"]
         }
-    }
+    },parameters: {
+        
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/dfKGw1H0IG6rr5ab6wLPxy/BSD--Template-Library?node-id=16566-283188&m=dev',
+        },
+    },
 };
 export default meta;
 export const Default = {

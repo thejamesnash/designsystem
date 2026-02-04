@@ -21,8 +21,12 @@ const meta = {
 };
 export default meta;
 export const Default = {
-    parameters: {
-    // layout:'centered'
+     parameters: {
+        
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=3685-85776&m=dev',
+        },
     },
     args:{
         animate: true,

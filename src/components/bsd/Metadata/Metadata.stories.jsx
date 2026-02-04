@@ -17,8 +17,17 @@ const meta = {
             },
             options: [0,1,2,3]
         }
-    }
+    },
+    parameters: {
+        layout: 'centered',
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=2078-11725&m=dev',
+        },
+    },
 };
+
+
 export default meta;
 export const Default = {
     parameters: {

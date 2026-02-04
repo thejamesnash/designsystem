@@ -1,0 +1,1896 @@
+{
+  "brand": {
+    "brandId": "21738456",
+    "allEpisodesCount": 15,
+    "allSeriesCount": 3,
+    "categories": [
+      "Drama",
+      "Crime"
+    ],
+    "expandedCategories": [
+      {
+        "displayName": "Drama",
+        "categoryPath": "/categories/drama",
+        "id": "drama"
+      },
+      {
+        "displayName": "Crime Drama",
+        "categoryPath": "/categories/drama/crime",
+        "id": "drama-crime"
+      },
+      {
+        "displayName": "Crime",
+        "categoryPath": "",
+        "id": ""
+      }
+    ],
+    "episodes": [
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13202028",
+            "duration": 2808,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Some violent scenes from the start and throughout",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13202028?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-001?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 1,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/C3E63717-0FA5-4948-AFC82A000BEFD229.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep1_1920x1080"
+        },
+        "originalTitle": "Vampire",
+        "programmeId": "78256-001",
+        "secondaryTitle": "Vampire",
+        "seriesNumber": 2,
+        "shortSummary": "When a man is found dead with a stake through his heart, Patience seeks a logical answer",
+        "summary": "When a photographer is found dead with a stake through his heart and his body drained of blood, Patience and new DI Frankie Monroe seek a logical answer to the vampire-like crime",
+        "title": "Series 2 Episode 1",
+        "updated": "2026-01-16T12:27:49.039Z",
+        "source": "brand_page:episodes:::l1|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13202976",
+            "duration": 2820,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Violent scenes from the start and throughout",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13202976?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-002?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 2,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/46E3CADB-2DC3-4C8A-B1B4D97F2A65828C.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep2_1920x1080"
+        },
+        "originalTitle": "Music in the Minster",
+        "programmeId": "78256-002",
+        "secondaryTitle": "Music in the Minster",
+        "seriesNumber": 2,
+        "shortSummary": "A music student is found dead... and then her professor dies too",
+        "summary": "A music student is found dead... and then her professor dies too. Patience races to unravel the mystery, leading to a showdown in York Minster. And Patience and Elliot go on their first date.",
+        "title": "Series 2 Episode 2",
+        "updated": "2026-01-16T12:27:49.031Z",
+        "source": "brand_page:episodes:::l2|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13203330",
+            "duration": 2804,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Violent scenes from the start and throughout",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13203330?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-003?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 3,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/82FD67DA-F738-4BA0-8750D35C2058EB95.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep3_1920x1080"
+        },
+        "originalTitle": "The Magpie",
+        "programmeId": "78256-003",
+        "secondaryTitle": "The Magpie",
+        "seriesNumber": 2,
+        "shortSummary": "A man is shot in a packed boardroom, yet no one saw the killer. Is a dead magpie a clue?",
+        "summary": "A lawyer is shot dead in a packed boardroom - yet no one saw the killer. Is a dead magpie at the scene of the crime a clue for Patience and the team?",
+        "title": "Series 2 Episode 3",
+        "updated": "2026-01-16T12:27:48.996Z",
+        "source": "brand_page:episodes:::l3|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13215727",
+            "duration": 2822,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Violent scenes from the start and throughout, and scenes some viewers may find distressing",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13215727?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-004?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 4,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/2B69EA24-4CEF-43EA-A7D40C8B8552B78C.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep4_1920x1080"
+        },
+        "originalTitle": "The Timetable",
+        "programmeId": "78256-004",
+        "secondaryTitle": "The Timetable",
+        "seriesNumber": 2,
+        "shortSummary": "After witnessing her dad’s murder, can a young autistic girl lead Patience to the truth?",
+        "summary": "A young autistic girl witnesses her father’s murder, and her mother goes missing, but she’s unable to tell anyone what happened. Can Patience gain her trust and uncover the truth?",
+        "title": "Series 2 Episode 4",
+        "updated": "2026-01-16T12:27:49.065Z",
+        "source": "brand_page:episodes:::l4|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13203029",
+            "duration": 2819,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Scenes of violence from the start and throughout",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13203029?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-005?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 5,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/3D8A892E-1538-4B09-9EB931C44F5D5D6A.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep5_1920x1080"
+        },
+        "originalTitle": "The Runes",
+        "programmeId": "78256-005",
+        "secondaryTitle": "The Runes",
+        "seriesNumber": 2,
+        "shortSummary": "Patience races to solve the murder of a Viking expert, and her relationship hits the rocks",
+        "summary": "When a Viking expert drops dead just before a big speech, Patience finds a message that hints at foul play... and then his colleague dies too. And Patience's romance with Elliot hits the rocks.",
+        "title": "Series 2 Episode 5",
+        "updated": "2026-01-16T12:27:49.091Z",
+        "source": "brand_page:episodes:::l5|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13221565",
+            "duration": 2819,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Scenes of violence from the start and throughout, and drug references",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13221565?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-006?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 6,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/5AE32377-ADFE-4365-BD476078A13B6F19.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep6_1920x1080"
+        },
+        "originalTitle": "Paco’s Revenge",
+        "programmeId": "78256-006",
+        "secondaryTitle": "Paco’s Revenge",
+        "seriesNumber": 2,
+        "shortSummary": "Resentment boils over between Patience and Frankie as they investigate a botanist's death",
+        "summary": "Resentment boils over between Patience and Frankie as they investigate the death of a botanist. And Jake takes Patience speed-dating.",
+        "title": "Series 2 Episode 6",
+        "updated": "2026-01-16T12:27:49.057Z",
+        "source": "brand_page:episodes:::l6|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13219243",
+            "duration": 2819,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Scenes of violence from the start and throughout",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13219243?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-007?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 7,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/891E2ADA-F3BF-4057-BF3241917745E8E0.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep7_1920x1080"
+        },
+        "originalTitle": "A Monk's Tale",
+        "programmeId": "78256-007",
+        "secondaryTitle": "A Monk's Tale",
+        "seriesNumber": 2,
+        "shortSummary": "When a monk is found dead in a chapel, unholy secrets surface at the monastery",
+        "summary": "When a monk is found dead in a chapel, unholy secrets surface at the monastery. Meanwhile, Patience finds herself under the spotlight, and starts to rethink her decision about Elliot.",
+        "title": "Series 2 Episode 7",
+        "updated": "2026-01-16T12:27:49.048Z",
+        "source": "brand_page:episodes:::l7|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13223196",
+            "duration": 2814,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Scenes of violence from the start and throughout, and some scenes some viewers may find distressing",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13223196?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-008?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 7 Jan 2026",
+        "episodeNumber": 8,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2026-01-07T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/F4F23386-5B03-4DBF-8F61D7F31CD063F8.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_Ep8_1920x1080"
+        },
+        "originalTitle": "Hostage",
+        "programmeId": "78256-008",
+        "secondaryTitle": "Hostage",
+        "seriesNumber": 2,
+        "shortSummary": "Patience and Frankie are held at gunpoint by an escaped prisoner seeking justice",
+        "summary": "Patience and Frankie are held at gunpoint by an escaped prisoner, and a figure from Frankie’s past resurfaces. Patience comes to a realisation about her feelings, and a visitor brings unexpected news.",
+        "title": "Series 2 Episode 8",
+        "updated": "2026-01-16T12:27:49.023Z",
+        "source": "brand_page:episodes:::l8|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "12255619",
+            "duration": 2772,
+            "durationLabel": "46 mins",
+            "endDate": "2034-11-29T23:59:59.000Z",
+            "guidance": "Graphic scenes from the start that some viewers may find distressing",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/12255619?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/76899-001?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2025-01-08T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 8 Jan 2025",
+        "episodeNumber": 1,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2025-01-08T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/59E1E5F8-7905-4B83-891A645C221FF64F.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_Ep1_1920x1080"
+        },
+        "originalTitle": "Paper Mountain Girl - Part 1",
+        "programmeId": "76899-001",
+        "secondaryTitle": "Paper Mountain Girl - Part 1",
+        "seriesNumber": 1,
+        "shortSummary": "When a man dies in a suspected suicide, eagle-eyed Patience spots an interesting link",
+        "summary": "When a man dies after setting himself on fire in a suspected suicide, eagle-eyed Patience identifies an interesting link to other cases, bringing her to the attention of Detective Bea Metcalf",
+        "title": "Series 1 Episode 1",
+        "updated": "2026-01-16T12:27:49.012Z",
+        "source": "brand_page:episodes:::l9|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "12255623",
+            "duration": 2762,
+            "durationLabel": "46 mins",
+            "endDate": "2034-11-29T23:59:59.000Z",
+            "guidance": "Graphic images from the start and scenes that some viewers may find distressing",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/12255623?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/76899-002?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2025-01-08T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 8 Jan 2025",
+        "episodeNumber": 2,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2025-01-08T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/079EA2BE-3024-4778-B2A719BE28F2B028.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_Ep2_1920x1080"
+        },
+        "originalTitle": "Paper Mountain Girl - Part 2",
+        "programmeId": "76899-002",
+        "secondaryTitle": "Paper Mountain Girl - Part 2",
+        "seriesNumber": 1,
+        "shortSummary": "A distressed Patience is questioned by the police after coming under suspicion",
+        "summary": "A distressed Patience is questioned by the police after coming under suspicion. Bea takes Patience under her wing and learns more about her past. Together, they set to work on cracking the case.",
+        "title": "Series 1 Episode 2",
+        "updated": "2026-01-16T12:27:49.074Z",
+        "source": "brand_page:episodes:::l10|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "12255629",
+            "duration": 2812,
+            "durationLabel": "47 mins",
+            "endDate": "2034-11-29T23:59:59.000Z",
+            "guidance": "Violent images from the start",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/12255629?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/76899-003?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2025-01-08T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 8 Jan 2025",
+        "episodeNumber": 3,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2025-01-08T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/E11DCE00-D16D-4825-AA4E8800E55514EA.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_Ep3_1920x1080"
+        },
+        "originalTitle": "The Missing Link",
+        "programmeId": "76899-003",
+        "secondaryTitle": "The Missing Link",
+        "seriesNumber": 1,
+        "shortSummary": "The team are baffled when a young woman is found dead in a museum's dinosaur display",
+        "summary": "The team are baffled when a young woman is found dead in a museum's dinosaur display. The investigation leads them into the shadowy world of fossil smuggling, and Patience makes a startling deduction.",
+        "title": "Series 1 Episode 3",
+        "updated": "2026-01-16T12:27:49.004Z",
+        "source": "brand_page:episodes:::l11|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "12256069",
+            "duration": 2805,
+            "durationLabel": "47 mins",
+            "endDate": "2034-11-29T23:59:59.000Z",
+            "guidance": "Scenes and images of violence",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/12256069?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/76899-004?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2025-01-08T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 8 Jan 2025",
+        "episodeNumber": 4,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2025-01-08T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/98FA49B6-315B-4368-A8AADF23B2DA9725.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_Ep4_1920x1080"
+        },
+        "originalTitle": "The Locked Room",
+        "programmeId": "76899-004",
+        "secondaryTitle": "The Locked Room",
+        "seriesNumber": 1,
+        "shortSummary": "When a reclusive crime writer is found dead behind locked doors, Bea needs Patience's help",
+        "summary": "When a reclusive crime writer is found dead behind locked doors, Bea asks Patience to help with the investigation. Can Patience make a breakthrough in the case?",
+        "title": "Series 1 Episode 4",
+        "updated": "2026-01-16T12:27:49.083Z",
+        "source": "brand_page:episodes:::l12|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "12256066",
+            "duration": 2810,
+            "durationLabel": "47 mins",
+            "endDate": "2034-11-29T23:59:59.000Z",
+            "guidance": "Graphic images and some violent scenes",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/12256066?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/76899-005?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2025-01-08T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 8 Jan 2025",
+        "episodeNumber": 5,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2025-01-08T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/03D0CB8F-B24D-413D-B8D06F0AD647B7BE.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_Ep5_1920x1080"
+        },
+        "originalTitle": "My Brother's Keeper",
+        "programmeId": "76899-005",
+        "secondaryTitle": "My Brother's Keeper",
+        "seriesNumber": 1,
+        "shortSummary": "Patience races against time when a body disappears from the morgue",
+        "summary": "Patience races against time when a body disappears from the morgue. Is it the work of bodysnatchers - or could the victim still be alive?",
+        "title": "Series 1 Episode 5",
+        "updated": "2026-01-16T12:27:48.987Z",
+        "source": "brand_page:episodes:::l13|::play||"
+      },
+      {
+        "exclusive": false,
+        "assetInfo": {
+          "premiere": false,
+          "exclusive": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "12273648",
+            "duration": 2810,
+            "durationLabel": "47 mins",
+            "endDate": "2034-11-29T23:59:59.000Z",
+            "guidance": "Graphic images and some violent scenes",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/12273648?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/76899-006?client=amazonfire",
+            "profile": "playready-stream-2",
+            "profiles": [
+              "playready-stream-2"
+            ],
+            "requestType": "ARCHIVE",
+            "startDate": "2025-01-08T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "resolution": "HD",
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "dateLabel": "First shown: Wed 8 Jan 2025",
+        "episodeNumber": 6,
+        "firstTXChannel": "C4",
+        "firstTXDate": "2025-01-08T00:00:00.000Z",
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/FFBEB0E5-B32C-43C3-A44C2E021C2B18F9.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_Ep6_1920x1080"
+        },
+        "originalTitle": "Pandora's Box",
+        "programmeId": "76899-006",
+        "secondaryTitle": "Pandora's Box",
+        "seriesNumber": 1,
+        "shortSummary": "A man dies on a bus, and Bea refuses to stop digging - but Patience fears for her safety",
+        "summary": "When a man dies on a bus, Bea is warned off the case but refuses to stop digging - and Patience fears for her safety",
+        "title": "Series 1 Episode 6",
+        "updated": "2026-01-16T12:27:49.100Z",
+        "source": "brand_page:episodes:::l14|::play||"
+      }
+    ],
+    "episodeOrder": "latest_series_first_episode",
+    "favouriteSet": false,
+    "hasGuidance": true,
+    "image": {
+      "href": "https://ic.c4assets.com/vps/patience/5F497900-CDEA-4993-850BB71AF773BC74.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+      "templated": false,
+      "type": "image/jpeg",
+      "title": "S2_Patience_Brand_1920x1080"
+    },
+    "images": [
+      {
+        "href": "https://ic.c4assets.com/vps/patience/1034987B-7641-4B2E-983FA41A9378E040.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+        "templated": false,
+        "type": "image/jpeg",
+        "title": "S2_Patience_Brand_1024x730",
+        "height": 730,
+        "width": 1024,
+        "aspectRatio": "4:3",
+        "fallback": false
+      },
+      {
+        "href": "https://ic.c4assets.com/vps/patience/EE9D3AB8-45E3-46DE-8E5723BA5329962B.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+        "templated": false,
+        "type": "image/jpeg",
+        "title": "S2_Patience_Apple_TV_3840x2160",
+        "height": 2160,
+        "width": 3840,
+        "aspectRatio": "16:9",
+        "fallback": false
+      },
+      {
+        "href": "https://ic.c4assets.com/vps/patience/5CB43FF4-04E0-4209-A6A66964EC71A4FD.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+        "templated": false,
+        "type": "image/jpeg",
+        "title": "S2_Patience_Box_Set_Sky_Archive_600_x_800",
+        "height": 800,
+        "width": 600,
+        "aspectRatio": "3:4",
+        "fallback": false
+      },
+      {
+        "href": "https://ic.c4assets.com/vps/patience/5F497900-CDEA-4993-850BB71AF773BC74.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+        "templated": false,
+        "type": "image/jpeg",
+        "title": "S2_Patience_Brand_1920x1080",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": "16:9",
+        "fallback": false
+      },
+      {
+        "href": "https://ic.c4assets.com/vps/patience/722AA21B-369F-4E91-873A77F313794897.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+        "templated": false,
+        "type": "image/jpeg",
+        "title": "S2_Patience_Brand_3000x3000",
+        "height": 3000,
+        "width": 3000,
+        "aspectRatio": "1:1",
+        "fallback": false
+      },
+      {
+        "href": "https://ic.c4assets.com/bips/21738456/EFAB491A-F01F-4925-83a9-4dffc93c3b92.jpg?interpolation=progressive-bicubic&output-quality=90&output-format=jpeg{&resize}",
+        "templated": true,
+        "type": "image/jpeg",
+        "title": "",
+        "height": 2160,
+        "width": 3840,
+        "aspectRatio": "16:9",
+        "fallback": false,
+        "imageType": "PRIMARY_HERO"
+      },
+      {
+        "href": "https://ic.c4assets.com/bips/21738456/9A552D53-76C1-4c9f-b0b6-15343cbbd784.png?interpolation=progressive-bicubic&output-quality=90&output-format=png{&resize}",
+        "templated": true,
+        "type": "image/png",
+        "title": "",
+        "height": 660,
+        "width": 1356,
+        "aspectRatio": "113:55",
+        "fallback": false,
+        "imageType": "TITLE_TREATMENT"
+      }
+    ],
+    "latestProgId": "78256-008",
+    "ondemandEpisodesCount": 14,
+    "ondemandSeriesCount": 2,
+    "presentationBrand": "C4",
+    "programmeType": "MST",
+    "reminderSet": false,
+    "series": [
+      {
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-2/4481624A-0A60-49AF-866016F60E937297.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S2_1920x1080"
+        },
+        "seriesNumber": 2,
+        "summary": "Patience helps the police to tackle more puzzling crimes across York, while navigating love and loss in her personal life. But can her brilliant intuition shine alongside fiery new detective Frankie?",
+        "title": "Series 2"
+      },
+      {
+        "image": {
+          "href": "https://ic.c4assets.com/vps/patience-yr-1/A2DA5877-B1E0-4AAC-8A74385D46282C9A.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+          "templated": false,
+          "type": "image/jpeg",
+          "title": "Patience_S1_1920x1080"
+        },
+        "seriesNumber": 1,
+        "summary": "Talented autistic archivist Patience enters an unpredictable world when detective Bea spots her unique crime-solving skills",
+        "title": "Series 1"
+      }
+    ],
+    "shortSummary": "Talented autistic archivist Patience is back on the case as the hit crime drama returns",
+    "summary": "The hit crime drama returns for a new run, as talented autistic archivist Patience helps the police to crack more curious cases across York",
+    "title": "Patience",
+    "updated": "2026-01-16T12:27:48.849Z",
+    "websafeTitle": "patience",
+    "subtitled": true,
+    "mvt": {
+      "userAction": [
+        {
+          "action": "page_interaction",
+          "eventKeyPrefix": "click"
+        }
+      ],
+      "eventKey": [
+        "_brandhub",
+        "_brandhub_episode"
+      ]
+    },
+    "resolution": "HD",
+    "editorialLabel": "",
+    "rating": "NEUTRAL",
+    "audioDescribedStatus": "FULL",
+    "subtitledStatus": "FULL",
+    "signedStatus": "NONE"
+  },
+  "navigation": [
+    {}
+  ],
+  "notifications": [
+    {
+      "count": 0,
+      "type": "NAV"
+    },
+    {
+      "count": 0,
+      "identifiers": [],
+      "type": "CONTINUE_WATCHING"
+    },
+    {
+      "count": 0,
+      "identifiers": [],
+      "type": "MYLIST"
+    }
+  ],
+  "user": {
+    "authenticated": true
+  },
+  "viewData": {
+    "createdDate": "2024-12-10T15:09:30.000Z",
+    "enableBrandSharing": true,
+    "enableImageSharing": true,
+    "enableVideoSharing": true,
+    "lastModified": "2024-12-10T15:09:47.000Z",
+    "pageSkinEnabled": false,
+    "publishDate": "2024-12-10T15:09:47.000Z",
+    "summary": "The hit crime drama returns for a new run, as talented autistic archivist Patience helps the police to crack more curious cases across York",
+    "theme": "c4",
+    "title": "Patience"
+  },
+  "sliceGroups": [
+    {
+      "columns": 3,
+      "linkText": "Visit 4Viewers",
+      "linkUrl": "http://www.channel4.com/4viewers/help-support",
+      "slices": [],
+      "title": "Affected by issues in the show?",
+      "type": "ANNOUNCEMENT"
+    },
+    {
+      "columns": 3,
+      "slices": [
+        {
+          "sliceItems": [
+            {
+              "brand": {
+                "allEpisodesCount": 34,
+                "brandId": "18761261",
+                "allSeriesCount": 5,
+                "categories": [
+                  "World Drama",
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/0DE304CB-C1F7-4F05-8E71AE8F3A48B3FE.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "S4_Astrid_Murder_In_Paris_Brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/CE69A744-F432-4B85-BA80436C8D3108B4.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S4_Astrid_Murder_In_Paris_Apple_TV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/1F5B5268-5719-4E12-90C2452C46BE66FC.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S4_Astrid_Murder_In_Paris_Boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/71F7223A-50B2-452C-9FDE5EE5CD9431A1.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S4_Astrid_Murder_In_Paris_Brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/5B06DB45-9E9A-4FA5-AA0D10C5A3893034.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S4_Astrid_Murder_In_Paris_Brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/0DE304CB-C1F7-4F05-8E71AE8F3A48B3FE.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S4_Astrid_Murder_In_Paris_Brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 34,
+                "ondemandSeriesCount": 5,
+                "presentationBrand": "M4",
+                "programmeType": "MST",
+                "shortSummary": "Intriguing French crime drama from Walter Presents. An autistic archivist fights crime.",
+                "summary": "Intriguing French crime drama from Walter Presents. Rule-breaking detective Raphaëlle Coste and autistic archivist Astrid Nielsen work together to investigate puzzling crimes.",
+                "title": "Astrid: Murder in Paris",
+                "websafeTitle": "astrid-murder-in-paris",
+                "updated": "2026-01-14T15:12:24.272Z",
+                "audioDescribedStatus": "NONE",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/astrid-murder-in-paris/0DE304CB-C1F7-4F05-8E71AE8F3A48B3FE.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "S4_Astrid_Murder_In_Paris_Brand_1920x1080"
+              },
+              "secondaryTitle": "5 Series, 34 Episodes",
+              "summary": "Intriguing French crime drama from Walter Presents. Rule-breaking detective Raphaëlle Coste and autistic archivist Astrid Nielsen work together to investigate puzzling crimes.",
+              "title": "Astrid: Murder in Paris",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l1|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 39,
+                "brandId": "16544127",
+                "allSeriesCount": 7,
+                "categories": [
+                  "World Drama",
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/5B2F283D-E1B7-4542-B3F9D4A5E1869D50.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "S6_Ice_Cold_Murders_Brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/454029E6-B112-454B-8EA512AEE959C67F.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S6_Ice_Cold_Murders_Apple_TV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/7CFE86A0-8CB6-4E54-9E65EBB9D89F178E.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S6_Ice_Cold_Murders_Sky_Boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/F62D6412-571F-4D02-8A9BDA7325949FD6.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S6_Ice_Cold_Murders_Brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/5B2F283D-E1B7-4542-B3F9D4A5E1869D50.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S6_Ice_Cold_Murders_Brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/19AF371D-611B-493C-B07F330CAFB3E6A7.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "S6_Ice_Cold_Murders_Brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 39,
+                "ondemandSeriesCount": 7,
+                "presentationBrand": "C4",
+                "programmeType": "MSU",
+                "shortSummary": "An offbeat detective is exiled to the mountains. Italian crime drama from Walter Presents.",
+                "summary": "Character-driven Italian crime drama from Walter Presents. A cranky and unorthodox detective is exiled to the snowbound Val d'Aosta but he can’t always evade the consequences of his past in Rome.",
+                "title": "Ice Cold Murders: Rocco Schiavone",
+                "websafeTitle": "ice-cold-murders-rocco-schiavone",
+                "updated": "2025-10-09T23:00:47.960Z",
+                "audioDescribedStatus": "NONE",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/ice-cold-murders-rocco-schiavone/5B2F283D-E1B7-4542-B3F9D4A5E1869D50.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "S6_Ice_Cold_Murders_Brand_1920x1080"
+              },
+              "secondaryTitle": "7 Series, 39 Episodes",
+              "summary": "Character-driven Italian crime drama from Walter Presents. A cranky and unorthodox detective is exiled to the snowbound Val d'Aosta but he can’t always evade the consequences of his past in Rome.",
+              "title": "Ice Cold Murders: Rocco Schiavone",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l2|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 14,
+                "brandId": "158969",
+                "allSeriesCount": 2,
+                "categories": [
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/the-gulf/43B6D475-D7A6-4F5F-8BAEC09CBB3F8296.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "The_Gulf_Brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-gulf/851224C7-F795-419C-A6D0C6E6DB96B68A.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Gulf_C4_AppleTV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-gulf/4321DDE5-498D-4CC1-B1E0AE49070F80F6.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Gulf_Brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-gulf/43B6D475-D7A6-4F5F-8BAEC09CBB3F8296.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Gulf_Brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-gulf/8212BB4D-7150-43C4-BCBDE6367FCFE6DA.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Gulf_Brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-gulf/FBC22E53-2394-4D8B-AD9434D509293DF2.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Gulf_Boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 14,
+                "ondemandSeriesCount": 2,
+                "presentationBrand": "C4",
+                "programmeType": "MST",
+                "shortSummary": "Engrossing New Zealand crime drama. Jess’s reality is shattered when her husband dies.",
+                "summary": "Engrossing New Zealand crime drama. After losing her husband in a car crash, Detective Jess's rigid view of justice is picked apart. Now she must face a reality that’s not so morally black and white.",
+                "title": "The Gulf",
+                "websafeTitle": "the-gulf",
+                "updated": "2026-01-19T18:06:21.313Z",
+                "audioDescribedStatus": "FULL",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/the-gulf/43B6D475-D7A6-4F5F-8BAEC09CBB3F8296.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "The_Gulf_Brand_1920x1080"
+              },
+              "secondaryTitle": "2 Series, 14 Episodes",
+              "summary": "Engrossing New Zealand crime drama. After losing her husband in a car crash, Detective Jess's rigid view of justice is picked apart. Now she must face a reality that’s not so morally black and white.",
+              "title": "The Gulf",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l3|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 6,
+                "brandId": "160000",
+                "allSeriesCount": 1,
+                "categories": [
+                  "World Drama",
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/the-invisibles-2025/6621BBAF-0895-4AE0-AB19948984342D85.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "The_Invisibles_Brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-invisibles-2025/1E8CB766-82F4-4D5F-A2B55B9DAC843069.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Invisibles_Brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-invisibles-2025/777FB8D1-1F6F-475E-88C447C9A59797B7.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Invisibles_Brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-invisibles-2025/6719D037-FDF1-420E-BB7FEED645974A82.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Invisibles_Apple_TV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-invisibles-2025/7FC426BF-FA55-42F5-BACE05ECADCB2BB4.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Invisibles_Sky_Boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-invisibles-2025/6621BBAF-0895-4AE0-AB19948984342D85.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Invisibles_Brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 6,
+                "ondemandSeriesCount": 1,
+                "presentationBrand": "C4",
+                "programmeType": "SST",
+                "shortSummary": "Found an unknown body? Call The Invisibles. French crime drama from Walter Presents.",
+                "summary": "Found an unknown body? Call The Invisibles, the misfit cops who have a week to solve the crimes behind nameless bodies; or into mass graves the victims go. French crime drama from Walter Presents.",
+                "title": "The Invisibles (2025)",
+                "websafeTitle": "the-invisibles-2025",
+                "updated": "2025-11-21T00:00:58.031Z",
+                "audioDescribedStatus": "NONE",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/the-invisibles-2025/6621BBAF-0895-4AE0-AB19948984342D85.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "The_Invisibles_Brand_1920x1080"
+              },
+              "secondaryTitle": "1 Series, 6 Episodes",
+              "summary": "Found an unknown body? Call The Invisibles, the misfit cops who have a week to solve the crimes behind nameless bodies; or into mass graves the victims go. French crime drama from Walter Presents.",
+              "title": "The Invisibles (2025)",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l4|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 18,
+                "brandId": "160101",
+                "allSeriesCount": 3,
+                "categories": [
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/whitstable-pearl/B51A1266-5C12-4D9A-BF628F130ADD4C57.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "whitstable_pearl_brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/whitstable-pearl/79563974-009C-490E-B848BE3B33C1C2D2.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "whitstable_pearl_AppleTV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/whitstable-pearl/40C55395-5E40-4291-BE459DDBD67D37ED.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "whitstable_pearl_sky_boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/whitstable-pearl/5B5883A3-C682-41FD-93F0DFDE5F4B2678.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "whitstable_pearl_brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/whitstable-pearl/B51A1266-5C12-4D9A-BF628F130ADD4C57.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "whitstable_pearl_brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/whitstable-pearl/1A82AF64-D2AC-4DB9-9D61F21B5635396E.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "whitstable_pearl_brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 18,
+                "ondemandSeriesCount": 3,
+                "presentationBrand": "ALL4",
+                "programmeType": "MSU",
+                "shortSummary": "Crime drama about a local restaurant owner who sets up a detective agency.",
+                "summary": "Crime drama about a local restaurant owner who sets up a detective agency after undergoing police training in an earlier career.",
+                "title": "Whitstable Pearl",
+                "websafeTitle": "whitstable-pearl",
+                "updated": "2026-01-05T00:33:28.766Z",
+                "audioDescribedStatus": "FULL",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/whitstable-pearl/B51A1266-5C12-4D9A-BF628F130ADD4C57.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "whitstable_pearl_brand_1920x1080"
+              },
+              "secondaryTitle": "3 Series, 18 Episodes",
+              "summary": "Crime drama about a local restaurant owner who sets up a detective agency after undergoing police training in an earlier career.",
+              "title": "Whitstable Pearl",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l5|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 96,
+                "brandId": "159372",
+                "allSeriesCount": 8,
+                "categories": [
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/dexter/2B050D72-83D0-4E92-9593C861AF32E13E.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "Dexter_Brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/dexter/0EC49737-D7FD-4982-9637C39F65344689.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Dexter_S1_Boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/dexter/2E158DAE-35B4-426F-9CA147F155532CFE.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Dexter_Apple_TV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/dexter/FFD31D3A-4959-4FFD-A94C077F8700CA56.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Dexter_Brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/dexter/2B050D72-83D0-4E92-9593C861AF32E13E.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Dexter_Brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/dexter/BC54BCF6-A646-47A3-84019E7F28C3094B.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Dexter_Brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 96,
+                "ondemandSeriesCount": 8,
+                "presentationBrand": "C4",
+                "programmeType": "MST",
+                "shortSummary": "Police blood spatter analyst Dexter Morgan has a code - only murder people who deserve it",
+                "summary": "Serial killer and Miami PD blood spatter analyst Dexter Morgan lives by a code: only murder and dismember people who deserve it. His dad taught him that. Simple, yes? Starring Michael C Hall.",
+                "title": "Dexter",
+                "websafeTitle": "dexter",
+                "updated": "2025-12-06T19:21:56.908Z",
+                "audioDescribedStatus": "FULL",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/dexter/2B050D72-83D0-4E92-9593C861AF32E13E.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "Dexter_Brand_1920x1080"
+              },
+              "secondaryTitle": "8 Series, 96 Episodes",
+              "summary": "Serial killer and Miami PD blood spatter analyst Dexter Morgan lives by a code: only murder and dismember people who deserve it. His dad taught him that. Simple, yes? Starring Michael C Hall.",
+              "title": "Dexter",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l6|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 36,
+                "brandId": "21608710",
+                "allSeriesCount": 3,
+                "categories": [
+                  "World Drama",
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/1572E6E9-5F3F-4EDF-83A17B57BA4322AB.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "Sommerdahl_Murders_S3_Brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/6395DFC6-8E42-4E71-BF9D8BCE22B9DA85.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "The_Sommerdahl_Murders_S2_Sky_Boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/930A3D6A-50A7-43C0-8E554C0AE3F453ED.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Sommerdahl_Murders_S3_Apple_TV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/03CE4745-A5F3-4452-8EF0BCA0986ABBBD.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Sommerdahl_Murders_S3_Brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/1572E6E9-5F3F-4EDF-83A17B57BA4322AB.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Sommerdahl_Murders_S3_Brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/D7F05377-A97B-4FDB-A6F967CE4A981F18.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "Sommerdahl_Murders_S3_Brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 24,
+                "ondemandSeriesCount": 3,
+                "presentationBrand": "C4",
+                "programmeType": "MSU",
+                "shortSummary": "Danish crime drama from Walter Presents. A cop's work obsession clashes with family life.",
+                "summary": "Touching Danish crime drama from Walter Presents. Police detective Dan Sommerdahl investigates crime in an idyllic seaside town. What effect does his work obsession have on his personal life?",
+                "title": "The Sommerdahl Murders",
+                "websafeTitle": "the-sommerdahl-murders",
+                "updated": "2025-10-27T12:21:10.156Z",
+                "audioDescribedStatus": "NONE",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/the-sommerdahl-murders/1572E6E9-5F3F-4EDF-83A17B57BA4322AB.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "Sommerdahl_Murders_S3_Brand_1920x1080"
+              },
+              "secondaryTitle": "3 Series, 24 Episodes",
+              "summary": "Touching Danish crime drama from Walter Presents. Police detective Dan Sommerdahl investigates crime in an idyllic seaside town. What effect does his work obsession have on his personal life?",
+              "title": "The Sommerdahl Murders",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l7|RECOMMENDATIONS::||"
+            },
+            {
+              "brand": {
+                "allEpisodesCount": 16,
+                "brandId": "160099",
+                "allSeriesCount": 2,
+                "categories": [
+                  "Drama",
+                  "Crime"
+                ],
+                "image": {
+                  "href": "https://ic.c4assets.com/vps/the-chelsea-detective/8F523DBB-BBB9-4F5D-A15AAB8D27113F0F.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                  "templated": false,
+                  "type": "image/jpeg",
+                  "title": "the_chelsea_detective_brand_1920x1080"
+                },
+                "images": [
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-chelsea-detective/C6DDF57E-6421-405B-816BC33FE924F75A.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "the_chelsea_detective_AppleTV_3840x2160",
+                    "height": 2160,
+                    "width": 3840,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-chelsea-detective/947D26ED-F8C4-4CA4-AB38E651682945B9.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "the_chelsea_detective_sky_boxset_600x800",
+                    "height": 800,
+                    "width": 600,
+                    "aspectRatio": "3:4",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-chelsea-detective/C7B4DE3A-11A0-40AA-9F085335B3816A67.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "the_chelsea_detective_brand_1024x730",
+                    "height": 730,
+                    "width": 1024,
+                    "aspectRatio": "4:3",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-chelsea-detective/8F523DBB-BBB9-4F5D-A15AAB8D27113F0F.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "the_chelsea_detective_brand_1920x1080",
+                    "height": 1080,
+                    "width": 1920,
+                    "aspectRatio": "16:9",
+                    "fallback": false
+                  },
+                  {
+                    "href": "https://ic.c4assets.com/vps/the-chelsea-detective/5BBFB416-0989-42B1-BED887FD5FCB5A73.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                    "templated": false,
+                    "type": "image/jpeg",
+                    "title": "the_chelsea_detective_brand_3000x3000",
+                    "height": 3000,
+                    "width": 3000,
+                    "aspectRatio": "1:1",
+                    "fallback": false
+                  }
+                ],
+                "ondemandEpisodesCount": 16,
+                "ondemandSeriesCount": 2,
+                "presentationBrand": "ALL4",
+                "programmeType": "MSU",
+                "shortSummary": "Crime drama set in London's wealthy and beautiful Chelsea neighbourhood.",
+                "summary": "Crime drama set in London's wealthy and beautiful Chelsea neighbourhood, where DI Max Arnold and his partner navigate a dark underside of deception, violence, greed and murder.",
+                "title": "The Chelsea Detective",
+                "websafeTitle": "the-chelsea-detective",
+                "updated": "2026-01-16T19:46:20.061Z",
+                "audioDescribedStatus": "PARTIAL",
+                "subtitledStatus": "FULL",
+                "signedStatus": "NONE",
+                "favouriteSet": false
+              },
+              "image": {
+                "href": "https://ic.c4assets.com/vps/the-chelsea-detective/8F523DBB-BBB9-4F5D-A15AAB8D27113F0F.jpg?interpolation=progressive-bicubic&output-format=jpeg&output-quality=90{&resize}",
+                "templated": false,
+                "type": "image/jpeg",
+                "title": "the_chelsea_detective_brand_1920x1080"
+              },
+              "secondaryTitle": "2 Series, 16 Episodes",
+              "summary": "Crime drama set in London's wealthy and beautiful Chelsea neighbourhood, where DI Max Arnold and his partner navigate a dark underside of deception, violence, greed and murder.",
+              "title": "The Chelsea Detective",
+              "type": "brand",
+              "programmeStatus": "VOD",
+              "source": "brand_page:slice::p1:l8|RECOMMENDATIONS::||"
+            }
+          ],
+          "title": "More Like This",
+          "type": "RECOMMENDATIONS",
+          "width": 3,
+          "mvt": {
+            "userAction": [
+              {
+                "action": "page_interaction",
+                "eventKeyPrefix": "click"
+              },
+              {
+                "action": "video_view",
+                "eventKeyPrefix": "video_view"
+              },
+              {
+                "action": "video_completion",
+                "eventKeyPrefix": "video_completion"
+              }
+            ],
+            "eventKey": [
+              "_brandhub",
+              "_brandhub_recommendations"
+            ]
+          },
+          "xPosition": 0,
+          "yPosition": 0
+        }
+      ],
+      "type": "FOOTER"
+    }
+  ],
+  "videos": [
+    {
+      "groups": [
+        "all"
+      ],
+      "image": {
+        "href": "https://ic.c4assets.com/bips/videos/6387468731112.jpg?interpolation=progressive-bicubic&output-quality=90&output-format=jpeg{&resize}",
+        "templated": true,
+        "type": "image/jpeg",
+        "title": "Patience S2 homepage trailer"
+      },
+      "summary": "Patience S2 homepage trailer",
+      "title": "Patience S2 homepage trailer",
+      "type": "TRAILER",
+      "websafeTitle": "patience-s2-homepage-trailer",
+      "ageRating": 0,
+      "brightcoveId": 6387468731112,
+      "duration": 18,
+      "durationLabel": "00:18",
+      "ogDescription": "Patience S2 homepage trailer",
+      "ogTitle": "Patience S2 homepage trailer",
+      "engagementAction": "CONTINUE",
+      "broadcast": false,
+      "featured": false,
+      "lastModified": "2026-01-09T12:30:02+0000",
+      "migrated": true,
+      "publishedDate": "2026-01-09T11:59:51+0000"
+    },
+    {
+      "groups": [
+        "all"
+      ],
+      "image": {
+        "href": "https://ic.c4assets.com/bips/videos/6369585752112.jpg?interpolation=progressive-bicubic&output-quality=90&output-format=jpeg{&resize}",
+        "templated": true,
+        "type": "image/jpeg",
+        "title": "Patience Homepage Trailer"
+      },
+      "summary": "Trailer made for Channel 4 Streaming for Patience.",
+      "title": "Patience Homepage Trailer",
+      "type": "TRAILER",
+      "websafeTitle": "patience-homepage-trailer",
+      "ageRating": 0,
+      "brightcoveId": 6369585752112,
+      "duration": 31,
+      "durationLabel": "00:31",
+      "ogDescription": "Trailer made for Channel 4 Streaming for Patience.",
+      "ogTitle": "Patience Homepage Trailer",
+      "engagementAction": "CONTINUE",
+      "broadcast": false,
+      "featured": false,
+      "lastModified": "2026-01-09T12:30:02+0000",
+      "migrated": true,
+      "publishedDate": "2025-03-04T10:41:09+0000"
+    },
+    {
+      "groups": [
+        "all"
+      ],
+      "image": {
+        "href": "https://ic.c4assets.com/bips/videos/6367018466112.jpg?interpolation=progressive-bicubic&output-quality=90&output-format=jpeg{&resize}",
+        "templated": true,
+        "type": "image/jpeg",
+        "title": "Patience - C4 Streaming Homepage Trailer"
+      },
+      "summary": "Patience - C4 Streaming Homepage Trailer",
+      "title": "Patience - C4 Streaming Homepage Trailer",
+      "type": "TRAILER",
+      "websafeTitle": "patience-c4-streaming-homepage-trailer",
+      "ageRating": 0,
+      "brightcoveId": 6367018466112,
+      "duration": 31,
+      "durationLabel": "00:31",
+      "ogDescription": "Patience - C4 Streaming Homepage Trailer",
+      "ogTitle": "Patience - C4 Streaming Homepage Trailer",
+      "engagementAction": "CONTINUE",
+      "broadcast": false,
+      "featured": false,
+      "lastModified": "2026-01-09T12:30:02+0000",
+      "migrated": true,
+      "publishedDate": "2025-01-13T09:58:23+0000"
+    }
+  ],
+  "actions": [
+    {
+      "type": "PLAY_NEXT_EPISODE",
+      "playNextEpisode": {
+        "title": "Play",
+        "secondaryTitle": "Series 2 Episode 1",
+        "assetInfo": {
+          "premiere": false,
+          "streaming": {
+            "ageRating": 16,
+            "assetId": "13202028",
+            "duration": 2808,
+            "durationLabel": "47 mins",
+            "endDate": "2035-12-18T23:59:59.000Z",
+            "guidance": "Some violent scenes from the start and throughout",
+            "href": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-ais/asset/13202028?client=amazonfire",
+            "vodBSHref": "https://api-proxy-v1-develop.dev.dit.c4cloud.net/prod-api/online/v1/vod/stream/78256-001?client=amazonfire",
+            "profile": "playready-stream-2",
+            "requestType": "ARCHIVE",
+            "startDate": "2026-01-07T21:00:00.000Z",
+            "subtitled": true,
+            "subtitles": [
+              "webvtt_007",
+              "ebu-tt part 2_008",
+              "srt_009",
+              "ebu-stl_010",
+              "ebu-tt-d_011",
+              "webvtt_003"
+            ],
+            "audioDescribed": true,
+            "engagementAction": "PROMPT_GUIDANCE"
+          }
+        },
+        "programmeId": "78256-001",
+        "episodeNumber": 1,
+        "seriesNumber": 2,
+        "synopsis": "The hit crime drama returns for a new run, as talented autistic archivist Patience helps the police to crack more curious cases across York",
+        "shortSynopsis": "Talented autistic archivist Patience is back on the case as the hit crime drama returns",
+        "summary": "When a photographer is found dead with a stake through his heart and his body drained of blood, Patience and new DI Frankie Monroe seek a logical answer to the vampire-like crime"
+      },
+      "mvt": {
+        "userAction": [
+          {
+            "action": "page_interaction",
+            "eventKeyPrefix": "click"
+          }
+        ],
+        "eventKey": [
+          "_brandhub_play_next",
+          "_brandhub"
+        ]
+      },
+      "source": "brand_page:hero:::|PLAY_NEXT_EPISODE::play||"
+    }
+  ]
+}

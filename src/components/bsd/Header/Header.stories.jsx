@@ -5,7 +5,12 @@ const meta = {
 };
 export default meta;
 export const Default = {
-    parameters: {},
+    parameters: {
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/design/kxGwBgOIMEXGclFy7SM5R7/BSD---Component-Library?node-id=2883-9001&m=dev',
+        },
+    },
     args: {
         titleText: 'This is a title',
         subTitle: 'This is a subtitle',
